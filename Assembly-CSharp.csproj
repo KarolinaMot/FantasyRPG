@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2020_3_6;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2020_3_6;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -56,23 +56,74 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SCRIPTS\CharacterCombat.cs" />
-    <Compile Include="Assets\SCRIPTS\Inventory.cs" />
-    <Compile Include="Assets\InventorySlot.cs" />
-    <Compile Include="Assets\PACKAGES\Supercyan Character Pack Zombie Sample\Scripts\ZombieCameraLogic.cs" />
-    <Compile Include="Assets\SCRIPTS\Item.cs" />
-    <Compile Include="Assets\PACKAGES\Supercyan Character Pack Zombie Sample\Scripts\ZombieCharacterControl.cs" />
-    <Compile Include="Assets\InventoryUI.cs" />
-    <Compile Include="Assets\SCRIPTS\ThirdPersonCamera.cs" />
-    <Compile Include="Assets\PACKAGES\Supercyan Character Pack Zombie Sample\Scripts\ZombieFree.cs" />
-    <Compile Include="Assets\SCRIPTS\ThirdPersonMovement.cs" />
-    <Compile Include="Assets\SCRIPTS\ItemPickUp.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\Gravity.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\GUIControls.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerMachineDebug.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\InstantActionHandler.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterAnimatorEvents.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\CameraController.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterInputController.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\Attack.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Null.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperStateMachine.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterMovementController.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\SimpleStateMachine.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Idle.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Knockback.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\IKHands.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerMachine.cs" />
+    <Compile Include="Assets\PACKAGES\ZOMBIE\Scripts\ZombieFree.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\HighJumpTrampoline.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCollisionType.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Math3d.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\AnimationData.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterNavigationController.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Jump.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Weapon\SwitchWeapon.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BSPTree.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperMath.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Fall.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\DiveRoll.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCollider.cs" />
+    <Compile Include="Assets\PACKAGES\ZOMBIE\Scripts\ZombieCameraLogic.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerInputController.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\MovementActionHandler.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Move.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerCamera.cs" />
+    <Compile Include="Assets\PACKAGES\ZOMBIE\Scripts\ZombieCharacterControl.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\DebugDraw.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\SlowTime.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Navigation.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BruteForceMesh.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\CoroutineQueue.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\GetHit.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterWeaponController.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\SimpleActionHandler.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\NoJumpSlime.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCharacterController.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\ActionHandler.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterController.cs" />
+    <Compile Include="Assets\SCRIPTS\MOVEMENT\InputManager.cs" />
+    <Compile Include="Assets\SCRIPTS\MOVEMENT\PlayerLocomotion.cs" />
+    <Compile Include="Assets\SCRIPTS\MOVEMENT\PlayerManager.cs" />
+    <Compile Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Scripts\PlayManager.cs" />
+    <Compile Include="Assets\SCRIPTS\AnimatorManager.cs" />
+    <Compile Include="Assets\SCRIPTS\CameraManager.cs" />
+    <Compile Include="Assets\SCRIPTS\MOVEMENT\PlayerControls.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\PACKAGES\JJ_Casual RPG Character - 8Ekard v1.1\readme.txt" />
-     <None Include="Assets\PACKAGES\Supercyan Character Pack Zombie Sample\Shaders\Legacy\CelShader.shader" />
-     <None Include="Assets\PACKAGES\Supercyan Character Pack Zombie Sample\Shaders\SupercyanShader.shader" />
-     <None Include="Assets\PACKAGES\Supercyan Character Pack Zombie Sample\Shaders\SupercyanShaderLighting.cginc" />
+     <None Include="Assets\PACKAGES\ZOMBIE\Shaders\Legacy\CelShader.shader" />
+     <None Include="Assets\PACKAGES\Simple Toon\Shaders\STOutline.shader" />
+     <None Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+     <None Include="Assets\PACKAGES\ZOMBIE\Shaders\SupercyanShader.shader" />
+     <None Include="Assets\PACKAGES\Simple Toon\Shaders\STTransparent.shader" />
+     <None Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\DiffuseReflectiveShader.shader" />
+     <None Include="Assets\PACKAGES\Simple Toon\Shaders\STCore.cginc" />
+     <None Include="Assets\PACKAGES\Simple Toon\Shaders\STDefault.shader" />
+     <None Include="Assets\PACKAGES\ZOMBIE\Shaders\SupercyanShaderLighting.cginc" />
+     <None Include="Assets\PACKAGES\Simple Toon\Shaders\STFunctions.cginc" />
+     <None Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\README.txt" />
+     <None Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\ReflectiveDiffuseSpec.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\2020.3.6f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -294,6 +345,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\2020.3.6f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>Library\PackageCache\com.unity.burst@1.3.4\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\2020.3.6f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -646,6 +700,9 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    </Reference>
     <Reference Include="com.unity.cinemachine.editor">
       <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
@@ -664,17 +721,35 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
