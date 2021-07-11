@@ -4,34 +4,40 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
+    //this code gets input information
+
     PlayerControls playerControls;
+    PlayerLocomotion playerLocomotion;
     AnimatorManager animatorManager;
 
     public Vector2 movementInput;
-    public Vector2 cameraInput;
 
-    public float cameraInputX;
-    public float cameraInputY;
-
-    private float moveAmount;
+    public float moveAmount;
     public float verticalImput;
     public float horizontalImput;
+
+    public bool sprintInput;
+    public bool jumpInput;
 
     private void Awake()
     {
         animatorManager = GetComponent<AnimatorManager>();
+        playerLocomotion = GetComponent<PlayerLocomotion>();
     }
     private void OnEnable()
     {
         if (playerControls == null) {
-            playerControls = new PlayerControls();
+           playerControls = new PlayerControls();
 
-            playerControls.PlayerMovement.Movement.performed += i => movementInput = i.ReadValue<Vector2>();
-            playerControls.PlayerMovement.Camera.performed += i => cameraInput = i.ReadValue<Vector2>();
-        
-         }
+           playerControls.PlayerMovement.Movement.performed += i => movementInput = i.ReadValue<Vector2>();
+
+           playerControls.PlayerActions.Sprint.performed += i => sprintInput = true;
+           playerControls.PlayerActions.Sprint.canceled += i => sprintInput = false;
+           playerControls.PlayerActions.Jump.performed += i => jumpInput = true;
+        }
 
         playerControls.Enable();
+
     }
 
     private void OnDisable()
@@ -42,6 +48,9 @@ public class InputManager : MonoBehaviour
     public void HandleAllInputs()
     {
         HandleMovementInput();
+        HandleSprintingInput();
+        HandleJumpInput();
+
     }
 
     private void HandleMovementInput()
@@ -49,11 +58,30 @@ public class InputManager : MonoBehaviour
         verticalImput = movementInput.y;
         horizontalImput = movementInput.x;
 
-        cameraInputX = cameraInput.x;
-        cameraInputY = cameraInput.y;
-
         moveAmount = Mathf.Clamp01(Mathf.Abs(horizontalImput) + Mathf.Abs(verticalImput));
-        animatorManager.UpdateAnimatorValues(0, moveAmount);
+        animatorManager.UpdateAnimatorValues(0, moveAmount, playerLocomotion.isSprinting);
+        
 
+    }
+
+    private void HandleSprintingInput()
+    {
+        if (sprintInput && moveAmount != 0)
+        {
+            playerLocomotion.isSprinting = true;
+        }
+        else
+        {
+            playerLocomotion.isSprinting = false;
+        }
+    }
+
+    private void HandleJumpInput()
+    {
+       if (jumpInput)
+       {
+            jumpInput = false;
+            playerLocomotion.HandleJump();
+       }
     }
 }

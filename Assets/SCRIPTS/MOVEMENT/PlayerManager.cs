@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    //This code handles all player inputs and movement
+    Animator animator;
     InputManager inputManager;
     PlayerLocomotion playerLocomotion;
-    CameraManager cameraManager;
+
+
+    public bool isLocked;
 
     private void Awake()
     {
+        animator = GetComponent<Animator>();
         inputManager = GetComponent<InputManager>();
         playerLocomotion = GetComponent<PlayerLocomotion>();
-        cameraManager = FindObjectOfType<CameraManager>();
     }
 
     private void Update()
@@ -27,6 +31,9 @@ public class PlayerManager : MonoBehaviour
 
     private void LateUpdate()
     {
-        cameraManager.HandleAllCameraMovement();
+        isLocked = animator.GetBool("isLocked");
+        playerLocomotion.isJumping = animator.GetBool("isJumping");
+        animator.SetBool("isGrounded", playerLocomotion.isGrounded);
+
     }
 }
