@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    //This code handles all player inputs and movement
+    //This code handles all inputs and movement
     Animator animator;
     InputManager inputManager;
     PlayerLocomotion playerLocomotion;
+    CombatManager combatManager;
 
 
     public bool isLocked;
@@ -17,6 +18,7 @@ public class PlayerManager : MonoBehaviour
         animator = GetComponent<Animator>();
         inputManager = GetComponent<InputManager>();
         playerLocomotion = GetComponent<PlayerLocomotion>();
+        combatManager = GetComponent<CombatManager>();
     }
 
     private void Update()
@@ -33,6 +35,7 @@ public class PlayerManager : MonoBehaviour
     {
         isLocked = animator.GetBool("isLocked");
         playerLocomotion.isJumping = animator.GetBool("isJumping");
+        combatManager.isAttacking = animator.GetBool("isAttacking");
         animator.SetBool("isGrounded", playerLocomotion.isGrounded);
 
     }

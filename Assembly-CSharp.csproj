@@ -86,6 +86,7 @@
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BSPTree.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperMath.cs" />
     <Compile Include="Assets\SCRIPTS\MOVEMENT\PlayerControls.cs" />
+    <Compile Include="Assets\SCRIPTS\ANIMATION\ResetIsJumping.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Fall.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\DiveRoll.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCollider.cs" />
@@ -110,22 +111,23 @@
     <Compile Include="Assets\SCRIPTS\ANIMATION\AnimatorManager.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterController.cs" />
     <Compile Include="Assets\SCRIPTS\MOVEMENT\InputManager.cs" />
-    <Compile Include="Assets\SCRIPTS\ANIMATION\ResetIsJumping.cs" />
+    <Compile Include="Assets\SCRIPTS\CombatManager.cs" />
+    <Compile Include="Assets\SCRIPTS\ANIMATION\ResetAttack.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\PACKAGES\ZOMBIE\Shaders\Legacy\CelShader.shader" />
      <None Include="Assets\PACKAGES\Simple Toon\Shaders\STOutline.shader" />
      <None Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\ReflectiveDiffuseSpecTransp.shader" />
-     <None Include="Assets\CITY ASSETS\LowPoly-Apocalyptic-Buildings-By-Majadroid\INFO.txt" />
+     <None Include="Assets\PACKAGES\CITY ASSETS\LowPoly-Apocalyptic-Buildings-By-Majadroid\INFO.txt" />
      <None Include="Assets\PACKAGES\ZOMBIE\Shaders\SupercyanShader.shader" />
      <None Include="Assets\PACKAGES\Simple Toon\Shaders\STTransparent.shader" />
      <None Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\DiffuseReflectiveShader.shader" />
      <None Include="Assets\PACKAGES\Simple Toon\Shaders\STCore.cginc" />
-     <None Include="Assets\CITY ASSETS\LowPoly-Apocalyptic-Buildings-By-Majadroid\textures\info.txt" />
+     <None Include="Assets\PACKAGES\CITY ASSETS\LowPoly-Apocalyptic-Buildings-By-Majadroid\textures\info.txt" />
      <None Include="Assets\PACKAGES\Simple Toon\Shaders\STDefault.shader" />
      <None Include="Assets\PACKAGES\ZOMBIE\Shaders\SupercyanShaderLighting.cginc" />
      <None Include="Assets\PACKAGES\Simple Toon\Shaders\STFunctions.cginc" />
-     <None Include="Assets\CITY ASSETS\Concrete barriers\readme.txt" />
+     <None Include="Assets\PACKAGES\CITY ASSETS\Concrete barriers\readme.txt" />
      <None Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\README.txt" />
      <None Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\ReflectiveDiffuseSpec.shader" />
     <Reference Include="UnityEngine">

@@ -10,6 +10,7 @@ public class PlayerLocomotion : MonoBehaviour
     PlayerManager playerManager;
     InputManager inputManager;
     AnimatorManager animatorManager;
+    CombatManager combatManager;
 
     Vector3 moveDirection;
     Transform cameraObject;
@@ -20,7 +21,7 @@ public class PlayerLocomotion : MonoBehaviour
     public float leapingVelocity;
     public float fallingVelocity;
     public float rayCastHeightOffset = 0.5f;
-    public float minFallingHeight = 3;
+    public float distanceToGround = 0;
     public LayerMask groundLayer;
 
     [Header("Movement Flags")]
@@ -30,13 +31,13 @@ public class PlayerLocomotion : MonoBehaviour
 
     [Header("Movement Speeds")]
     public float walkingSpeed = 1.5f;
-    public float runningSpeed = 5;
-    public float sprintingSpeed = 7;
-    public float rotationSpeed = 15;
+    public float runningSpeed = 6;
+    public float sprintingSpeed = 10;
+    public float rotationSpeed = 12;
 
     [Header("Jump speeds")]
-    public float jumpHeight = 3;
-    public float gravityIntensity = -15;
+    public float jumpHeight = 2;
+    public float gravityIntensity = -3;
     #endregion
 
     private void Awake()
@@ -45,6 +46,7 @@ public class PlayerLocomotion : MonoBehaviour
         animatorManager = GetComponent<AnimatorManager>();
         inputManager = GetComponent<InputManager>();
         playerRigidBody = GetComponent<Rigidbody>();
+        combatManager = GetComponent<CombatManager>();
         cameraObject = Camera.main.transform;
         
     }
@@ -52,7 +54,7 @@ public class PlayerLocomotion : MonoBehaviour
     {
         HandleFallingAndLanding();
 
-        if (playerManager.isLocked || isJumping)
+        if (playerManager.isLocked || isJumping || combatManager.isAttacking)
           return;
         
 
@@ -119,7 +121,11 @@ public class PlayerLocomotion : MonoBehaviour
 
         if (!isGrounded && !isJumping) //checks if player isnt touching the ground i.e. is falling and plays falling animation if he is
         {
-            if(!playerManager.isLocked)
+            Physics.Raycast(rayCastOrigin, -Vector3.up, out hit, groundLayer);
+
+            distanceToGround = hit.distance;
+            animatorManager.animator.SetFloat("distanceToGround", distanceToGround);
+            if (!playerManager.isLocked && distanceToGround > jumpHeight)
                 animatorManager.PlayTargetAnimation("FALL", true);
 
             inAirTimer = inAirTimer + Time.deltaTime;
@@ -127,43 +133,32 @@ public class PlayerLocomotion : MonoBehaviour
             playerRigidBody.AddForce(-Vector3.up * fallingVelocity * inAirTimer);
         }
 
-        if (Physics.SphereCast(rayCastOrigin, 0.1f, -Vector3.up, out hit, 0.3f, groundLayer)) //checks if player is touching the ground 
+        if (Physics.Raycast(rayCastOrigin, -Vector3.up, 0.2f, groundLayer)) //checks if player is touching the ground 
         {
+
             if (!isGrounded && playerManager.isLocked) //checks if player was previously falling
             {
                 animatorManager.PlayTargetAnimation("LAND", true);
             }
 
-            inAirTimer = 0;
             isGrounded = true;
+            inAirTimer = 0;            
         }
         else //if player isnt touching the ground - he isnt grounded, changes isGrounded bool
         {
             isGrounded = false;
         }
-
-        Debug.Log("Is grounded:" +  isGrounded);
-        Debug.Log("Is locked:" +  playerManager.isLocked);
     }
 
     public void HandleJump() //is called if player presses jump button
     {
-        if (isGrounded)
+        if (isGrounded && !isJumping)
         {
             animatorManager.animator.SetBool("isJumping", true);
             animatorManager.PlayTargetAnimation("Jump", false);
 
             Vector3 origin = transform.position;
             origin.y = origin.y + rayCastHeightOffset;
-
-            if (Physics.Raycast(origin, -Vector3.up, minFallingHeight))
-            {
-                animatorManager.animator.SetBool("bigGroundDistance", true);
-            }
-            else
-            {
-                animatorManager.animator.SetBool("bigGroundDistance", false);
-            }
 
             float jumpingVelocity = Mathf.Sqrt(-2 * gravityIntensity * jumpHeight);
             Vector3 playerVelocity = moveDirection;
