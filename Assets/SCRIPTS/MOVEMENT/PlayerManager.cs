@@ -9,9 +9,11 @@ public class PlayerManager : MonoBehaviour
     InputManager inputManager;
     PlayerLocomotion playerLocomotion;
     CombatManager combatManager;
-
-
+   
     public bool isLocked;
+    public bool hasWeapon;
+    public Transform weapon;
+    public Transform hand;
 
     private void Awake()
     {
@@ -19,6 +21,8 @@ public class PlayerManager : MonoBehaviour
         inputManager = GetComponent<InputManager>();
         playerLocomotion = GetComponent<PlayerLocomotion>();
         combatManager = GetComponent<CombatManager>();
+
+        weapon = LookForWeapon(hand);
     }
 
     private void Update()
@@ -38,5 +42,18 @@ public class PlayerManager : MonoBehaviour
         combatManager.isAttacking = animator.GetBool("isAttacking");
         animator.SetBool("isGrounded", playerLocomotion.isGrounded);
 
+    }
+
+    public Transform LookForWeapon( Transform hand)
+    {
+        foreach (Transform child in hand)
+        {
+            if (child.gameObject.CompareTag("Weapon"))
+            {
+                hasWeapon = true;
+                return child;
+            }
+        }
+        return null;
     }
 }

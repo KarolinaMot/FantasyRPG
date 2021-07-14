@@ -6,6 +6,7 @@ public class CombatManager : MonoBehaviour
 {
     PlayerLocomotion playerLocomotion;
     AnimatorManager animatorManager;
+    PlayerManager playerManager;
 
     public bool isAttacking;
 
@@ -13,10 +14,11 @@ public class CombatManager : MonoBehaviour
     {
         playerLocomotion = GetComponent<PlayerLocomotion>();
         animatorManager = GetComponent<AnimatorManager>();
+        playerManager = GetComponent<PlayerManager>();
     }
     public void handleAttack()
     {
-        if(playerLocomotion.isGrounded && !playerLocomotion.isJumping)
+        if(playerLocomotion.isGrounded && !playerLocomotion.isJumping && !isAttacking)
         {
             animatorManager.animator.SetBool("isAttacking", true);
             animatorManager.PlayTargetAnimation("Attack", false);

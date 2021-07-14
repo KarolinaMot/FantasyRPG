@@ -14,13 +14,19 @@ public class PlayerLocomotion : MonoBehaviour
 
     Vector3 moveDirection;
     Transform cameraObject;
-    Rigidbody playerRigidBody;
+    [HideInInspector]
+    public Rigidbody playerRigidBody;
 
     [Header("Falling")]
+    [HideInInspector]
     public float inAirTimer;
+    [HideInInspector]
     public float leapingVelocity;
+    [HideInInspector]
     public float fallingVelocity;
+    [HideInInspector]
     public float rayCastHeightOffset = 0.5f;
+    [HideInInspector]
     public float distanceToGround = 0;
     public LayerMask groundLayer;
 

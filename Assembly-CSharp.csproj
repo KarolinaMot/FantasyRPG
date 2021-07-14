@@ -65,6 +65,7 @@
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\InstantActionHandler.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterAnimatorEvents.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\CameraController.cs" />
+    <Compile Include="Assets\SCRIPTS\CombatManager.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterInputController.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\Attack.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Null.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Weapon\SwitchWeapon.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BSPTree.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperMath.cs" />
+    <Compile Include="Assets\SCRIPTS\ANIMATION\ResetAttack.cs" />
     <Compile Include="Assets\SCRIPTS\MOVEMENT\PlayerControls.cs" />
     <Compile Include="Assets\SCRIPTS\ANIMATION\ResetIsJumping.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Fall.cs" />
@@ -111,8 +113,8 @@
     <Compile Include="Assets\SCRIPTS\ANIMATION\AnimatorManager.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterController.cs" />
     <Compile Include="Assets\SCRIPTS\MOVEMENT\InputManager.cs" />
-    <Compile Include="Assets\SCRIPTS\CombatManager.cs" />
-    <Compile Include="Assets\SCRIPTS\ANIMATION\ResetAttack.cs" />
+    <Compile Include="Assets\SCRIPTS\StatsManager.cs" />
+    <Compile Include="Assets\SCRIPTS\Weapon.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\PACKAGES\ZOMBIE\Shaders\Legacy\CelShader.shader" />
