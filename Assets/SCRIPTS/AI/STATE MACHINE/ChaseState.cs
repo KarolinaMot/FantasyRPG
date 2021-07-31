@@ -6,20 +6,24 @@ using UnityEngine.AI;
 public class ChaseState : State
 {
     public AttackState attackState;
-    public bool isInRange;
+    bool isInRange;
     public NavMeshAgent navMeshAgent;
-    public Transform player;
+    public Transform enemy;
 
     public override State RunCurrentState()
     {
         HandleChasing();
+        isInRange = CheckIfInRange(player, enemy, animator);
 
         if (isInRange)
         {
             return attackState;
+            
         }
         else
-             return this;
+        {
+            return this;
+        }
     }
 
     private void HandleChasing()
@@ -27,5 +31,20 @@ public class ChaseState : State
         navMeshAgent.SetDestination(player.position);
     }
 
+
+    public static bool CheckIfInRange(Transform player, Transform enemy, Animator animator)
+    {
+        if (Vector3.Distance(player.position, enemy.position) <= 1.6)
+        {
+            animator.SetFloat("Blend", 0);
+            return true;
+        }
+        else
+        {
+            animator.SetFloat("Blend", 1);
+            return false;
+        }
+            
+    }
  
 }

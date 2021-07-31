@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Weapon
+  - Collide
+  - Building
   layers:
   - Default
   - TransparentFX

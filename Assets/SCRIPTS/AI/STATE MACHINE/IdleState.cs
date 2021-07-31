@@ -6,10 +6,9 @@ public class IdleState : State
 {
     public bool canSeeThePlayer;
     public ChaseState chaseState;
-    public Transform player;
     RaycastHit hit;
     public float maxRange = 14;
-    public Animator animator;
+
 
     public override State RunCurrentState()
     {
@@ -22,16 +21,24 @@ public class IdleState : State
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
-        if (other.CompareTag("Player") && Physics.Raycast(transform.position, (player.position - transform.position), out hit, maxRange))
+        //if (other.CompareTag("Player"))
+        //{
+        //    Debug.Log(other.gameObject.name);
+        //}
+        
+        if (other.CompareTag("Player"))
         {
-            if (hit.transform == player)
+            Physics.Raycast(transform.position, (player.position - transform.position), out hit, maxRange);
+
+            if (!hit.collider.CompareTag("Building"))
             {
                 canSeeThePlayer = true;
-                animator.SetFloat("Vertical", 1, 0.1f, Time.deltaTime);
+                Debug.Log("Player detected");
+
             }
             else
             {
+                Debug.Log("Player not detected");
                 canSeeThePlayer = false;
             }
         }

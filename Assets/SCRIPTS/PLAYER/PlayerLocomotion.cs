@@ -60,9 +60,9 @@ public class PlayerLocomotion : MonoBehaviour
     {
         HandleFallingAndLanding();
 
-        if (playerManager.isLocked || isJumping || combatManager.isAttacking)
-          return;
-        
+        if (playerManager.isLocked || combatManager.isAttacking)
+            return;
+
 
         HandleMovement();
         HandleRotation();
@@ -93,7 +93,13 @@ public class PlayerLocomotion : MonoBehaviour
 
         
         Vector3 movementVelocity = moveDirection;
-        playerRigidBody.velocity = movementVelocity;
+        if (isJumping)
+        {
+            playerRigidBody.velocity += movementVelocity;
+        }
+        else
+            playerRigidBody.velocity = movementVelocity;
+
 
     }
 
@@ -164,7 +170,11 @@ public class PlayerLocomotion : MonoBehaviour
             Vector3 origin = transform.position;
             origin.y = origin.y + rayCastHeightOffset;
 
+
             float jumpingVelocity = Mathf.Sqrt(-2 * gravityIntensity * jumpHeight);
+            if(isSprinting)
+                jumpingVelocity = Mathf.Sqrt(-2 * gravityIntensity * (jumpHeight+2));
+
             Vector3 playerVelocity = moveDirection;
             playerVelocity.y = jumpingVelocity;
             playerRigidBody.velocity = playerVelocity;
