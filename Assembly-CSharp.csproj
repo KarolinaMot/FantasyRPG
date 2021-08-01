@@ -56,90 +56,105 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\Gravity.cs" />
-    <Compile Include="Assets\SCRIPTS\AI\EnemyManager.cs" />
     <Compile Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Scripts\PlayManager.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\GUIControls.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerMachineDebug.cs" />
-    <Compile Include="Assets\SCRIPTS\ANIMATION\ResetBool.cs" />
     <Compile Include="Assets\SCRIPTS\PLAYER\PlayerManager.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\InstantActionHandler.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterAnimatorEvents.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\CameraController.cs" />
     <Compile Include="Assets\SCRIPTS\COMBAT\CombatManager.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterInputController.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\Attack.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Null.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperStateMachine.cs" />
-    <Compile Include="Assets\SCRIPTS\BlockCharacterCollision.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterMovementController.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\SimpleStateMachine.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Idle.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Knockback.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\IKHands.cs" />
     <Compile Include="Assets\SCRIPTS\AI\STATE MACHINE\StateManager.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerMachine.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\HighJumpTrampoline.cs" />
     <Compile Include="Assets\SCRIPTS\AI\STATE MACHINE\StartPositionState.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCollisionType.cs" />
     <Compile Include="Assets\SCRIPTS\COMBAT\EnemyStats.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Math3d.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\AnimationData.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterNavigationController.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Jump.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Weapon\SwitchWeapon.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BSPTree.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperMath.cs" />
     <Compile Include="Assets\SCRIPTS\ANIMATION\ResetAttack.cs" />
-    <Compile Include="Assets\SCRIPTS\PLAYER\PlayerControls.cs" />
-    <Compile Include="Assets\SCRIPTS\ANIMATION\ResetIsJumping.cs" />
-    <Compile Include="Assets\SCRIPTS\ANIMATION\AnimatorManager.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Fall.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\DiveRoll.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCollider.cs" />
-    <Compile Include="Assets\SCRIPTS\COMBAT\PlayerStats.cs" />
-    <Compile Include="Assets\SCRIPTS\AI\STATE MACHINE\State.cs" />
     <Compile Include="Assets\SCRIPTS\AI\EnemyLocomotion.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerInputController.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\MovementActionHandler.cs" />
     <Compile Include="Assets\SCRIPTS\AI\EnemyAnimatorManager.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Move.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerCamera.cs" />
     <Compile Include="Assets\SCRIPTS\COMBAT\Weapon.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\DebugDraw.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\SlowTime.cs" />
     <Compile Include="Assets\SCRIPTS\AI\STATE MACHINE\IdleState.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Navigation.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BruteForceMesh.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\CoroutineQueue.cs" />
-    <Compile Include="Assets\SCRIPTS\AI\STATE MACHINE\AttackState.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\GetHit.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterWeaponController.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\SimpleActionHandler.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\NoJumpSlime.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCharacterController.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\ActionHandler.cs" />
     <Compile Include="Assets\SCRIPTS\AI\STATE MACHINE\ChaseState.cs" />
     <Compile Include="Assets\SCRIPTS\PLAYER\PlayerLocomotion.cs" />
-    <Compile Include="Assets\SCRIPTS\COMBAT\CharacterStats.cs" />
-    <Compile Include="Assets\SCRIPTS\PLAYER\PlayerAnimatorManager.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterController.cs" />
     <Compile Include="Assets\SCRIPTS\PLAYER\InputManager.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\Gravity.cs" />
+    <Compile Include="Assets\SCRIPTS\AI\EnemyManager.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerMachineDebug.cs" />
+    <Compile Include="Assets\SCRIPTS\ANIMATION\ResetBool.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterAnimatorEvents.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterInputController.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\Attack.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Null.cs" />
+    <Compile Include="Assets\SCRIPTS\BlockCharacterCollision.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Knockback.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\IKHands.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerMachine.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCollisionType.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Jump.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Weapon\SwitchWeapon.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BSPTree.cs" />
+    <Compile Include="Assets\SCRIPTS\PLAYER\PlayerControls.cs" />
+    <Compile Include="Assets\SCRIPTS\ANIMATION\ResetIsJumping.cs" />
+    <Compile Include="Assets\SCRIPTS\ANIMATION\AnimatorManager.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Fall.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCollider.cs" />
+    <Compile Include="Assets\SCRIPTS\COMBAT\PlayerStats.cs" />
+    <Compile Include="Assets\SCRIPTS\AI\STATE MACHINE\State.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerCamera.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\DebugDraw.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\SlowTime.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Navigation.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BruteForceMesh.cs" />
+    <Compile Include="Assets\SCRIPTS\AI\STATE MACHINE\AttackState.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCharacterController.cs" />
+    <Compile Include="Assets\SCRIPTS\COMBAT\CharacterStats.cs" />
+    <Compile Include="Assets\SCRIPTS\PLAYER\PlayerAnimatorManager.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\EasyRoads3D\lib\DelaunayER.dll" />
+     <None Include="Assets\EasyRoads3D\shaders\EasyRoads3D-Surface-Offset.shader" />
+     <None Include="Assets\EasyRoads3D\SRP Support Packages\_Readme.txt" />
      <None Include="Assets\PACKAGES\Simple Toon\Shaders\STOutline.shader" />
+     <None Include="Assets\EasyRoads3D\Resources\custom prefabs\_custom prefabs.txt" />
+     <None Include="Assets\EasyRoads3D\prefab meshes\_custom prefabs.txt" />
+     <None Include="Assets\EasyRoads3D\Quick Start.txt" />
      <None Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+     <None Include="Assets\EasyRoads3D\lib\EasyRoads3Dv3.dll" />
+     <None Include="Assets\EasyRoads3D\_readme .txt" />
+     <None Include="Assets\EasyRoads3D\shaders\EasyRoads3D-Road-Edit-Mode.shader" />
      <None Include="Assets\PACKAGES\CITY ASSETS\LowPoly-Apocalyptic-Buildings-By-Majadroid\INFO.txt" />
      <None Include="Assets\PACKAGES\Simple Toon\Shaders\STTransparent.shader" />
      <None Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\DiffuseReflectiveShader.shader" />
      <None Include="Assets\PACKAGES\Simple Toon\Shaders\STCore.cginc" />
+     <None Include="Assets\EasyRoads3D\shaders\ER Road Transparency.shader" />
      <None Include="Assets\PACKAGES\CITY ASSETS\LowPoly-Apocalyptic-Buildings-By-Majadroid\textures\info.txt" />
      <None Include="Assets\PACKAGES\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader" />
+     <None Include="Assets\EasyRoads3D\Resources\dynamic prefabs\dynamic prefabs.txt" />
      <None Include="Assets\PACKAGES\Simple Toon\Shaders\STDefault.shader" />
      <None Include="Assets\PACKAGES\Simple Toon\Shaders\STFunctions.cginc" />
      <None Include="Assets\PACKAGES\CITY ASSETS\Concrete barriers\readme.txt" />
+     <None Include="Assets\EasyRoads3D\shaders\EasyRoads3D - Unity Standard 2018+.shader" />
+     <None Include="Assets\SHADERS\CustomLighting.hlsl" />
      <None Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\README.txt" />
+     <None Include="Assets\EasyRoads3D\prefab sources\_custom prefabs.txt" />
      <None Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\ReflectiveDiffuseSpec.shader" />
+     <None Include="Assets\EasyRoads3D\_Release Notes.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\2020.3.6f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -364,6 +379,12 @@
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.3.4\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyRoads3Dv3">
+      <HintPath>Assets\EasyRoads3D\lib\EasyRoads3Dv3.dll</HintPath>
+    </Reference>
+    <Reference Include="DelaunayER">
+      <HintPath>Assets\EasyRoads3D\lib\DelaunayER.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\2020.3.6f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -710,17 +731,14 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\2020.3.6f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
@@ -728,8 +746,8 @@
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -737,14 +755,23 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -755,11 +782,14 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProGrids.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Animation.Rigging.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Animation.Rigging">
       <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
@@ -767,23 +797,44 @@
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ProBuilder">
-      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
+    <Reference Include="Unity.Burst">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
       <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ProGrids.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
       <HintPath>Library\ScriptAssemblies\Unity.ProGrids.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
