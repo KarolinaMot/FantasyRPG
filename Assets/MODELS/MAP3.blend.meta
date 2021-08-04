@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: a1c8235c618e2b846be36693c299a220
+guid: 151603169af404c48a7f9a74a9ec31e5
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FORCEFIELD
+    second: {fileID: 2100000, guid: c36c46f3084ffed4cbfc4b546fe4f955, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

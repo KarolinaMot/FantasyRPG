@@ -22,8 +22,7 @@ public class PlayerLocomotion : MonoBehaviour
     public float inAirTimer;
     [HideInInspector]
     public float leapingVelocity;
-    [HideInInspector]
-    public float fallingVelocity;
+    public float fallingVelocity = 1;
     [HideInInspector]
     public float rayCastHeightOffset = 0.5f;
     [HideInInspector]
@@ -36,14 +35,19 @@ public class PlayerLocomotion : MonoBehaviour
     public bool isJumping;
 
     [Header("Movement Speeds")]
-    public float walkingSpeed = 1.5f;
-    public float runningSpeed = 6;
-    public float sprintingSpeed = 10;
-    public float rotationSpeed = 12;
+    [SerializeField] float walkingSpeed = 1.5f;
+    [SerializeField] float runningSpeed = 6;
+    [SerializeField] float sprintingSpeed = 10;
+    [SerializeField] float rotationSpeed = 12;
 
     [Header("Jump speeds")]
-    public float jumpHeight = 2;
-    public float gravityIntensity = -3;
+    [SerializeField] float jumpHeight = 2;
+    [SerializeField] float gravityIntensity = -3;
+
+    [Header("Going up steps")]
+    [SerializeField] GameObject stepRayUpper;
+    [SerializeField] GameObject stepRayLower;
+    [SerializeField] float stepSmooth = 0.1f;
     #endregion
 
     private void Awake()
@@ -54,7 +58,9 @@ public class PlayerLocomotion : MonoBehaviour
         playerRigidBody = GetComponent<Rigidbody>();
         combatManager = GetComponent<CombatManager>();
         cameraObject = Camera.main.transform;
-        
+
+
+
     }
     public void HandleAllMovement()
     {
@@ -66,6 +72,7 @@ public class PlayerLocomotion : MonoBehaviour
 
         HandleMovement();
         HandleRotation();
+        HandleStepClimb();
     }
 
     private void HandleMovement()
@@ -75,6 +82,13 @@ public class PlayerLocomotion : MonoBehaviour
         moveDirection = moveDirection + cameraObject.right * inputManager.horizontalImput;
         moveDirection.Normalize();
         moveDirection.y = 0;
+
+        if (!isJumping)
+        {
+            walkingSpeed = 1.5f;
+            runningSpeed = 6;
+            sprintingSpeed = 12;
+        }
 
         if (isSprinting){
             moveDirection = moveDirection * sprintingSpeed;
@@ -129,18 +143,25 @@ public class PlayerLocomotion : MonoBehaviour
         Vector3 rayCastOrigin = transform.position;
         rayCastOrigin.y = rayCastOrigin.y + rayCastHeightOffset;
 
-        if (!isGrounded && !isJumping) //checks if player isnt touching the ground i.e. is falling and plays falling animation if he is
+        if (!isGrounded) //checks if player isnt touching the ground i.e. is falling and plays falling animation if he is
         {
             Physics.Raycast(rayCastOrigin, -Vector3.up, out hit, groundLayer);
 
             distanceToGround = hit.distance;
             animatorManager.animator.SetFloat("distanceToGround", distanceToGround);
+
             if (!playerManager.isLocked && distanceToGround > jumpHeight)
                 animatorManager.PlayTargetAnimation("FALL", true);
 
             inAirTimer = inAirTimer + Time.deltaTime;
-            playerRigidBody.AddForce(transform.forward * leapingVelocity);
+
+            if (hit.collider.gameObject.CompareTag("Stairs"))
+            {
+                fallingVelocity = 1500;
+            }
             playerRigidBody.AddForce(-Vector3.up * fallingVelocity * inAirTimer);
+            fallingVelocity = 100;
+
         }
 
         if (Physics.Raycast(rayCastOrigin, -Vector3.up, 0.2f, groundLayer)) //checks if player is touching the ground 
@@ -152,6 +173,7 @@ public class PlayerLocomotion : MonoBehaviour
             }
 
             isGrounded = true;
+
             inAirTimer = 0;            
         }
         else //if player isnt touching the ground - he isnt grounded, changes isGrounded bool
@@ -166,18 +188,57 @@ public class PlayerLocomotion : MonoBehaviour
         {
             animatorManager.animator.SetBool("isJumping", true);
             animatorManager.PlayTargetAnimation("Jump", false);
+            
+            if(inputManager.moveAmount > 0)
+            {
+                walkingSpeed = 1;
+                runningSpeed = 4;
+                sprintingSpeed = 7;
+            }
 
             Vector3 origin = transform.position;
             origin.y = origin.y + rayCastHeightOffset;
 
 
             float jumpingVelocity = Mathf.Sqrt(-2 * gravityIntensity * jumpHeight);
-            if(isSprinting)
-                jumpingVelocity = Mathf.Sqrt(-2 * gravityIntensity * (jumpHeight+2));
 
             Vector3 playerVelocity = moveDirection;
             playerVelocity.y = jumpingVelocity;
             playerRigidBody.velocity = playerVelocity;
         } 
+    }
+
+    private void HandleStepClimb()
+    {
+        RaycastHit hitLower;
+        if(Physics.Raycast(stepRayLower.transform.position, transform.TransformDirection(Vector3.forward), out hitLower, 0.3f))
+        {
+            RaycastHit hitUpper;
+            if(!Physics.Raycast(stepRayUpper.transform.position, transform.TransformDirection(Vector3.forward), out hitUpper, 0.2f) && inputManager.moveAmount >0)
+            {
+                playerRigidBody.position -= new Vector3(0f, -stepSmooth, 0f);
+            }
+        }
+
+        RaycastHit hitLower45;
+        if (Physics.Raycast(stepRayLower.transform.position, transform.TransformDirection(1.5f, 0, 1), out hitLower45, 0.3f))
+        {
+            RaycastHit hitUpper45;
+            if (!Physics.Raycast(stepRayUpper.transform.position, transform.TransformDirection(1.5f, 0, 1), out hitUpper45, 0.2f) && inputManager.moveAmount > 0)
+            {
+                playerRigidBody.position -= new Vector3(0f, -stepSmooth, 0f);
+            }
+        }
+
+        RaycastHit hitLowerMinus45;
+        if (Physics.Raycast(stepRayLower.transform.position, transform.TransformDirection(-1.5f, 0, 1), out hitLowerMinus45, 0.3f))
+        {
+            RaycastHit hitUpperMinus45;
+            if (!Physics.Raycast(stepRayUpper.transform.position, transform.TransformDirection(-1.5f, 0, 1), out hitUpperMinus45, 0.2f) && inputManager.moveAmount > 0)
+            {
+                playerRigidBody.position -= new Vector3(0f, -stepSmooth, 0f);
+            }
+        }
+
     }
 }
