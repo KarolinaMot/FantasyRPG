@@ -311,6 +311,44 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Settings"",
+            ""id"": ""22f56ee0-ad7c-473e-b3cb-2cbe1d0dba86"",
+            ""actions"": [
+                {
+                    ""name"": ""CameraSettings"",
+                    ""type"": ""Button"",
+                    ""id"": ""d96d92ac-295c-4031-8a6f-2ab55c56b175"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""b3acbfa2-284b-4b3d-bcdd-4143631ae644"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraSettings"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""84dbe29e-fda6-4528-bb34-0999fd013e11"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraSettings"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -324,6 +362,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_PlayerActions_Sprint = m_PlayerActions.FindAction("Sprint", throwIfNotFound: true);
         m_PlayerActions_Jump = m_PlayerActions.FindAction("Jump", throwIfNotFound: true);
         m_PlayerActions_Attack = m_PlayerActions.FindAction("Attack", throwIfNotFound: true);
+        // Settings
+        m_Settings = asset.FindActionMap("Settings", throwIfNotFound: true);
+        m_Settings_CameraSettings = m_Settings.FindAction("CameraSettings", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -459,6 +500,39 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         }
     }
     public PlayerActionsActions @PlayerActions => new PlayerActionsActions(this);
+
+    // Settings
+    private readonly InputActionMap m_Settings;
+    private ISettingsActions m_SettingsActionsCallbackInterface;
+    private readonly InputAction m_Settings_CameraSettings;
+    public struct SettingsActions
+    {
+        private @PlayerControls m_Wrapper;
+        public SettingsActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @CameraSettings => m_Wrapper.m_Settings_CameraSettings;
+        public InputActionMap Get() { return m_Wrapper.m_Settings; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(SettingsActions set) { return set.Get(); }
+        public void SetCallbacks(ISettingsActions instance)
+        {
+            if (m_Wrapper.m_SettingsActionsCallbackInterface != null)
+            {
+                @CameraSettings.started -= m_Wrapper.m_SettingsActionsCallbackInterface.OnCameraSettings;
+                @CameraSettings.performed -= m_Wrapper.m_SettingsActionsCallbackInterface.OnCameraSettings;
+                @CameraSettings.canceled -= m_Wrapper.m_SettingsActionsCallbackInterface.OnCameraSettings;
+            }
+            m_Wrapper.m_SettingsActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @CameraSettings.started += instance.OnCameraSettings;
+                @CameraSettings.performed += instance.OnCameraSettings;
+                @CameraSettings.canceled += instance.OnCameraSettings;
+            }
+        }
+    }
+    public SettingsActions @Settings => new SettingsActions(this);
     public interface IPlayerMovementActions
     {
         void OnMovement(InputAction.CallbackContext context);
@@ -469,5 +543,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnSprint(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
+    }
+    public interface ISettingsActions
+    {
+        void OnCameraSettings(InputAction.CallbackContext context);
     }
 }

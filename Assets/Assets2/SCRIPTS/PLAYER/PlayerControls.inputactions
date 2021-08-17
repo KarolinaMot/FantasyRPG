@@ -298,6 +298,44 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Settings",
+            "id": "22f56ee0-ad7c-473e-b3cb-2cbe1d0dba86",
+            "actions": [
+                {
+                    "name": "CameraSettings",
+                    "type": "Button",
+                    "id": "d96d92ac-295c-4031-8a6f-2ab55c56b175",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b3acbfa2-284b-4b3d-bcdd-4143631ae644",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraSettings",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "84dbe29e-fda6-4528-bb34-0999fd013e11",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraSettings",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

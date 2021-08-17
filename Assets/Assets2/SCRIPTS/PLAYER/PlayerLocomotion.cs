@@ -33,6 +33,7 @@ public class PlayerLocomotion : MonoBehaviour
     public bool isSprinting;
     public bool isGrounded;
     public bool isJumping;
+    public bool isClimbing;
 
     [Header("Movement Speeds")]
     [SerializeField] float walkingSpeed = 1.5f;
@@ -155,13 +156,17 @@ public class PlayerLocomotion : MonoBehaviour
 
             inAirTimer = inAirTimer + Time.deltaTime;
 
-            if (hit.collider.gameObject.CompareTag("Stairs"))
+            if (!isJumping && !isClimbing)
             {
                 fallingVelocity = 1500;
             }
-            playerRigidBody.AddForce(-Vector3.up * fallingVelocity * inAirTimer);
-            fallingVelocity = 100;
 
+            if (isJumping || isClimbing)
+            {
+                fallingVelocity = 100;
+            }
+
+            playerRigidBody.AddForce(-Vector3.up * fallingVelocity * inAirTimer);
         }
 
         if (Physics.Raycast(rayCastOrigin, -Vector3.up, 0.2f, groundLayer)) //checks if player is touching the ground 
@@ -211,34 +216,49 @@ public class PlayerLocomotion : MonoBehaviour
     private void HandleStepClimb()
     {
         RaycastHit hitLower;
-        if(Physics.Raycast(stepRayLower.transform.position, transform.TransformDirection(Vector3.forward), out hitLower, 0.3f))
+        if (Physics.Raycast(stepRayLower.transform.position, transform.TransformDirection(Vector3.forward), out hitLower, 0.3f))
         {
             RaycastHit hitUpper;
-            if(!Physics.Raycast(stepRayUpper.transform.position, transform.TransformDirection(Vector3.forward), out hitUpper, 0.2f) && inputManager.moveAmount >0)
+            if (!Physics.Raycast(stepRayUpper.transform.position, transform.TransformDirection(Vector3.forward), out hitUpper, 1) && inputManager.moveAmount > 0)
             {
                 playerRigidBody.position -= new Vector3(0f, -stepSmooth, 0f);
+                isClimbing = true;
             }
+            else
+                isClimbing = false;
         }
+        else
+            isClimbing = false;
 
         RaycastHit hitLower45;
         if (Physics.Raycast(stepRayLower.transform.position, transform.TransformDirection(1.5f, 0, 1), out hitLower45, 0.3f))
         {
             RaycastHit hitUpper45;
-            if (!Physics.Raycast(stepRayUpper.transform.position, transform.TransformDirection(1.5f, 0, 1), out hitUpper45, 0.2f) && inputManager.moveAmount > 0)
+            if (!Physics.Raycast(stepRayUpper.transform.position, transform.TransformDirection(1.5f, 0, 1), out hitUpper45, 1) && inputManager.moveAmount > 0)
             {
                 playerRigidBody.position -= new Vector3(0f, -stepSmooth, 0f);
+                isClimbing = true;
             }
+            else
+                isClimbing = false;
         }
+        else
+            isClimbing = false;
 
         RaycastHit hitLowerMinus45;
         if (Physics.Raycast(stepRayLower.transform.position, transform.TransformDirection(-1.5f, 0, 1), out hitLowerMinus45, 0.3f))
         {
             RaycastHit hitUpperMinus45;
-            if (!Physics.Raycast(stepRayUpper.transform.position, transform.TransformDirection(-1.5f, 0, 1), out hitUpperMinus45, 0.2f) && inputManager.moveAmount > 0)
+            if (!Physics.Raycast(stepRayUpper.transform.position, transform.TransformDirection(-1.5f, 0, 1), out hitUpperMinus45, 1) && inputManager.moveAmount > 0)
             {
                 playerRigidBody.position -= new Vector3(0f, -stepSmooth, 0f);
+                isClimbing = true;
             }
+            else
+                isClimbing = false;
         }
+        else
+            isClimbing = false;
 
     }
 }
