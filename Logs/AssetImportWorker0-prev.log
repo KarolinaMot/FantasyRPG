@@ -1,0 +1,93 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.6f1 (338bb68529b2) revision 3378102'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1165; Version 2009; 64bit' Language: 'en' Physical Memory: 16161 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\2020.3.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/kahyt/OneDrive/Documents/GitHub/FantasyRPG 3.0
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56855
+Successfully changed project path to: C:/Users/kahyt/OneDrive/Documents/GitHub/FantasyRPG 3.0
+C:/Users/kahyt/OneDrive/Documents/GitHub/FantasyRPG 3.0
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 658.16 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.6f1 (338bb68529b2)
+[Subsystems] Discovering subsystems at path C:/Program Files/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/kahyt/OneDrive/Documents/GitHub/FantasyRPG 3.0/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce MX350 (ID=0x1c94)
+    Vendor:   
+    VRAM:     1979 MB
+    Driver:   30.0.14.7141
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/2020.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008221 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 254.50 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 12.682 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.065017 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 154.96 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  4.096 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 1.71 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3824 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 178.6 MB.
+System memory in use after: 178.7 MB.
+
+Unloading 71 unused Assets to reduce memory usage. Loaded Objects now: 4385.
+Total: 11.222600 ms (FindLiveObjects: 0.454800 ms CreateObjectMapping: 0.180700 ms MarkObjects: 10.223700 ms  DeleteObjects: 0.359400 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Assets2/MODELS/NEW MAP.blend
+  artifactKey: Guid(0e378937337836548984afb52c99b04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets2/MODELS/NEW MAP.blend using Guid(0e378937337836548984afb52c99b04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cc1acaaea59b7290e00d27d39d1138b') in 0.756902 seconds
+  Import took 0.773606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 497.474747 seconds.
+  path: Assets/Assets2/MODELS/NEW MAP.blend
+  artifactKey: Guid(0e378937337836548984afb52c99b04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets2/MODELS/NEW MAP.blend using Guid(0e378937337836548984afb52c99b04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e81d973d4f384e4ac89042bf384ac2d4') in 0.551482 seconds
+  Import took 0.570347 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
