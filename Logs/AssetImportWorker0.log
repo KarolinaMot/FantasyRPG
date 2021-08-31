@@ -15,11 +15,11 @@ C:/Users/kahyt/OneDrive/Documents/GitHub/FantasyRPG 3.0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53592
+53966
 Successfully changed project path to: C:/Users/kahyt/OneDrive/Documents/GitHub/FantasyRPG 3.0
 C:/Users/kahyt/OneDrive/Documents/GitHub/FantasyRPG 3.0
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 221.40 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 222.51 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.6f1 (338bb68529b2)
 [Subsystems] Discovering subsystems at path C:/Program Files/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
@@ -31,27 +31,26 @@ Direct3D:
     Vendor:   
     VRAM:     1979 MB
     Driver:   30.0.14.7141
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/2020.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56328
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56444
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007359 seconds.
+Registered in 0.009840 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 167.50 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 233.85 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  5.415 seconds
+- Completed reload, in  6.889 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.042331 seconds.
+Registered in 0.055779 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 157.66 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 210.86 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
@@ -60,86 +59,39 @@ Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/
 Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  4.321 seconds
+- Completed reload, in  4.727 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 1.83 ms, found 6 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
+Refreshing native plugins compatible for Editor in 6.14 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3822 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.8 MB.
-System memory in use after: 176.9 MB.
+Unloading 3825 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 175.6 MB.
+System memory in use after: 166.5 MB.
 
-Unloading 71 unused Assets to reduce memory usage. Loaded Objects now: 4382.
-Total: 4.089200 ms (FindLiveObjects: 0.429000 ms CreateObjectMapping: 0.214400 ms MarkObjects: 3.214500 ms  DeleteObjects: 0.228800 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/easy UI emerald - default.psd
-  artifactKey: Guid(1f758ec661cd10f4b889c713e4d957cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/easy UI emerald - default.psd using Guid(1f758ec661cd10f4b889c713e4d957cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e6bc312f21db276a96fd86a38fb7635') in 0.185745 seconds
-  Import took 0.194308 seconds .
+Unloading 179 unused Assets to reduce memory usage. Loaded Objects now: 4278.
+Total: 22.465900 ms (FindLiveObjects: 0.351300 ms CreateObjectMapping: 0.243900 ms MarkObjects: 9.677100 ms  DeleteObjects: 12.190600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11715.489989 seconds.
-  path: Assets/Assets2
-  artifactKey: Guid(fa8d186a8b0b22d4f91a6397685f1062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets2 using Guid(fa8d186a8b0b22d4f91a6397685f1062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5798b20ad1e1714f63e1df475242728') in 0.018767 seconds
-  Import took 0.178659 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000640 seconds.
-  path: Assets/Assets2/Close.png
-  artifactKey: Guid(fad8632a2bbb3914190aa5839db93a77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets2/Close.png using Guid(fad8632a2bbb3914190aa5839db93a77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6b30b512bd555f414942bf1a5c29d96') in 0.207597 seconds
-  Import took 0.215264 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/Assets2/515-5154977_frost-effect-png.png
-  artifactKey: Guid(87954605d2c31624a8552b409c1f425a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets2/515-5154977_frost-effect-png.png using Guid(87954605d2c31624a8552b409c1f425a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cec23f844d3a4b8b6454974ea56655be') in 0.045954 seconds
-  Import took 0.056706 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.128602 seconds.
-  path: Assets/Assets2/SCENES
-  artifactKey: Guid(e5e9b3c54f947be4e961fe709fa2303b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets2/SCENES using Guid(e5e9b3c54f947be4e961fe709fa2303b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82598c32d6e14c0daf49ab7a5ba7311a') in 0.021694 seconds
-  Import took 0.043520 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.461803 seconds.
-  path: Assets/Assets2/SCENES/MAIN SCENE.unity
-  artifactKey: Guid(b27077ae9d8b32244805f81286649b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets2/SCENES/MAIN SCENE.unity using Guid(b27077ae9d8b32244805f81286649b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b20125a443315f445a53f779a98a7a21') in 0.025703 seconds
-  Import took 0.039239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 485.273923 seconds.
-  path: Assets/Assets2/SCENES/MAIN SCENE.unity
-  artifactKey: Guid(b27077ae9d8b32244805f81286649b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets2/SCENES/MAIN SCENE.unity using Guid(b27077ae9d8b32244805f81286649b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2dd2ccacf30d98b5c35c9a8f66eda89') in 0.012724 seconds
-  Import took 0.032731 seconds .
+  path: Assets/Assets2/SHADERS/ToonShader.shadergraph
+  artifactKey: Guid(695dd01f9de75b048beedcea3d995f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets2/SHADERS/ToonShader.shadergraph using Guid(695dd01f9de75b048beedcea3d995f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '575962a42334f4d43a4e48ac30759688') in 0.127858 seconds
+  Import took 0.152688 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.047880 seconds.
+Registered in 0.036885 seconds.
 Begin MonoManager ReloadAssembly
 Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.79 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.87 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
@@ -148,16 +100,48 @@ Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/
 Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  2.661 seconds
+- Completed reload, in  3.563 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.31 ms, found 6 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 4.14 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3633 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 165.1 MB.
-System memory in use after: 165.3 MB.
+Unloading 3741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.4 MB.
+System memory in use after: 162.2 MB.
 
-Unloading 64 unused Assets to reduce memory usage. Loaded Objects now: 4393.
-Total: 5.324500 ms (FindLiveObjects: 0.431000 ms CreateObjectMapping: 0.196500 ms MarkObjects: 4.531800 ms  DeleteObjects: 0.162000 ms)
+Unloading 172 unused Assets to reduce memory usage. Loaded Objects now: 4281.
+Total: 18.759900 ms (FindLiveObjects: 0.888500 ms CreateObjectMapping: 0.275900 ms MarkObjects: 4.840900 ms  DeleteObjects: 12.750300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.026533 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.53 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/2020.3.6f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  3.096 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.96 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.4 MB.
+System memory in use after: 162.3 MB.
+
+Unloading 172 unused Assets to reduce memory usage. Loaded Objects now: 4284.
+Total: 17.058400 ms (FindLiveObjects: 0.376800 ms CreateObjectMapping: 0.281000 ms MarkObjects: 6.460400 ms  DeleteObjects: 9.938000 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
