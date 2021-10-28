@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{97527DDD-752E-4D8A-EBF1-999831FA11AB}</ProjectGuid>
+    <ProjectGuid>{168EC505-C3CD-8C89-29BC-420E406C68CC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,176 +56,154 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Assets2\PACKAGES\BASIC MOTIONS\SampleScene\Scripts\PlayManager.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\Demo Elements\Code\GUIControls.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\PLAYER\PlayerManager.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\InstantActionHandler.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\Demo Elements\Code\CameraController.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\COMBAT\CombatManager.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperStateMachine.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterMovementController.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\Code\SimpleStateMachine.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Idle.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\AI\STATE MACHINE\StateManager.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\Demo Elements\Code\HighJumpTrampoline.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\AI\STATE MACHINE\StartPositionState.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\COMBAT\EnemyStats.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Math3d.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\AnimationData.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterNavigationController.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperMath.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\ANIMATION\ResetAttack.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\DiveRoll.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\AI\EnemyLocomotion.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerInputController.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\MovementActionHandler.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\AI\EnemyAnimatorManager.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Move.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\COMBAT\Weapon.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\AI\STATE MACHINE\IdleState.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\CoroutineQueue.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\GetHit.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterWeaponController.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\SimpleActionHandler.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\Demo Elements\Code\NoJumpSlime.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\ActionHandler.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\AI\STATE MACHINE\ChaseState.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\PLAYER\PlayerLocomotion.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterController.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\GeometryGrassPainter.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\InputManager.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\Code\Gravity.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\AI\EnemyManager.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerMachineDebug.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\ANIMATION\ResetBool.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterAnimatorEvents.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterInputController.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\Attack.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Null.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\BlockCharacterCollision.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Knockback.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\IKHands.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerMachine.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCollisionType.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\PLAYER\PlayerValues.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Jump.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Weapon\SwitchWeapon.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BSPTree.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\PLAYER\PlayerControls.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\GrassPainterEditor.cs.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\ANIMATION\ResetIsJumping.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\ANIMATION\AnimatorManager.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Fall.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCollider.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\COMBAT\PlayerStats.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\AI\STATE MACHINE\State.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerCamera.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\DebugDraw.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\SlowTime.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Navigation.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BruteForceMesh.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\AI\STATE MACHINE\AttackState.cs" />
-    <Compile Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCharacterController.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\COMBAT\CharacterStats.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\PLAYER\PlayerAnimatorManager.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Scripts\PlayManager.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\GUIControls.cs" />
+    <Compile Include="Assets\SCRIPTS\PLAYER\PlayerManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
-    <Compile Include="Assets\Assets2\SCRIPTS\SettingsUI.cs" />
-    <Compile Include="Assets\Krivodeling\UI\Effects\Blur\Demo\Scripts\MovingImage.cs" />
-    <Compile Include="Assets\Krivodeling\UI\Effects\Blur\Scripts\UIBlurWithCanvasGroup.cs" />
-    <Compile Include="Assets\Krivodeling\UI\Effects\Blur\Scripts\UIBlur.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\InstantActionHandler.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\CameraController.cs" />
+    <Compile Include="Assets\SCRIPTS\COMBAT\CombatManager.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperStateMachine.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterMovementController.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\SimpleStateMachine.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Idle.cs" />
+    <Compile Include="Assets\SCRIPTS\AI\STATE MACHINE\StateManager.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\HighJumpTrampoline.cs" />
+    <Compile Include="Assets\SCRIPTS\AI\STATE MACHINE\StartPositionState.cs" />
+    <Compile Include="Assets\SCRIPTS\COMBAT\EnemyStats.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Math3d.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\AnimationData.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterNavigationController.cs" />
+    <Compile Include="Assets\GrassPainterEditor.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperMath.cs" />
+    <Compile Include="Assets\SCRIPTS\ANIMATION\ResetAttack.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\DiveRoll.cs" />
+    <Compile Include="Assets\SCRIPTS\SettingsUI.cs" />
+    <Compile Include="Assets\SCRIPTS\AI\EnemyLocomotion.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerInputController.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\MovementActionHandler.cs" />
+    <Compile Include="Assets\SCRIPTS\AI\EnemyAnimatorManager.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Move.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\SCRIPTS\COMBAT\Weapon.cs" />
+    <Compile Include="Assets\SCRIPTS\AI\STATE MACHINE\IdleState.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\CoroutineQueue.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\GetHit.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterWeaponController.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\SimpleActionHandler.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\NoJumpSlime.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\ActionHandler.cs" />
+    <Compile Include="Assets\SCRIPTS\AI\STATE MACHINE\ChaseState.cs" />
+    <Compile Include="Assets\SCRIPTS\PLAYER\PlayerLocomotion.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterController.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\SCRIPTS\InputManager.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\Gravity.cs" />
+    <Compile Include="Assets\SCRIPTS\AI\EnemyManager.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerMachineDebug.cs" />
+    <Compile Include="Assets\SCRIPTS\ANIMATION\ResetBool.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterAnimatorEvents.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterInputController.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\Attack.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Null.cs" />
+    <Compile Include="Assets\SCRIPTS\BlockCharacterCollision.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Knockback.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\IKHands.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerMachine.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCollisionType.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\SCRIPTS\PLAYER\PlayerValues.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Jump.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Weapon\SwitchWeapon.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BSPTree.cs" />
+    <Compile Include="Assets\SCRIPTS\PLAYER\PlayerControls.cs" />
+    <Compile Include="Assets\GeometryGrassPainter.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\SCRIPTS\ANIMATION\ResetIsJumping.cs" />
+    <Compile Include="Assets\SCRIPTS\ANIMATION\AnimatorManager.cs" />
+    <Compile Include="Assets\NEW_SCRIPTS\ANIMATOR\ChangeBoolASB.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Fall.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCollider.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\SCRIPTS\COMBAT\PlayerStats.cs" />
+    <Compile Include="Assets\SCRIPTS\AI\STATE MACHINE\State.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerCamera.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\DebugDraw.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\SlowTime.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Navigation.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BruteForceMesh.cs" />
+    <Compile Include="Assets\SCRIPTS\AI\STATE MACHINE\AttackState.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCharacterController.cs" />
+    <Compile Include="Assets\SCRIPTS\COMBAT\CharacterStats.cs" />
+    <Compile Include="Assets\SCRIPTS\PLAYER\PlayerAnimatorManager.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\NEW_SCRIPTS\ANIMATOR\AddVelocity.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\GeometryGrassURP.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-     <None Include="Assets\EasyRoads3D\lib\DelaunayER.dll" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets\EasyRoads3D\shaders\EasyRoads3D-Surface-Offset.shader" />
-     <None Include="Assets\Allegorithmic\Plugins\Substance.Engine.dll" />
-     <None Include="Assets\EasyRoads3D\SRP Support Packages\_Readme.txt" />
-     <None Include="Assets\Assets2\PACKAGES\Simple Toon\Shaders\STOutline.shader" />
+     <None Include="Assets\PACKAGES\Simple Toon\Shaders\STOutline.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\EasyRoads3D\Resources\custom prefabs\_custom prefabs.txt" />
-     <None Include="Assets\EasyRoads3D\prefab meshes\_custom prefabs.txt" />
-     <None Include="Assets\Allegorithmic\Plugins\EULA.txt" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-     <None Include="Assets\EasyRoads3D\Quick Start.txt" />
-     <None Include="Assets\Assets2\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+     <None Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\ReflectiveDiffuseSpecTransp.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <None Include="Assets\EasyRoads3D\lib\EasyRoads3Dv3.dll" />
-     <None Include="Assets\EasyRoads3D\_readme .txt" />
-     <None Include="Assets\Allegorithmic\Plugins\Substance.Game.dll" />
-     <None Include="Assets\EasyRoads3D\shaders\EasyRoads3D-Road-Edit-Mode.shader" />
-     <None Include="Assets\Assets2\PACKAGES\CITY ASSETS\LowPoly-Apocalyptic-Buildings-By-Majadroid\INFO.txt" />
+     <None Include="Assets\PACKAGES\CITY ASSETS\LowPoly-Apocalyptic-Buildings-By-Majadroid\INFO.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <None Include="Assets\Assets2\PACKAGES\Simple Toon\Shaders\STTransparent.shader" />
+     <None Include="Assets\PACKAGES\Simple Toon\Shaders\STTransparent.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\Allegorithmic\Plugins\substance_sse2_blend.dll" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\Assets2\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\DiffuseReflectiveShader.shader" />
-     <None Include="Assets\Assets2\PACKAGES\Simple Toon\Shaders\STCore.cginc" />
+     <None Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\DiffuseReflectiveShader.shader" />
+     <None Include="Assets\PACKAGES\Simple Toon\Shaders\STCore.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\EasyRoads3D\shaders\ER Road Transparency.shader" />
-     <None Include="Assets\Allegorithmic\Plugins\engine_build_info.txt" />
-     <None Include="Assets\Assets2\PACKAGES\CITY ASSETS\LowPoly-Apocalyptic-Buildings-By-Majadroid\textures\info.txt" />
+     <None Include="Assets\PACKAGES\CITY ASSETS\LowPoly-Apocalyptic-Buildings-By-Majadroid\textures\info.txt" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\Krivodeling\UI\Effects\Blur\Readme.txt" />
-     <None Include="Assets\Assets2\PACKAGES\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader" />
-     <None Include="Assets\EasyRoads3D\Resources\dynamic prefabs\dynamic prefabs.txt" />
-     <None Include="Assets\Assets2\PACKAGES\Simple Toon\Shaders\STDefault.shader" />
+     <None Include="Assets\PACKAGES\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader" />
+     <None Include="Assets\PACKAGES\Simple Toon\Shaders\STDefault.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\Assets2\SHADERS\GrassGeometry.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\Assets2\PACKAGES\Simple Toon\Shaders\STFunctions.cginc" />
-     <None Include="Assets\Assets2\PACKAGES\CITY ASSETS\Concrete barriers\readme.txt" />
+     <None Include="Assets\PACKAGES\Simple Toon\Shaders\STFunctions.cginc" />
+     <None Include="Assets\PACKAGES\CITY ASSETS\Concrete barriers\readme.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\EasyRoads3D\shaders\EasyRoads3D - Unity Standard 2018+.shader" />
-     <None Include="Assets\Krivodeling\UI\Effects\Blur\Shaders\UIBlur.shader" />
-     <None Include="Assets\Assets2\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\README.txt" />
+     <None Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\README.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\EasyRoads3D\prefab sources\_custom prefabs.txt" />
-     <None Include="Assets\Assets2\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\ReflectiveDiffuseSpec.shader" />
+     <None Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\ReflectiveDiffuseSpec.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-     <None Include="Assets\EasyRoads3D\_Release Notes.txt" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\2020.3.6f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -449,17 +427,8 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\2020.3.6f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="EasyRoads3Dv3">
-      <HintPath>Assets\EasyRoads3D\lib\EasyRoads3Dv3.dll</HintPath>
-    </Reference>
-    <Reference Include="DelaunayER">
-      <HintPath>Assets\EasyRoads3D\lib\DelaunayER.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.3.4\Unity.Burst.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="Substance.Game">
-      <HintPath>Assets\Allegorithmic\Plugins\Substance.Game.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\2020.3.6f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -839,6 +808,9 @@
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProBuilder">
       <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
     </Reference>
@@ -865,9 +837,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Animation.Rigging">
       <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
@@ -919,14 +888,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Substance.EditorHelper.csproj">
-      <Project>{D9F34D07-BE84-16D2-0365-8DAC6C419C60}</Project>
-      <Name>Substance.EditorHelper</Name>
-    </ProjectReference>
-    <ProjectReference Include="Substance.Platform.csproj">
-      <Project>{7620C716-B660-3D53-AC0C-D7A228918AF0}</Project>
-      <Name>Substance.Platform</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
