@@ -518,3 +518,87 @@ C# parse time         : 312ms
 candidates check time : 60ms
 console write time    : 0ms
 
+[api-updater (non-obsolete-error-filter)] 10/31/2021 9:46:01 PM : Starting C:/Program Files/2020.3.6f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 3135.0551ms
+moved types parse time: 655ms
+candidates parse time : 15ms
+C# parse time         : 3461ms
+candidates check time : 486ms
+console write time    : 5ms
+
+[api-updater (non-obsolete-error-filter)] 10/31/2021 9:46:12 PM : Starting C:/Program Files/2020.3.6f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 730.5493ms
+moved types parse time: 588ms
+candidates parse time : 13ms
+C# parse time         : 1747ms
+candidates check time : 279ms
+console write time    : 6ms
+
+[api-updater (non-obsolete-error-filter)] 11/2/2021 2:52:14 PM : Starting C:/Program Files/2020.3.6f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 179.7642ms
+moved types parse time: 66ms
+candidates parse time : 1ms
+C# parse time         : 324ms
+candidates check time : 139ms
+console write time    : 3ms
+
+[api-updater (non-obsolete-error-filter)] 11/4/2021 2:04:33 PM : Starting C:/Program Files/2020.3.6f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 225.1439ms
+moved types parse time: 74ms
+candidates parse time : 1ms
+C# parse time         : 347ms
+candidates check time : 68ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 11/4/2021 2:13:49 PM : Starting C:/Program Files/2020.3.6f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] Exception caught while loading types from C:\Users\kahyt\OneDrive\Documents\GitHub\FantasyRPG 3.0\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll (some types may not be loaded)
+	Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
+	  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at APIUpdater.NonObsoleteApiUpdaterDetector.ExtraInfoParser+<LoadTypesWithMovedFromAttributeAsync>d__3.MoveNext () [0x000c8] in <68bff7873e0e4aa69a14dfc30bebbe3e>:0 
+	Could not load file or assembly 'UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 134.9861ms
+moved types parse time: 78ms
+candidates parse time : 1ms
+C# parse time         : 618ms
+candidates check time : 113ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 11/4/2021 7:44:41 PM : Starting C:/Program Files/2020.3.6f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] Exception caught while loading types from C:\Users\kahyt\OneDrive\Documents\GitHub\FantasyRPG 3.0\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll (some types may not be loaded)
+	Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
+	  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at APIUpdater.NonObsoleteApiUpdaterDetector.ExtraInfoParser+<LoadTypesWithMovedFromAttributeAsync>d__3.MoveNext () [0x000c8] in <68bff7873e0e4aa69a14dfc30bebbe3e>:0 
+	Could not load file or assembly 'UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 174.8063ms
+moved types parse time: 115ms
+candidates parse time : 1ms
+C# parse time         : 613ms
+candidates check time : 105ms
+console write time    : 2ms
+
+[api-updater (non-obsolete-error-filter)] 11/7/2021 4:38:29 PM : Starting C:/Program Files/2020.3.6f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 262.9697ms
+moved types parse time: 126ms
+candidates parse time : 3ms
+C# parse time         : 500ms
+candidates check time : 120ms
+console write time    : 1ms
+
