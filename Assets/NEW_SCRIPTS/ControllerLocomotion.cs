@@ -119,12 +119,8 @@ public class ControllerLocomotion : MonoBehaviour
                 {
                     playerRb.position -= new Vector3(0f, -stepSmooth, 0f);
                 }
-
-
             }
         }
-
-
     }
 
     #region Gravity Functions
@@ -146,7 +142,8 @@ public class ControllerLocomotion : MonoBehaviour
             anim.SetBool("isLanding", true);
         }
 
-        anim.SetBool("isFalling", false); 
+        anim.SetBool("isFalling", false);
+        Debug.Log("handle grounded reset");
         anim.SetBool("isJumping", false);
         inAir = 0;
     }
