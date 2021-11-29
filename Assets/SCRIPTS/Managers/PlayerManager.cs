@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     ControllerLocomotion controllerLocomotion;
+    ControllerCombat controllerCombat;
     InputManager inputManager;
     AnimatorManager animatorManager;
 
@@ -14,12 +15,14 @@ public class PlayerManager : MonoBehaviour
     {
         inputManager = GetComponent<InputManager>();
         controllerLocomotion = GetComponentInParent<ControllerLocomotion>();
+        controllerCombat = GetComponentInParent<ControllerCombat>();
         animatorManager = GetComponent<AnimatorManager>();
     }
 
     void Update()
     {
         inputManager.HandleAllInput();
+        controllerCombat.HandleAttack();
     }
 
     private void LateUpdate(){

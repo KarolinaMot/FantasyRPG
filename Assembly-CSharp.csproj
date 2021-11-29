@@ -55,11 +55,10 @@
   <ItemGroup>
     <Compile Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Scripts\PlayManager.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\GUIControls.cs" />
-    <Compile Include="Assets\SCRIPTS\SetLocomotionBool.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\InstantActionHandler.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\CameraController.cs" />
-    <Compile Include="Assets\SCRIPTS\ResetIsJumping.cs" />
-    <Compile Include="Assets\SCRIPTS\AnimatorManager.cs" />
+    <Compile Include="Assets\SCRIPTS\Animations\ResetIsJumping.cs" />
+    <Compile Include="Assets\SCRIPTS\Managers\AnimatorManager.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperStateMachine.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterMovementController.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\SimpleStateMachine.cs" />
@@ -69,16 +68,16 @@
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\AnimationData.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterNavigationController.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperMath.cs" />
-    <Compile Include="Assets\SCRIPTS\ResetBoolOnStateEnter.cs" />
+    <Compile Include="Assets\SCRIPTS\Animations\ResetBoolOnStateEnter.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\DiveRoll.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerInputController.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\MovementActionHandler.cs" />
-    <Compile Include="Assets\SCRIPTS\PlayerManager.cs" />
+    <Compile Include="Assets\SCRIPTS\Managers\PlayerManager.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Move.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\CoroutineQueue.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\GetHit.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterWeaponController.cs" />
-    <Compile Include="Assets\SCRIPTS\ResetBoolOnStateExit.cs" />
+    <Compile Include="Assets\SCRIPTS\Animations\ResetBoolOnStateExit.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\SimpleActionHandler.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\NoJumpSlime.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\ActionHandler.cs" />
@@ -89,14 +88,14 @@
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterInputController.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\Attack.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Null.cs" />
-    <Compile Include="Assets\SCRIPTS\ControllerLocomotion.cs" />
+    <Compile Include="Assets\SCRIPTS\ControllerActions\ControllerLocomotion.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Knockback.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\IKHands.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerMachine.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCollisionType.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Jump.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Weapon\SwitchWeapon.cs" />
-    <Compile Include="Assets\SCRIPTS\InputManager.cs" />
+    <Compile Include="Assets\SCRIPTS\Managers\InputManager.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BSPTree.cs" />
     <Compile Include="Assets\SCRIPTS\Controller\PlayerControls.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Fall.cs" />
@@ -107,6 +106,8 @@
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Navigation.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BruteForceMesh.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCharacterController.cs" />
+    <Compile Include="Assets\SCRIPTS\ControllerActions\ControllerCombat.cs" />
+    <Compile Include="Assets\SCRIPTS\ControllerActions\ControllerClimbing.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\PACKAGES\Simple Toon\Shaders\STOutline.shader" />

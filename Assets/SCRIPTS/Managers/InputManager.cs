@@ -6,6 +6,7 @@ public class InputManager : MonoBehaviour
 {
     PlayerControls playerControls;
     ControllerLocomotion controllerLocomotion;
+    ControllerCombat controllerCombat;
     AnimatorManager animatorManager;
     private Vector2 movementInput;
 
@@ -16,15 +17,13 @@ public class InputManager : MonoBehaviour
     private float moveAmount;
     public bool isSprinting = false;
     public bool isJumping;
-    public bool isAttacking;
-    public float attackTimer;
-    public float timerMax;
-    public int attackType;
+
 
     private void Awake()
     {
         animatorManager = GetComponent<AnimatorManager>();
         controllerLocomotion = GetComponentInParent<ControllerLocomotion>();
+        controllerCombat = GetComponentInParent<ControllerCombat>();
     }
 
     private void OnEnable()
@@ -39,8 +38,8 @@ public class InputManager : MonoBehaviour
             playerControls.PlayerActions.Sprint.performed += _ => animatorManager.SetAnimatorBool("isSprinting", true);
             playerControls.PlayerActions.Sprint.canceled += _ => animatorManager.SetAnimatorBool("isSprinting", false);
             playerControls.PlayerActions.Jump.performed += _ => isJumping = true;
-            playerControls.PlayerActions.Attack.performed += _ => isAttacking = true;
-            playerControls.PlayerActions.Attack.performed += _ => attackTimer = 0;
+            playerControls.PlayerActions.Attack.performed += _ => controllerCombat.isAttacking = true;
+            playerControls.PlayerActions.Attack.performed += _ => controllerCombat.attackTimer = 0;
 
         }
         playerControls.Enable();   
@@ -53,7 +52,6 @@ public class InputManager : MonoBehaviour
     {
         HandleMovementInput();
         HandleJumpInput();
-        HandleAttackInput();
     }
 
     private void HandleMovementInput()
@@ -74,21 +72,4 @@ public class InputManager : MonoBehaviour
             controllerLocomotion.HandleJumping();
         }
     }
-
-    private void HandleAttackInput()
-    {
-        if (attackTimer >= timerMax)
-        {
-            isAttacking = false;
-            attackTimer = 0;
-        }
-
-        if (isAttacking)
-        {
-            attackTimer++;
-        }
-
-        animatorManager.SetAnimatorBool("isAttacking", isAttacking);
-    }
-
 }

@@ -58,7 +58,6 @@ public class ControllerLocomotion : MonoBehaviour
 
     private void Awake()
     {
-
         playerManager = GetComponentInChildren<PlayerManager>();
         inputManager = GetComponentInChildren<InputManager>();
         animatorManager = GetComponentInChildren<AnimatorManager>();
@@ -67,7 +66,6 @@ public class ControllerLocomotion : MonoBehaviour
         cameraObject = Camera.main.transform;
         fallingVelocity2 = fallingVelocity;
     }
-
     public void HandleAllMovement()
     {
         UpdateFlags();
@@ -77,7 +75,6 @@ public class ControllerLocomotion : MonoBehaviour
         Locomotion();
         Rotation();       
     }
-
     private void Locomotion()
     {
         if (playerManager.isLockedInAnimation)
@@ -112,10 +109,8 @@ public class ControllerLocomotion : MonoBehaviour
         Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
         Quaternion playerRotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
-
         transform.rotation = playerRotation;
     }
-
     private void HandleFallingAndLanding(){
        
         Vector3 rayCastOrigin = transform.position;
@@ -156,7 +151,6 @@ public class ControllerLocomotion : MonoBehaviour
         }
 
     }
-
     public void HandleJumping(){
 
         if(isGrounded){
@@ -179,7 +173,6 @@ public class ControllerLocomotion : MonoBehaviour
             playerRb.velocity = playerVelocity;
         }
     }
-
     private void StepClimb()
     {
         RaycastHit hitLower;
@@ -204,6 +197,11 @@ public class ControllerLocomotion : MonoBehaviour
                 {
                     playerRb.position -= new Vector3(0f, -stepSmooth, 0f);
                 }
+                else
+                {
+                   //HandleClimbing();
+                }
+                
             }
 
             if (Physics.Raycast(lowStep.transform.position, transform.TransformDirection(1.5f, 0, 1), out hitLower45, lowStepRaycast))
@@ -224,8 +222,7 @@ public class ControllerLocomotion : MonoBehaviour
                 }
             }
         }
-        
-
+    
     }
     private void UpdateFlags()
     {
