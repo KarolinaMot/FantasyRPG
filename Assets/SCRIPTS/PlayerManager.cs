@@ -8,6 +8,8 @@ public class PlayerManager : MonoBehaviour
     InputManager inputManager;
     AnimatorManager animatorManager;
 
+    public bool isLockedInAnimation;
+
     private void Awake()
     {
         inputManager = GetComponent<InputManager>();
@@ -18,9 +20,13 @@ public class PlayerManager : MonoBehaviour
     void Update()
     {
         inputManager.HandleAllInput();
-        animatorManager.SetAllValues();
     }
 
+    private void LateUpdate(){
+        isLockedInAnimation = animatorManager.GetAnimatorBool("isInteracting");
+        controllerLocomotion.isJumping =  animatorManager.GetAnimatorBool("isJumping");
+        animatorManager.SetAnimatorBool("isGrounded", controllerLocomotion.isGrounded);
+    }
     private void FixedUpdate()
     {
         controllerLocomotion.HandleAllMovement();        

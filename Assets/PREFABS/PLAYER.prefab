@@ -1163,6 +1163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00ba850c65152bf41bc7b0b1ce02603c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLockedInAnimation: 0
 --- !u!114 &4781079514149722321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1177,6 +1178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   verticalMovement: 0
   horizontalMovement: 0
+  isSprinting: 0
+  isJumping: 0
 --- !u!114 &4781079514149722326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1189,9 +1192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3331e82065ba0c1478e40552838fa62d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  vertical: 0
-  horizontal: 0
 --- !u!1 &4789960204737865000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,7 +1331,7 @@ GameObject:
   - component: {fileID: 5663460894256699014}
   - component: {fileID: 5663460894256699009}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PLAYER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1386,7 +1386,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 112
@@ -1402,9 +1402,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.25
-  m_Height: 2.72
+  m_Height: 2.4
   m_Direction: 1
-  m_Center: {x: 0.32, y: 1.32, z: 0.16}
+  m_Center: {x: 0.32, y: 1.41, z: 0.16}
 --- !u!114 &5663460894256699009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1420,18 +1420,25 @@ MonoBehaviour:
   sprintingSpeed: 7
   runningSpeed: 5
   rotationSpeed: 10
+  lowStep: {fileID: 2949468004849911432}
+  highStep: {fileID: 556617497299982099}
   leapingVelocity: 1
   fallingVelocity: 50
-  runJumpForce: 2
-  sprintJumpForce: 4
-  idleJumpForce: 1
+  rayCastHeighOffset: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 3200
+  stepHeight: 0
+  runJumpForce: 7
+  sprintJumpForce: 8
+  idleJumpForce: 7
+  gravityIntensity: -1
   hardFallDistance: 0.8
-  isGrounded: 0
   isJumping: 0
+  isGrounded: 0
   isFalling: 0
-  isLanding: 0
   isSprinting: 0
-  inAir: 0
+  inAirTimer: 0
 --- !u!1 &5822238679636302908
 GameObject:
   m_ObjectHideFlags: 0
