@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     ControllerLocomotion controllerLocomotion;
+    ControllerClimbing controllerClimbing;
     ControllerCombat controllerCombat;
     InputManager inputManager;
     AnimatorManager animatorManager;
@@ -15,6 +16,7 @@ public class PlayerManager : MonoBehaviour
     {
         inputManager = GetComponent<InputManager>();
         controllerLocomotion = GetComponentInParent<ControllerLocomotion>();
+        controllerClimbing = GetComponentInParent<ControllerClimbing>();
         controllerCombat = GetComponentInParent<ControllerCombat>();
         animatorManager = GetComponent<AnimatorManager>();
     }
@@ -29,9 +31,11 @@ public class PlayerManager : MonoBehaviour
         isLockedInAnimation = animatorManager.GetAnimatorBool("isInteracting");
         controllerLocomotion.isJumping =  animatorManager.GetAnimatorBool("isJumping");
         animatorManager.SetAnimatorBool("isGrounded", controllerLocomotion.isGrounded);
+        animatorManager.SetAnimatorBool("isClimbing", controllerClimbing.isClimbing);
     }
     private void FixedUpdate()
     {
-        controllerLocomotion.HandleAllMovement();        
+        controllerLocomotion.HandleMovement();
+        controllerClimbing.HandleClimbing();
     }
 }

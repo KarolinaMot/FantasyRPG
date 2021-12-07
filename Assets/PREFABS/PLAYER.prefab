@@ -307,6 +307,36 @@ Transform:
   m_Father: {fileID: 5931612866795767453}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1658716676172595210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4938499052119532741}
+  m_Layer: 0
+  m_Name: HandObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4938499052119532741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658716676172595210}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.302, y: 2.154, z: 0.368}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5031496058300845114}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1689703891311959898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,6 +1360,8 @@ GameObject:
   - component: {fileID: 5663460894256699015}
   - component: {fileID: 5663460894256699014}
   - component: {fileID: 5663460894256699009}
+  - component: {fileID: 4781079515046412388}
+  - component: {fileID: 4781079515046412389}
   m_Layer: 0
   m_Name: PLAYER
   m_TagString: Untagged
@@ -1353,6 +1385,7 @@ Transform:
   - {fileID: 4781079513630874206}
   - {fileID: 6184627273546020093}
   - {fileID: 6834421548917078474}
+  - {fileID: 4938499052119532741}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1420,15 +1453,12 @@ MonoBehaviour:
   sprintingSpeed: 7
   runningSpeed: 5
   rotationSpeed: 10
-  lowStep: {fileID: 2949468004849911432}
-  highStep: {fileID: 556617497299982099}
   leapingVelocity: 1
   fallingVelocity: 50
   rayCastHeighOffset: 0.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 3200
-  stepHeight: 0
   runJumpForce: 7
   sprintJumpForce: 8
   idleJumpForce: 7
@@ -1439,6 +1469,43 @@ MonoBehaviour:
   isFalling: 0
   isSprinting: 0
   inAirTimer: 0
+--- !u!114 &4781079515046412388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5663460894256699008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2120d9c1bd498a4f98421695a8b885d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAttacking: 0
+  attackTimer: 0
+  timerMax: 30
+--- !u!114 &4781079515046412389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5663460894256699008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2849ee241b540446a9455b176d0db41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowStep: {fileID: 0}
+  highStep: {fileID: 0}
+  handSpot: {fileID: 0}
+  headSpot: {fileID: 0}
+  stepSmooth: 0.1
+  lowStepRaycast: 0.1
+  highStepRaycast: 0.2
+  handRaycast: 0.1
+  headRaycast: 0.2
+  isClimbing: 0
 --- !u!1 &5822238679636302908
 GameObject:
   m_ObjectHideFlags: 0

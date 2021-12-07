@@ -5,28 +5,19 @@ using UnityEngine;
 public class ControllerLocomotion : MonoBehaviour
 {
     InputManager inputManager;
+    ControllerClimbing controllerClimbing;
     PlayerManager playerManager;
     AnimatorManager animatorManager;
 
     Transform cameraObject;
     Rigidbody playerRb;
     Vector3 movementDirection;
-
-    [Header("Raycast lengths")]
-    public float groundRaycast =0.6f;
-    public float lowStepRaycast = 0.1f;
-    public float highStepRaycast = 0.2f;
     
     #region Locomotion variables
     [Header("Locomotion Stats")]
     public float sprintingSpeed;
     public float runningSpeed;
     public float rotationSpeed;
-    
-    [HeaderAttribute("Walking up stairs")]
-    public GameObject lowStep;
-    public GameObject highStep;
-    public float stepSmooth = 0.1f;
     #endregion
 
     #region Falling Stats
@@ -36,6 +27,7 @@ public class ControllerLocomotion : MonoBehaviour
     private float fallingVelocity2;
     public float rayCastHeighOffset;
     public LayerMask groundLayer;
+    float groundRaycast = 0.6f;
     #endregion
 
     #region Jumping Stats
@@ -62,45 +54,55 @@ public class ControllerLocomotion : MonoBehaviour
         inputManager = GetComponentInChildren<InputManager>();
         animatorManager = GetComponentInChildren<AnimatorManager>();
         playerRb = GetComponent<Rigidbody>();
+        controllerClimbing = GetComponent<ControllerClimbing>();
 
         cameraObject = Camera.main.transform;
         fallingVelocity2 = fallingVelocity;
     }
-    public void HandleAllMovement()
+    public void HandleMovement()
     {
         UpdateFlags();
-        StepClimb();
         HandleFallingAndLanding();
 
-        Locomotion();
-        Rotation();       
+
+        if (!controllerClimbing.isOnWall)
+        {
+            Locomotion();
+            Rotation();
+        }
     }
     private void Locomotion()
     {
-        if (playerManager.isLockedInAnimation)
+        float sk;
+
+        if (playerManager.isLockedInAnimation || controllerClimbing.isOnWall)
             return;
-        movementDirection = cameraObject.forward * inputManager.verticalMovement;
-        movementDirection = movementDirection + cameraObject.right * inputManager.horizontalMovement;
+
+        Vector3 normalizedCamera = Vector3.ProjectOnPlane(cameraObject.forward, Vector3.up);
+        movementDirection = normalizedCamera * inputManager.verticalInput;
+        movementDirection = movementDirection + cameraObject.right * inputManager.horizontalInput;
         movementDirection.Normalize();
-        movementDirection.y = 0;
 
         if(!isSprinting)
             movementDirection = movementDirection * runningSpeed;
         else
             movementDirection = movementDirection * sprintingSpeed;
 
-      
+        sk = playerRb.velocity.y;
         Vector3 movementVelocity = movementDirection;
+        movementVelocity.y = sk;
         playerRb.velocity = movementVelocity;
+        
+       
     }
     private void Rotation()
     {
-        if (playerManager.isLockedInAnimation)
+        if (playerManager.isLockedInAnimation || controllerClimbing.isOnWall)
             return;
 
         Vector3 targetDirection;
 
-        targetDirection = movementDirection + cameraObject.right * inputManager.horizontalMovement;
+        targetDirection = movementDirection + cameraObject.right * inputManager.horizontalInput;
         targetDirection.Normalize();
 
         if(targetDirection == Vector3.zero)
@@ -110,6 +112,7 @@ public class ControllerLocomotion : MonoBehaviour
         Quaternion playerRotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
         transform.rotation = playerRotation;
+        playerRb.angularVelocity = Vector3.zero;
     }
     private void HandleFallingAndLanding(){
        
@@ -118,31 +121,33 @@ public class ControllerLocomotion : MonoBehaviour
         Debug.DrawRay(rayCastOrigin, Vector3.down*groundRaycast, Color.red);
 
         if(Physics.SphereCast(rayCastOrigin, 0.2f, Vector3.down, out RaycastHit hit, 10, groundLayer)){
-            
-            if(hit.distance <= groundRaycast)
+
+            if (hit.distance <= groundRaycast)
             {
                 if (playerManager.isLockedInAnimation && isFalling)
                 {
                     animatorManager.PlayTargetAnimation("Land", true);
+                    movementDirection.y = 0;
                     isFalling = false;
                 }
 
                 inAirTimer = 0;
                 isGrounded = true;
             }
-            else
+            else if(!controllerClimbing.isOnWall)
             {
-                if (!playerManager.isLockedInAnimation && hit.transform.gameObject.tag!="Stairs")
+                if (!playerManager.isLockedInAnimation && hit.transform.gameObject.tag != "Stairs" && !isJumping)
                 {
                     animatorManager.PlayTargetAnimation("Fall", true);
                     isFalling = true;
                 }
 
-                if (hit.transform.gameObject.tag == "Stairs")
-                    fallingVelocity = fallingVelocity2 + 10000;   
+                if (hit.transform.gameObject.tag == "Stairs" && !isJumping)
+                    fallingVelocity = fallingVelocity2 + 10000;
                 else
                     fallingVelocity = fallingVelocity2;
-                     
+
+
                 inAirTimer = inAirTimer + Time.deltaTime;
                 playerRb.AddForce(transform.forward * leapingVelocity);
                 playerRb.AddForce(-Vector3.up * fallingVelocity * inAirTimer);
@@ -157,73 +162,14 @@ public class ControllerLocomotion : MonoBehaviour
             animatorManager.SetAnimatorBool("isJumping", true);
             animatorManager.PlayTargetAnimation("Jump", false);
 
-
-            movementDirection = cameraObject.forward * inputManager.verticalMovement;
-            movementDirection = movementDirection + cameraObject.right * inputManager.horizontalMovement;
-            movementDirection.Normalize();
-            movementDirection.y = 0;
-
-            if (!isSprinting)
-                movementDirection = movementDirection * runningSpeed;
-            else
-                movementDirection = movementDirection * sprintingSpeed;
             float jumpingVelocity = Mathf.Sqrt(-2 * gravityIntensity * runJumpForce);
             Vector3 playerVelocity = movementDirection;
             playerVelocity.y = jumpingVelocity;
             playerRb.velocity = playerVelocity;
+            Debug.Log(playerVelocity);
         }
     }
-    private void StepClimb()
-    {
-        RaycastHit hitLower;
-        RaycastHit hitLower45;
-        RaycastHit hitLowerMinus45;
-
-        #region Debug Rays
-            Debug.DrawRay(lowStep.transform.position, transform.TransformDirection(Vector3.forward)*0.1f, Color.green);
-            Debug.DrawRay(lowStep.transform.position, transform.TransformDirection(1.5f, 0, 1) *0.1f, Color.green);
-            Debug.DrawRay(lowStep.transform.position, transform.TransformDirection(-1.5f, 0, 1) *0.1f, Color.green);
-            Debug.DrawRay(highStep.transform.position, transform.TransformDirection(Vector3.forward)*0.2f, Color.green);
-            Debug.DrawRay(highStep.transform.position, transform.TransformDirection(1.5f, 0, 1) *0.2f, Color.green);
-            Debug.DrawRay(highStep.transform.position, transform.TransformDirection(-1.5f, 0, 1) *0.2f, Color.green);
-        #endregion
-
-        if(inputManager.verticalMovement != 0 || inputManager.horizontalMovement!=0)
-        {
-            if (Physics.Raycast(lowStep.transform.position, transform.TransformDirection(Vector3.forward), out hitLower, lowStepRaycast))
-            {
-                RaycastHit hitUpper;
-                if (!Physics.Raycast(highStep.transform.position, transform.TransformDirection(Vector3.forward), out hitUpper, highStepRaycast))
-                {
-                    playerRb.position -= new Vector3(0f, -stepSmooth, 0f);
-                }
-                else
-                {
-                   //HandleClimbing();
-                }
-                
-            }
-
-            if (Physics.Raycast(lowStep.transform.position, transform.TransformDirection(1.5f, 0, 1), out hitLower45, lowStepRaycast))
-            {
-                RaycastHit hitUpper45;
-                if (!Physics.Raycast(highStep.transform.position, transform.TransformDirection(1.5f, 0, 1), out hitUpper45, highStepRaycast))
-                {
-                    playerRb.position -= new Vector3(0f, -stepSmooth, 0f);
-                }
-            }
-
-            if (Physics.Raycast(lowStep.transform.position, transform.TransformDirection(-1.5f, 0, 1), out hitLowerMinus45, lowStepRaycast))
-            {
-                RaycastHit hitUpperMinus45;
-                if (!Physics.Raycast(highStep.transform.position, transform.TransformDirection(-1.5f, 0, 1), out hitUpperMinus45, highStepRaycast))
-                {
-                    playerRb.position -= new Vector3(0f, -stepSmooth, 0f);
-                }
-            }
-        }
-    
-    }
+ 
     private void UpdateFlags()
     {
         isSprinting = inputManager.isSprinting;

@@ -11,9 +11,9 @@ public class InputManager : MonoBehaviour
     private Vector2 movementInput;
 
     [HideInInspector]
-    public float verticalMovement;
+    public float verticalInput;
     [HideInInspector]
-    public float horizontalMovement;
+    public float horizontalInput;
     private float moveAmount;
     public bool isSprinting = false;
     public bool isJumping;
@@ -31,8 +31,8 @@ public class InputManager : MonoBehaviour
         if (playerControls == null)
         {
             playerControls = new PlayerControls();
-            verticalMovement = 0;
-            horizontalMovement = 0;
+            verticalInput = 0;
+            horizontalInput = 0;
 
             playerControls.PlayerMovement.Movement.performed += _ => movementInput = _.ReadValue<Vector2>();
             playerControls.PlayerActions.Sprint.performed += _ => animatorManager.SetAnimatorBool("isSprinting", true);
@@ -56,10 +56,10 @@ public class InputManager : MonoBehaviour
 
     private void HandleMovementInput()
     {
-        verticalMovement = movementInput.y;
-        horizontalMovement = movementInput.x;
+        verticalInput = movementInput.y;
+        horizontalInput = movementInput.x;
 
-        moveAmount = Mathf.Clamp01(Mathf.Abs(horizontalMovement) + Mathf.Abs(verticalMovement));
+        moveAmount = Mathf.Clamp01(Mathf.Abs(horizontalInput) + Mathf.Abs(verticalInput));
         animatorManager.UpdateLocomotionValues(0, moveAmount);
 
         isSprinting = animatorManager.GetAnimatorBool("isSprinting");

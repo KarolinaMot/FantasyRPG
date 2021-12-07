@@ -63,6 +63,7 @@
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterMovementController.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\SimpleStateMachine.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Idle.cs" />
+    <Compile Include="Assets\SCRIPTS\ControllerActions\ControllerClimbing.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\Demo Elements\Code\HighJumpTrampoline.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Math3d.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\AnimationData.cs" />
@@ -97,7 +98,7 @@
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Weapon\SwitchWeapon.cs" />
     <Compile Include="Assets\SCRIPTS\Managers\InputManager.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BSPTree.cs" />
-    <Compile Include="Assets\SCRIPTS\Controller\PlayerControls.cs" />
+    <Compile Include="Assets\SCRIPTS\ControllerInput\PlayerControls.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Fall.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCollider.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\Code\PlayerCamera.cs" />
@@ -105,9 +106,8 @@
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\SlowTime.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Navigation.cs" />
     <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\BruteForceMesh.cs" />
-    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCharacterController.cs" />
     <Compile Include="Assets\SCRIPTS\ControllerActions\ControllerCombat.cs" />
-    <Compile Include="Assets\SCRIPTS\ControllerActions\ControllerClimbing.cs" />
+    <Compile Include="Assets\PACKAGES\RPG COMBAT\SuperCharacterController\SuperCharacterController\Core\SuperCharacterController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\PACKAGES\Simple Toon\Shaders\STOutline.shader" />
