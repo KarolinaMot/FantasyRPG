@@ -53,7 +53,7 @@ public class PlayerLocomotion : MonoBehaviour
         playerManager = GetComponentInChildren<PlayerManager>();
         inputManager = GetComponentInChildren<InputManager>();
         animatorManager = GetComponentInChildren<AnimatorManager>();
-        playerRb = GetComponent<Rigidbody>();
+        playerRb = GetComponentInChildren<Rigidbody>();
         controllerClimbing = GetComponent<PlayerClimbing>();
 
         cameraObject = Camera.main.transform;
@@ -78,7 +78,7 @@ public class PlayerLocomotion : MonoBehaviour
         Vector3 normalizedCamera = Vector3.ProjectOnPlane(cameraObject.forward, Vector3.up);
         movementDirection = normalizedCamera * inputManager.verticalInput;
         movementDirection = movementDirection + cameraObject.right * inputManager.horizontalInput;
-        movementDirection.Normalize();
+        //movementDirection.Normalize();
 
         if(!isSprinting)
             movementDirection = movementDirection * runningSpeed;
@@ -112,40 +112,43 @@ public class PlayerLocomotion : MonoBehaviour
         rayCastOrigin.y = rayCastOrigin.y + rayCastHeighOffset;
         Debug.DrawRay(rayCastOrigin, Vector3.down*groundRaycast, Color.red);
 
-        if(Physics.SphereCast(rayCastOrigin, 0.2f, Vector3.down, out RaycastHit hit, 10, groundLayer)){
-
-            if (hit.distance <= groundRaycast)
-            {
-                if (playerManager.isLockedInAnimation && isFalling)
-                {
-                    animatorManager.PlayTargetAnimation("Land", true, 0.2f);
-                    movementDirection.y = 0;
-                    isFalling = false;
-                }
-
-                inAirTimer = 0;
-                isGrounded = true;
-            }
-            else
-            {
-                if (!playerManager.isLockedInAnimation && hit.transform.gameObject.tag != "Stairs" && !isJumping)
-                {
-                    animatorManager.PlayTargetAnimation("Fall", true, 0.2f);
-                    isFalling = true;
-                }
-
-                if (hit.transform.gameObject.tag == "Stairs" && !isJumping)
-                    fallingVelocity = fallingVelocity2 + 10000;
-                else
-                    fallingVelocity = fallingVelocity2;
-
-
-                inAirTimer = inAirTimer + Time.deltaTime;
-                playerRb.AddForce(transform.forward * leapingVelocity);
-                playerRb.AddForce(-Vector3.up * fallingVelocity * inAirTimer);
-                isGrounded = false;
-            }
+        if (!Physics.SphereCast(rayCastOrigin, 0.2f, Vector3.down, out RaycastHit hit, 10, groundLayer))
+        {
+            return;
         }
+        
+        if (hit.distance <= groundRaycast)
+        {
+             if (playerManager.isLockedInAnimation && isFalling)
+             {
+                 animatorManager.PlayTargetAnimation("Land", true, 0.2f);
+                 movementDirection.y = 0;
+                 isFalling = false;
+             }
+
+             inAirTimer = 0;
+             isGrounded = true;
+        }
+        else
+        {
+             if (!playerManager.isLockedInAnimation && hit.transform.gameObject.tag != "Stairs" && !isJumping)
+             {
+                 animatorManager.PlayTargetAnimation("Fall", true, 0.2f);
+                 isFalling = true;
+             }
+
+             if (hit.transform.gameObject.tag == "Stairs" && !isJumping)
+                 fallingVelocity = fallingVelocity2 + 10000;
+             else
+                 fallingVelocity = fallingVelocity2;
+
+
+             inAirTimer = inAirTimer + Time.deltaTime;
+             playerRb.AddForce(transform.forward * leapingVelocity);
+             playerRb.AddForce(-Vector3.up * fallingVelocity * inAirTimer);
+             isGrounded = false;
+        }
+        
 
     }
     public void HandleJumping(){

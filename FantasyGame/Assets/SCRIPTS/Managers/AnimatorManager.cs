@@ -7,7 +7,7 @@ public class AnimatorManager : MonoBehaviour
     Animator anim;
     void Awake()
     {
-        anim = GetComponentInParent<Animator>();
+        anim = transform.parent.GetComponentInChildren<Animator>();
     }
     public void SetAnimatorBool(string animatorBool, bool value)
     {
