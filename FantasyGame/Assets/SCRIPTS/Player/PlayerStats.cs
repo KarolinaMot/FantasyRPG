@@ -7,6 +7,7 @@ public class PlayerStats : MonoBehaviour
 {
     
     private StarterAssetsInputs inputs;
+    private ThirdPersonController thirdPersonController;
 
     [Header("Stamina Stuff")]
     public float stamina;
@@ -23,6 +24,7 @@ public class PlayerStats : MonoBehaviour
     void Start()
     {
         inputs = GetComponent<StarterAssetsInputs>();
+        thirdPersonController = GetComponent<ThirdPersonController>();
         stamina = maxStamina;
     }
 
@@ -34,7 +36,7 @@ public class PlayerStats : MonoBehaviour
 
     void ManageStamina()
     {
-        if (inputs.sprint && stamina >0)
+        if (inputs.sprint && stamina >0 && thirdPersonController.targetSpeed !=0 )
         {
             stamina -= Time.deltaTime * 0.1f;
             staminaBarImage.fillAmount = 1 - stamina;

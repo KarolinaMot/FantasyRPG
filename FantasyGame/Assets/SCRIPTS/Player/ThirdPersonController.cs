@@ -23,12 +23,15 @@ using UnityEngine.InputSystem;
 		public float rotationSmoothTime = 0.12f;
 		[Tooltip("Acceleration and deceleration")]
 		public float speedChangeRate = 10.0f;
+		[HideInInspector]
+		public float targetSpeed;
 
-		[Space(10)]
+	    [Space(10)]
 		[Tooltip("The height the player can jump")]
 		public float jumpHeight = 1.2f;
 		[Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
 		public float gravity = -15.0f;
+		public bool isJumping = false;
 
 		[Space(10)]
 		[Tooltip("Time required to pass before being able to jump again. Set to 0f to instantly jump again")]
@@ -57,6 +60,8 @@ using UnityEngine.InputSystem;
 		public float cameraAngleOverride = 0.0f;
 		[Tooltip("For locking the camera position on all axis")]
 		public bool lockCameraPosition = false;
+
+
 
 		// cinemachine
 		private float cinemachineTargetYaw;
@@ -91,7 +96,6 @@ using UnityEngine.InputSystem;
 		private bool hasAnimator;
 
 		private PlayerStats playerStats;
-		private float targetSpeed;
 
 		private void Awake()
 		{
@@ -173,23 +177,18 @@ using UnityEngine.InputSystem;
 		{
 
 			if(playerStats.slowedLocomotion)
-			{
 				targetSpeed = moveSpeed / 2;
-			}
 			else
 			{
-				if (input.sprint && playerStats.stamina > 0)
+				if (input.sprint && playerStats.stamina > 0 && targetSpeed!=0)
 					targetSpeed = sprintSpeed;
 				else
-					targetSpeed = moveSpeed;
+					targetSpeed = moveSpeed;	
 			}
-		
 
-			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
+			if (input.move == Vector2.zero)
+				targetSpeed = 0.0f;
 
-			// note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
-			// if there is no input, set the target speed to 0
-		if (input.move == Vector2.zero) targetSpeed = 0.0f;
 
 			// a reference to the players current horizontal velocity
 			float currentHorizontalSpeed = new Vector3(controller.velocity.x, 0.0f, controller.velocity.z).magnitude;
@@ -232,6 +231,7 @@ using UnityEngine.InputSystem;
 
 			// move the player
 			controller.Move(targetDirection.normalized * (speed * Time.deltaTime) + new Vector3(0.0f, verticalVelocity, 0.0f) * Time.deltaTime);
+			
 
 			// update animator if using character
 			if (hasAnimator)
@@ -245,6 +245,7 @@ using UnityEngine.InputSystem;
 		{
 			if (grounded)
 			{
+				isJumping = false;
 				// reset the fall timeout timer
 				fallTimeoutDelta = fallTimeout;
 
@@ -272,6 +273,7 @@ using UnityEngine.InputSystem;
 					{
 						animator.SetBool(animIDJump, true);
 					}
+					isJumping = true;
 				}
 
 				// jump timeout

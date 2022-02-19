@@ -64,7 +64,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: JACKET COLOR 2
-    second: {fileID: 2100000, guid: 8e4ff1766995b1946ab6ab4fcd74f61d, type: 2}
+    second: {fileID: 2100000, guid: 77d692949f570a348ac83112584480f6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -89,7 +89,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SHIRT
-    second: {fileID: 2100000, guid: 6b5a84bc014a0c54d8aed021a1d89ed2, type: 2}
+    second: {fileID: 2100000, guid: 77d692949f570a348ac83112584480f6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -124,7 +124,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: UPPER LIP
-    second: {fileID: 2100000, guid: 45eae87d9f782344585802cd75f32159, type: 2}
+    second: {fileID: 2100000, guid: 34931d3da7455e54cb5606530abf7fff, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
