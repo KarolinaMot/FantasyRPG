@@ -8,13 +8,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SIMPLE WHITE 2
-  m_Shader: {fileID: -6465566751694194690, guid: 3fe91b4a9f3bf36479c44ffe8db6df52, type: 3}
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2000
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -145,7 +146,7 @@ Material:
     - _ShnOverlap: 0
     - _ShnRange: 0.15
     - _ShnSmooth: 0.15
-    - _Smoothness: 0.5
+    - _Smoothness: 0.109
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -166,9 +167,9 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_2edec8efaf3447988ad46451754ef79d: {r: 1, g: 1, b: 1, a: 0}
-    - Color_a9d737b9c3b74364af40606122d8fe78: {r: 0.53041214, g: 0.47432357, b: 0.5377358, a: 0}
+    - Color_a9d737b9c3b74364af40606122d8fe78: {r: 0.65637946, g: 0.6531684, b: 0.7735849, a: 0}
     - Color_fa7f7740307d4685adf1dbb0415c2464: {r: 0.6061122, g: 0.5496173, b: 0.6509434, a: 0}
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.49056602, g: 0.45585614, b: 0.45585614, a: 1}
     - _Color: {r: 0.7254234, g: 0.68636525, b: 0.754717, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}

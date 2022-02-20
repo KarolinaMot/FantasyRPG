@@ -11,6 +11,7 @@ using UnityEngine.InputSystem;
 		public Vector2 look;
 		public bool jump;
 		public bool sprint;
+		public bool attack;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -44,11 +45,14 @@ using UnityEngine.InputSystem;
 		{
 			SprintInput(value.isPressed);
 		}
+		
+		public void OnAttack(InputValue value)
+		{
+			AttackInput(value.isPressed);
+		}
 #else
 	// old input sys if we do decide to have it (most likely wont)...
 #endif
-
-
 		public void MoveInput(Vector2 newMoveDirection)
 		{
 			move = newMoveDirection;
@@ -69,6 +73,11 @@ using UnityEngine.InputSystem;
 			sprint = newSprintState;
 		}
 
+		public void AttackInput (bool newAttackState)
+		{
+		  attack = newAttackState;
+		}
+
 #if !UNITY_IOS || !UNITY_ANDROID
 
 		private void OnApplicationFocus(bool hasFocus)
@@ -82,6 +91,5 @@ using UnityEngine.InputSystem;
 		}
 
 #endif
-
 	}
 	

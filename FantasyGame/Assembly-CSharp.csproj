@@ -64,9 +64,11 @@
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\SuperCharacterController\Code\SimpleStateMachine.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Idle.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\Demo Elements\Code\HighJumpTrampoline.cs" />
+    <Compile Include="Assets\SCRIPTS\World\Door.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\SuperCharacterController\SuperCharacterController\Math3d.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\AnimationData.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterNavigationController.cs" />
+    <Compile Include="Assets\OUTLINE\UnityOutlineShader-master\Assets\PostProcessOutline.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\SuperCharacterController\SuperCharacterController\Core\SuperMath.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\DiveRoll.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\SuperCharacterController\Code\PlayerInputController.cs" />
@@ -80,10 +82,14 @@
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\Demo Elements\Code\NoJumpSlime.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\Actions\ActionHandler.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterController.cs" />
+    <Compile Include="Assets\SCRIPTS\World\DoorTrigger.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\SuperCharacterController\Code\Gravity.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\SuperCharacterController\Code\PlayerMachineDebug.cs" />
+    <Compile Include="Assets\Mixamo\Melee Axe Pack\Demo\CameraScroll.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterAnimatorEvents.cs" />
+    <Compile Include="Assets\OUTLINE\UnityOutlineShader-master\Assets\Scripts\RenderReplacementShaderToTexture.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterInputController.cs" />
+    <Compile Include="Assets\SCRIPTS\Player\SoundManager.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\Attack.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\Actions\Null.cs" />
     <Compile Include="Assets\PACKAGES\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
@@ -106,10 +112,7 @@
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\SuperCharacterController\SuperCharacterController\Core\BruteForceMesh.cs" />
     <Compile Include="Assets\PACKAGES\FarlandSkies\Demo\Scripts\Skybox\SkyboxChanger.cs" />
     <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\SuperCharacterController\SuperCharacterController\Core\SuperCharacterController.cs" />
-    <Compile Include="Assets\OUTLINE\UnityOutlineShader-master\Assets\PostProcessOutline.cs" />
-    <Compile Include="Assets\OUTLINE\UnityOutlineShader-master\Assets\Scripts\RenderReplacementShaderToTexture.cs" />
-    <Compile Include="Assets\SCRIPTS\Player\SoundManager.cs" />
-    <Compile Include="Assets\Mixamo\Melee Axe Pack\Demo\CameraScroll.cs" />
+    <Compile Include="Assets\SCRIPTS\Player\CombatManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\PACKAGES\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
