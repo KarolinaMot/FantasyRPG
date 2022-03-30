@@ -14,6 +14,7 @@ using UnityEngine.InputSystem;
 	public class ThirdPersonController : MonoBehaviour
 	{
 		[Header("Player")]
+		public float dashSpeed = 90;
 		[Tooltip("Move speed of the character in m/s")]
 		public float moveSpeed = 2.0f;
 		[Tooltip("Sprint speed of the character in m/s")]
@@ -25,6 +26,9 @@ using UnityEngine.InputSystem;
 		public float speedChangeRate = 10.0f;
 		[HideInInspector]
 		public float targetSpeed;
+		public bool moving = false;
+		public float dashTime =  2;
+
 
 	    [Space(10)]
 		[Tooltip("The height the player can jump")]
@@ -74,6 +78,9 @@ using UnityEngine.InputSystem;
 		private float rotationVelocity;
 		private float verticalVelocity;
 		private float terminalVelocity = 53.0f;
+		public  bool isDashing = false;
+		private bool canDash = true;
+		public float timer = 0;
 
 		// timeout deltatime
 		private float jumpTimeoutDelta;
@@ -88,14 +95,16 @@ using UnityEngine.InputSystem;
 
 		private Animator animator;
 		private CharacterController controller;
+		private CombatManager combatManager;
 		private StarterAssetsInputs input;
 		private GameObject mainCamera;
+	
 
 		private const float threshold = 0.01f;
 
 		private bool hasAnimator;
 
-		private PlayerStats playerStats;
+		private CharacterStats playerStats;
 
 		private void Awake()
 		{
@@ -104,7 +113,7 @@ using UnityEngine.InputSystem;
 			{
 				mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
 			}
-			playerStats = GetComponent<PlayerStats>();
+			playerStats = GetComponent<CharacterStats>();
 		}
 
 		private void Start()
@@ -112,6 +121,7 @@ using UnityEngine.InputSystem;
 			hasAnimator = TryGetComponent(out animator);
 			controller = GetComponent<CharacterController>();
 			input = GetComponent<StarterAssetsInputs>();
+			combatManager = GetComponent<CombatManager>();
 
 			AssignAnimationIDs();
 
@@ -172,23 +182,11 @@ using UnityEngine.InputSystem;
 			// Cinemachine will follow this target
 			cinemachineCameraTarget.transform.rotation = Quaternion.Euler(cinemachineTargetPitch + cameraAngleOverride, cinemachineTargetYaw, 0.0f);
 		}
-
+		
 		private void Move()
 		{
 
-			if(playerStats.slowedLocomotion)
-				targetSpeed = moveSpeed / 2;
-			else
-			{
-				if (input.sprint && playerStats.stamina > 0 && targetSpeed!=0)
-					targetSpeed = sprintSpeed;
-				else
-					targetSpeed = moveSpeed;	
-			}
-
-			if (input.move == Vector2.zero)
-				targetSpeed = 0.0f;
-
+			SetSpeeed();
 
 			// a reference to the players current horizontal velocity
 			float currentHorizontalSpeed = new Vector3(controller.velocity.x, 0.0f, controller.velocity.z).magnitude;
@@ -329,5 +327,46 @@ using UnityEngine.InputSystem;
 			
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - groundedOffset, transform.position.z), groundedRadius);
+		}
+
+		private void SetSpeeed()
+		{
+			if (input.move == Vector2.zero || combatManager.isAttacking)
+			{
+				targetSpeed = 0.0f;
+				moving = false;
+			}
+			else
+			{
+				moving = true;
+				if (playerStats.slowedLocomotion)
+					targetSpeed = moveSpeed / 2;
+				else
+				{
+					if (input.dash && playerStats.stamina > 0 && targetSpeed != 0){
+							Tick();
+							if(timer>dashTime){
+								targetSpeed=sprintSpeed;
+								isDashing = false;
+							}
+							else{
+								targetSpeed = dashSpeed;
+								isDashing = true;
+							}
+					}
+					else{
+						targetSpeed = moveSpeed;
+						canDash = true;
+						isDashing = false;
+						timer=0;
+					}
+				}
+
+			}
+
+		}
+
+		public void Tick(){
+			timer+= Time.deltaTime;
 		}
 	}

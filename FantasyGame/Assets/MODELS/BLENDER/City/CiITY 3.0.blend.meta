@@ -3,7 +3,37 @@ guid: d1e92f3ebe1758b469d7ee4cc4610512
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BUILDING
+    second: {fileID: 2100000, guid: 65b2b7e8179e20c47ae900ef972270e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GLASS
+    second: {fileID: 2100000, guid: 0ac3395f3dfdb084ba1fe6751970e7bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LAMP
+    second: {fileID: 2100000, guid: 1a46c4a695066c84da22d3ac77b7c4a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Needles
+    second: {fileID: 2100000, guid: 2fb5660fd666c56498188127acfbc466, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PAVEMENT
+    second: {fileID: 2100000, guid: ffe6a6b99e92ce24987af7a9c4296966, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trunk
+    second: {fileID: 2100000, guid: 5f9de66f2c100d14093f491821374e95, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

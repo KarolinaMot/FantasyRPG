@@ -10,8 +10,10 @@ using UnityEngine.InputSystem;
 		public Vector2 move;
 		public Vector2 look;
 		public bool jump;
-		public bool sprint;
+		public bool dash;
 		public bool attack;
+
+		private int timer = 0;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -41,9 +43,9 @@ using UnityEngine.InputSystem;
 			JumpInput(value.isPressed);
 		}
 
-		public void OnSprint(InputValue value)
+		public void OnDash(InputValue value)
 		{
-			SprintInput(value.isPressed);
+			DashInput(value.isPressed);
 		}
 		
 		public void OnAttack(InputValue value)
@@ -68,9 +70,9 @@ using UnityEngine.InputSystem;
 			jump = newJumpState;
 		}
 
-		public void SprintInput(bool newSprintState)
+		public void DashInput(bool newDashState)
 		{
-			sprint = newSprintState;
+			dash = newDashState;
 		}
 
 		public void AttackInput (bool newAttackState)
