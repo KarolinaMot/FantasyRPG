@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class CombatManager : MonoBehaviour
 {
@@ -11,10 +12,16 @@ public class CombatManager : MonoBehaviour
     private CharacterController ch;
     private SoundManager soundManager;
 
+    private Collider nearestEnemy;
+    private Collider lastNearestEnemy;
+
+    [Header ("Enemy lock on")]
+    public bool enemyDetected = false;
+    public float enemyDetectionRadius = 10;
+    public bool enemyChosen = false;
     		
 
     [Header ("Attack Animation Stuff")]
-    public AnimationClip lastAnimation;
     [SerializeField]
     private float maxTimeBetweenAttacks = 0;
     private float timer = 0;
@@ -28,7 +35,6 @@ public class CombatManager : MonoBehaviour
     public GameObject weaponSlot;
     public bool hasWeapon;
     private GameObject weapon;
-
     public LayerMask enemyLayer;
 
 
@@ -51,8 +57,8 @@ public class CombatManager : MonoBehaviour
     {
             AttackAnimation();
             Tick();
-            if(thirdPersonController.moving)
-                ticking=false;
+            SearchNearbyEnemy();
+
             playerAnimator.SetBool("IsAttacking", ticking);
 
     }
@@ -64,10 +70,12 @@ public class CombatManager : MonoBehaviour
         {
             timer = 0;
             ticking = false;
+            soundManager.StopAllWooshSounds();
+
             return;
         }
 
-        if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.3f && inputs.attack || playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle Walk Run Blend") && inputs.attack) {
+        if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.3f && inputs.attack && !thirdPersonController.isJumping && !thirdPersonController.isDashing && !thirdPersonController.isSprinting || playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle Walk Run Blend") && inputs.attack && !thirdPersonController.isJumping && !thirdPersonController.isDashing && !thirdPersonController.isSprinting) {
             ticking = true;
             timer = 0;
         }
@@ -76,11 +84,55 @@ public class CombatManager : MonoBehaviour
           inputs.attack = false;
     }
 
-    private void MoveOnAnimation(float speed)
-    {
-        ch.Move(transform.forward * speed); 
-    }
+    public void SearchNearbyEnemy(){
+        Collider[] nearbyEnemies = Physics.OverlapSphere(transform.position, enemyDetectionRadius, enemyLayer);
+        float nearestDistance = float.MaxValue;
+        lastNearestEnemy = nearestEnemy;
+        
 
+        if(nearbyEnemies.Length>0){
+            if(!enemyChosen){
+                enemyDetected = true;
+                inputs.disabledlockOn = false;
+                if(inputs.lockOn && !thirdPersonController.isDashing && !thirdPersonController.isSprinting){
+                    for(int i=0; i<nearbyEnemies.Length; i++){
+                        float distance = (nearbyEnemies[i].transform.position - transform.position).sqrMagnitude;
+                        if(distance < nearestDistance) {
+                            nearestEnemy = nearbyEnemies[i];
+                            nearestDistance = distance;
+                        }
+                    }
+                    nearestEnemy.GetComponent<EnemyCombat>().EnableCanvas(true);
+                    enemyChosen = true;
+                }
+                else{
+                    nearestEnemy.GetComponent<EnemyCombat>().EnableCanvas(false);
+                }
+            }
+            else{
+                if(inputs.lockOn && !thirdPersonController.isDashing && !thirdPersonController.isSprinting){
+                    transform.LookAt(nearestEnemy.transform.position);
+                    nearestEnemy.GetComponent<EnemyCombat>().EnableCanvas(true);
+                    if(nearestEnemy.GetComponent<CharacterStats>().currentHp <= 0){
+                        enemyChosen = false;
+                        Destroy(nearestEnemy.gameObject);
+                        inputs.lockOn = false;
+                    }
+                }
+                else{
+                    enemyChosen = false;
+                    nearestEnemy.GetComponent<EnemyCombat>().EnableCanvas(false);
+                }
+            }
+        }
+        else{
+            enemyDetected = false;
+            enemyChosen = false;
+            inputs.disabledlockOn = true;
+            nearestEnemy.GetComponent<EnemyCombat>().EnableCanvas(false);
+        }
+    }
+   
     private void CheckWeapon()
     {
         if(weaponSlot.transform.childCount > 0)
@@ -105,15 +157,21 @@ public class CombatManager : MonoBehaviour
 
         foreach(Collider col in hitColliders){
             ApplyDamage(col.gameObject);
-            if(!soundManager.hit.isPlaying){
-                soundManager.hit.Play();
-            }
         }
     }
+    
     public void ApplyDamage(GameObject enemy)
     {
+        if(!soundManager.hit.isPlaying){
+          soundManager.hit.Play();
+        } 
+        else{
+            soundManager.hit.Stop();
+            soundManager.hit.Play();
+        }
         CharacterStats enemyStats = enemy.GetComponent<CharacterStats>();
         enemyStats.currentHp -= characterStats.attack;
+
 
     }
 }

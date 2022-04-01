@@ -12,13 +12,8 @@ public class CharacterStats : MonoBehaviour
     [Header("Stamina Stuff")]
     public float stamina;
     private float maxStamina = 1;
-    public bool slowedLocomotion = false;
     [SerializeField]
     private Image staminaBarImage;
-    [SerializeField]
-    private float slowedLocomotionTimerMax = 100;
-    [SerializeField]
-    private int slowedLocomotionTimer = 0;
 
     [Header("HP Stuff")]
     public float maxHp = 1000;
@@ -52,7 +47,7 @@ public class CharacterStats : MonoBehaviour
     {
         if(staminaBarImage != null)
         {
-            if (inputs.dash && stamina > 0 && thirdPersonController.targetSpeed != 0)
+            if (inputs.dash && stamina > 0 && thirdPersonController.moving)
             {
                 stamina -= Time.deltaTime * 0.1f;
                 if(thirdPersonController.isDashing)
@@ -64,20 +59,17 @@ public class CharacterStats : MonoBehaviour
 
             if (stamina <= 0)
             {
-                slowedLocomotion = true;
-                slowedLocomotionTimer++;
-
-                if (slowedLocomotionTimer == slowedLocomotionTimerMax)
-                {
-                    slowedLocomotionTimer = 0;
-                    slowedLocomotion = false;
-                }
+                inputs.sprintDisabled = true;
+                inputs.dash = false;
             }
 
-            if (stamina < maxStamina && !inputs.dash && !slowedLocomotion)
+            if (stamina < maxStamina && (!inputs.dash || inputs.sprintDisabled))
             {
                 stamina += Time.deltaTime * 0.1f;
                 staminaBarImage.fillAmount = 1 - stamina;
+            }
+            if(inputs.sprintDisabled && stamina>=1){
+                inputs.sprintDisabled = false;
             }
         }
     }

@@ -3,7 +3,52 @@ guid: f2b98d76f7f7ca2479a4c1ee3bea542d
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BANNER METAL
+    second: {fileID: 2100000, guid: ffe6a6b99e92ce24987af7a9c4296966, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BANNER.001
+    second: {fileID: 2100000, guid: 0ac3395f3dfdb084ba1fe6751970e7bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DOOR
+    second: {fileID: 2100000, guid: 5f9de66f2c100d14093f491821374e95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GLASS
+    second: {fileID: 2100000, guid: 0ac3395f3dfdb084ba1fe6751970e7bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ROOF BASE
+    second: {fileID: 2100000, guid: 0b5aa0c9186c7cd4785866fc7dc1c97e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ROOF TILES
+    second: {fileID: 2100000, guid: 885c426e69cfe9f488ad7a6f84bfda59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WALL
+    second: {fileID: 2100000, guid: 0b5aa0c9186c7cd4785866fc7dc1c97e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WALL FRAME
+    second: {fileID: 2100000, guid: 0b5aa0c9186c7cd4785866fc7dc1c97e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WINDOW FRAME
+    second: {fileID: 2100000, guid: ffe6a6b99e92ce24987af7a9c4296966, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,7 +90,7 @@ ModelImporter:
     importLights: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1

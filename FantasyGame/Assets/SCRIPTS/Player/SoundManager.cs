@@ -29,7 +29,7 @@ public class SoundManager : MonoBehaviour
 	}
     private void PlayMovingSounds()
     {
-        if (!thirdPersonController.isJumping && thirdPersonController.targetSpeed > 0)
+        if (thirdPersonController.targetSpeed > 0 && thirdPersonController.grounded)
         {
 			if (thirdPersonController.targetSpeed == thirdPersonController.moveSpeed && !running.isPlaying)
 			{
@@ -76,6 +76,12 @@ public class SoundManager : MonoBehaviour
     {
 		wooshs[index].Play();
     }
+
+	public void StopAllWooshSounds(){
+		foreach(AudioSource woosh in wooshs){
+			woosh.Stop();
+		}
+	}
 
 	private void StopAllMovingSounds()
     {

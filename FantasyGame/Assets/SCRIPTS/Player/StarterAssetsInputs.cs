@@ -12,7 +12,10 @@ using UnityEngine.InputSystem;
 		public bool jump;
 		public bool dash;
 		public bool attack;
+		public bool lockOn;
+		public bool disabledlockOn = true;
 
+		public bool sprintDisabled;
 		private int timer = 0;
 
 		[Header("Movement Settings")]
@@ -52,6 +55,10 @@ using UnityEngine.InputSystem;
 		{
 			AttackInput(value.isPressed);
 		}
+
+		public void OnLockOn(InputValue value){
+			LockOnInput(value.isPressed);
+		}
 #else
 	// old input sys if we do decide to have it (most likely wont)...
 #endif
@@ -72,12 +79,25 @@ using UnityEngine.InputSystem;
 
 		public void DashInput(bool newDashState)
 		{
+			if(!sprintDisabled)
 			dash = newDashState;
 		}
 
 		public void AttackInput (bool newAttackState)
 		{
 		  attack = newAttackState;
+		}
+
+		public void LockOnInput(bool newLockOnState){
+			if(!disabledlockOn){
+				if(!lockOn && newLockOnState)
+					lockOn = true;
+				else if(lockOn && newLockOnState){
+					lockOn = false;
+				}
+				return;
+			}
+			lockOn = false;
 		}
 
 #if !UNITY_IOS || !UNITY_ANDROID

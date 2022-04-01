@@ -16,6 +16,8 @@ using UnityEngine.InputSystem;
 		[Header("Player")]
 		public float dashSpeed = 90;
 		[Tooltip("Move speed of the character in m/s")]
+
+		public float walkSpeed = 4.5f;
 		public float moveSpeed = 2.0f;
 		[Tooltip("Sprint speed of the character in m/s")]
 		public float sprintSpeed = 5.335f;
@@ -79,6 +81,8 @@ using UnityEngine.InputSystem;
 		private float verticalVelocity;
 		private float terminalVelocity = 53.0f;
 		public  bool isDashing = false;
+
+		public bool isSprinting = true;	
 		private bool canDash = true;
 		public float timer = 0;
 
@@ -133,7 +137,6 @@ using UnityEngine.InputSystem;
 		private void Update()
 		{
 			hasAnimator = TryGetComponent(out animator);
-			
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
@@ -215,20 +218,38 @@ using UnityEngine.InputSystem;
 
 			// note: Vector2's != operator uses approximation so is not floating point error prone, and is cheaper than magnitude
 			// if there is a move input rotate player when the player is moving
-			if (input.move != Vector2.zero)
+			if ((input.move != Vector2.zero && !combatManager.isAttacking || input.move != Vector2.zero && isDashing) && !input.lockOn)
 			{
 				targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg + mainCamera.transform.eulerAngles.y;
 				float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetRotation, ref rotationVelocity, rotationSmoothTime);
-
 				// rotate to face input direction relative to camera position
 				transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
 			}
 
+			Vector3 targetDirection = Vector3.zero;
+			if(!input.lockOn){
+				targetDirection = Quaternion.Euler(0.0f, targetRotation, 0.0f) * Vector3.forward;
+				// move the player
+				controller.Move(targetDirection.normalized * (speed * Time.deltaTime) + new Vector3(0.0f, verticalVelocity, 0.0f) * Time.deltaTime);
+			}
+			else{
 
-			Vector3 targetDirection = Quaternion.Euler(0.0f, targetRotation, 0.0f) * Vector3.forward;
+				Vector2 input = new Vector2(inputDirection.x, inputDirection.z);
+				input = Vector2.ClampMagnitude(input, 1);
 
-			// move the player
-			controller.Move(targetDirection.normalized * (speed * Time.deltaTime) + new Vector3(0.0f, verticalVelocity, 0.0f) * Time.deltaTime);
+				Vector3 camF = mainCamera.transform.forward;
+				Vector3 camR = mainCamera.transform.right;
+
+				camF.y = 0;
+				camR.y = 0;
+				camF = camF.normalized;
+				camR = camR.normalized;
+				transform.position += (camF*input.y + camR*input.x)*Time.deltaTime * targetSpeed;
+				animator.SetFloat("StrafingX", inputDirection.x*-1);
+				animator.SetFloat("StrafingY", inputDirection.z*-1);
+			}
+				
+
 			
 
 			// update animator if using character
@@ -236,6 +257,10 @@ using UnityEngine.InputSystem;
 			{
 				animator.SetFloat(animIDSpeed, animationBlend);
 				animator.SetFloat(animIDMotionSpeed, inputMagnitude);
+				if(input.lockOn && !isDashing && !isSprinting)
+					animator.SetInteger("Strafing", 1);
+				else
+					animator.SetInteger("Strafing", 0);
 			}
 		}
 
@@ -339,8 +364,8 @@ using UnityEngine.InputSystem;
 			else
 			{
 				moving = true;
-				if (playerStats.slowedLocomotion)
-					targetSpeed = moveSpeed / 2;
+				if (input.sprintDisabled)
+					targetSpeed = walkSpeed;
 				else
 				{
 					if (input.dash && playerStats.stamina > 0 && targetSpeed != 0){
@@ -348,21 +373,47 @@ using UnityEngine.InputSystem;
 							if(timer>dashTime){
 								targetSpeed=sprintSpeed;
 								isDashing = false;
+								isSprinting = false;
 							}
 							else{
 								targetSpeed = dashSpeed;
 								isDashing = true;
+								isSprinting = false;
 							}
 					}
 					else{
-						targetSpeed = moveSpeed;
+						if(input.lockOn && !isDashing && !isSprinting)
+							targetSpeed = walkSpeed;
+						else
+							targetSpeed = moveSpeed;
 						canDash = true;
 						isDashing = false;
+						isSprinting = false;
 						timer=0;
 					}
 				}
 
 			}
+			if(input.dash && input.move != Vector2.zero && playerStats.stamina > 0){
+					Tick();
+					if(timer>dashTime){
+						targetSpeed=sprintSpeed;
+						isDashing = false;
+						isSprinting = true;
+						input.lockOn = false;
+					}
+					else{
+						targetSpeed = dashSpeed;
+						isDashing = true;
+					}
+			}
+			else{
+				canDash = true;
+				isDashing = false;
+				isSprinting = false;
+				timer=0;
+			}
+
 
 		}
 
