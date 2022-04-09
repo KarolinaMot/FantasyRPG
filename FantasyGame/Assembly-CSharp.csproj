@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Scripts\PlayManager.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\Demo Elements\Code\GUIControls.cs" />
+     <Compile Include="Assets\SCRIPTS\NPC\Enemy\AttackState.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\Actions\InstantActionHandler.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\Demo Elements\Code\CameraController.cs" />
      <Compile Include="Assets\PACKAGES\FarlandSkies\Demo\Scripts\Player\FPSWalkerEnhanced.cs" />
@@ -55,11 +56,13 @@
      <Compile Include="Assets\VFX\OUTLINE\UnityOutlineShader-master\Assets\PostProcessOutline.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\SuperCharacterController\SuperCharacterController\Core\SuperMath.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\DiveRoll.cs" />
+     <Compile Include="Assets\SCRIPTS\NPC\StateMachine\StateManager.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\SuperCharacterController\Code\PlayerInputController.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\MovementActionHandler.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Move.cs" />
      <Compile Include="Assets\SCRIPTS\NPC\Enemy\EnemyCombat.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\CoroutineQueue.cs" />
+     <Compile Include="Assets\SCRIPTS\NPC\StateMachine\State.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\GetHit.cs" />
      <Compile Include="Assets\SCRIPTS\Player\CharacterStats.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterWeaponController.cs" />
@@ -68,7 +71,9 @@
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\Actions\ActionHandler.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterController.cs" />
      <Compile Include="Assets\SCRIPTS\World\DoorTrigger.cs" />
+     <Compile Include="Assets\SCRIPTS\NPC\Enemy\ChaseState.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\SuperCharacterController\Code\Gravity.cs" />
+     <Compile Include="Assets\SCRIPTS\World\UiManager.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\SuperCharacterController\Code\PlayerMachineDebug.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterAnimatorEvents.cs" />
      <Compile Include="Assets\VFX\OUTLINE\UnityOutlineShader-master\Assets\Scripts\RenderReplacementShaderToTexture.cs" />
@@ -76,6 +81,7 @@
      <Compile Include="Assets\SCRIPTS\Player\SoundManager.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\Attack.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\Actions\Null.cs" />
+     <Compile Include="Assets\SCRIPTS\NPC\Enemy\IdleState.cs" />
      <Compile Include="Assets\PACKAGES\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Knockback.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\RPG Character Mecanim Animation Pack FREE\Code\IKHands.cs" />
@@ -98,11 +104,6 @@
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\SuperCharacterController\SuperCharacterController\Core\BruteForceMesh.cs" />
      <Compile Include="Assets\PACKAGES\FarlandSkies\Demo\Scripts\Skybox\SkyboxChanger.cs" />
      <Compile Include="Assets\PACKAGES\COMBAT ANIMATIONS 2\SuperCharacterController\SuperCharacterController\Core\SuperCharacterController.cs" />
-     <Compile Include="Assets\SCRIPTS\NPC\StateMachine\State.cs" />
-     <Compile Include="Assets\SCRIPTS\NPC\StateMachine\StateManager.cs" />
-     <Compile Include="Assets\SCRIPTS\NPC\Enemy\IdleState.cs" />
-     <Compile Include="Assets\SCRIPTS\NPC\Enemy\ChaseState.cs" />
-     <Compile Include="Assets\SCRIPTS\NPC\Enemy\AttackState.cs" />
      <None Include="Assets\VFX\Render Pipelines support\Shaders\URP_LightGlow.shader" />
      <None Include="Assets\VFX\OUTLINE\UnityOutlineShader-master\Assets\Outline.shader" />
      <None Include="Assets\PACKAGES\BASIC MOTIONS\SampleScene\Shaders\ReflectiveDiffuseSpecTransp.shader" />
@@ -726,6 +727,9 @@
     <Reference Include="Unity.2D.Sprite.Editor">
         <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+        <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProBuilder">
         <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
@@ -750,9 +754,6 @@
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
         <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-        <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
@@ -768,11 +769,11 @@
     <Reference Include="Unity.Mathematics">
         <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-        <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.InternalAPIEditorBridgeDev.001">
         <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+        <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
         <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Cinemachine.dll</HintPath>

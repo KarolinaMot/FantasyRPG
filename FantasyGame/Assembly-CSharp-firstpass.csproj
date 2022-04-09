@@ -706,6 +706,9 @@
     <Reference Include="Unity.2D.Sprite.Editor">
         <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+        <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProBuilder">
         <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
@@ -730,9 +733,6 @@
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
         <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-        <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
@@ -748,11 +748,11 @@
     <Reference Include="Unity.Mathematics">
         <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-        <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.InternalAPIEditorBridgeDev.001">
         <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+        <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
         <HintPath>C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
@@ -795,18 +795,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
-      <Project>{f045b390-c20b-d11a-c94f-cc304c859efc}</Project>
-      <Name>Boxophobic.Utils.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Boxophobic.SkyboxCubemapExtended.Editor.csproj">
-      <Project>{24fa020f-dbec-30d4-6a12-7286940a8b28}</Project>
-      <Name>Boxophobic.SkyboxCubemapExtended.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
-      <Project>{7602bfab-4410-2df9-c4c5-4bbac7315086}</Project>
-      <Name>Boxophobic.Utils.Scripts</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
