@@ -106,7 +106,8 @@ public class CombatManager : MonoBehaviour
                     enemyChosen = true;
                 }
                 else{
-                    nearestEnemy.GetComponent<EnemyCombat>().EnableCanvas(false);
+                    if(nearestEnemy != null)
+                        nearestEnemy.GetComponent<EnemyCombat>().EnableCanvas(false);
                 }
             }
             else{

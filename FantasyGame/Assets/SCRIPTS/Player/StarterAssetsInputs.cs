@@ -86,6 +86,7 @@ using UnityEngine.InputSystem;
 		public void AttackInput (bool newAttackState)
 		{
 		  attack = newAttackState;
+		  Debug.Log("Attack input");
 		}
 
 		public void LockOnInput(bool newLockOnState){
