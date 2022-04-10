@@ -1,87 +1,98 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.6f1 (338bb68529b2) revision 3378102'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 22000.556; Version 2009; 64bit' Language: 'en' Physical Memory: 16204 MB
+OS: 'Windows 10 Pro; OS build 22000.588; Version 2009; 64bit' Language: 'en' Physical Memory: 16160 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Unity.exe
+D:\UnityHub\Editor\2020.3.6f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/TK/Desktop/fanatasyrpg/Project files/FantasyRPG/FantasyGame
+C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49177
-Successfully changed project path to: C:/Users/TK/Desktop/fanatasyrpg/Project files/FantasyRPG/FantasyGame
-C:/Users/TK/Desktop/fanatasyrpg/Project files/FantasyRPG/FantasyGame
+59967
+Successfully changed project path to: C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame
+C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 73.57 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 110.68 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.6f1 (338bb68529b2)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/TK/Desktop/fanatasyrpg/Project files/FantasyRPG/FantasyGame/Assets
+[Subsystems] Discovering subsystems at path D:/UnityHub/Editor/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3070 Laptop GPU (ID=0x249d)
+    Renderer: NVIDIA GeForce MX350 (ID=0x1c94)
     Vendor:   
-    VRAM:     8044 MB
-    Driver:   30.0.15.1215
+    VRAM:     1979 MB
+    Driver:   30.0.14.7196
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
+Mono path[0] = 'D:/UnityHub/Editor/2020.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'D:/UnityHub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/UnityHub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56392
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.109849 seconds.
+Register platform support module: D:/UnityHub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/UnityHub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001324 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 71.36 ms, found 1 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 87.52 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.283 seconds
+- Completed reload, in  2.374 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.134026 seconds.
+Registered in 0.002224 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 74.27 ms, found 1 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 95.71 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  6.938 seconds
+- Completed reload, in  2.049 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.91 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4323 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 192.0 MB.
+System memory in use before: 191.9 MB.
 System memory in use after: 192.1 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 4767.
-Total: 3.919400 ms (FindLiveObjects: 0.803000 ms CreateObjectMapping: 0.232200 ms MarkObjects: 2.768600 ms  DeleteObjects: 0.114600 ms)
+Total: 3.921600 ms (FindLiveObjects: 0.322100 ms CreateObjectMapping: 0.124400 ms MarkObjects: 3.326500 ms  DeleteObjects: 0.147400 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/MODELS/FBX/Hotel/stairssecondfllor.fbx
-  artifactKey: Guid(961a5754e192d524bba404b890965c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/Hotel/stairssecondfllor.fbx using Guid(961a5754e192d524bba404b890965c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e74aebc06596bc8aa13926835ac5a294') in 0.227406 seconds
-  Import took 0.234709 seconds .
+  path: Assets/qe4_Plane032.asset
+  artifactKey: Guid(3be10f1a0d1856e4c9ef9403a500a8f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/qe4_Plane032.asset using Guid(3be10f1a0d1856e4c9ef9403a500a8f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd27b6b7ef55420286453fb4db1f9aba8') in 0.130224 seconds
+  Import took 0.138076 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 192.984454 seconds.
-  path: Assets/MODELS/FBX/Hotel/3floor.fbx
-  artifactKey: Guid(e810f6bb0f88d7346b96498df7c6a26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/Hotel/3floor.fbx using Guid(e810f6bb0f88d7346b96498df7c6a26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cd67ec6e02a9e1958ab0faaeac01ef3') in 0.087002 seconds
-  Import took 0.095328 seconds .
+  Time since last request: 0.000409 seconds.
+  path: Assets/qe1_Plane037.asset
+  artifactKey: Guid(9773d5f425975354c981e0b595b05db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/qe1_Plane037.asset using Guid(9773d5f425975354c981e0b595b05db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2751252b3b5d7e08eaacc4d12ba45cad') in 0.023584 seconds
+  Import took 0.033968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000434 seconds.
+  path: Assets/qe4_Plane037.asset
+  artifactKey: Guid(1810fe3ee75b1bb418c477dacc89de12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/qe4_Plane037.asset using Guid(1810fe3ee75b1bb418c477dacc89de12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8143d2cbfd9972fd034ed261223a7d59') in 0.025391 seconds
+  Import took 0.037056 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
