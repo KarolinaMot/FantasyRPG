@@ -65,6 +65,7 @@
      <Compile Include="Assets\PLUGINS\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\PLUGINS\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\PLUGINS\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
+     <Compile Include="Assets\PLUGINS\ProCore\QuickEdit\Scripts\qe_HandleRenderer.cs" />
      <Compile Include="Assets\PLUGINS\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets\PLUGINS\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
      <Compile Include="Assets\PLUGINS\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
@@ -73,10 +74,12 @@
      <None Include="Assets\PLUGINS\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\PLUGINS\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\PLUGINS\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\PLUGINS\ProCore\QuickEdit\Shader\qe_VertexShader.shader" />
      <None Include="Assets\PLUGINS\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
      <None Include="Assets\PLUGINS\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
      <None Include="Assets\PLUGINS\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\PLUGINS\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\PLUGINS\ProCore\QuickEdit\Shader\qe_FaceShader.shader" />
      <None Include="Assets\PLUGINS\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\PLUGINS\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\PLUGINS\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />

@@ -1,587 +1,87 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.6f1 (338bb68529b2) revision 3378102'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 22000.588; Version 2009; 64bit' Language: 'en' Physical Memory: 16160 MB
+OS: 'Windows 10 Home; OS build 22000.556; Version 2009; 64bit' Language: 'en' Physical Memory: 16204 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-D:\UnityHub\Editor\2020.3.6f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame
+C:/Users/TK/Desktop/fanatasyrpg/Project files/FantasyRPG/FantasyGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62426
-Successfully changed project path to: C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame
-C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame
+49177
+Successfully changed project path to: C:/Users/TK/Desktop/fanatasyrpg/Project files/FantasyRPG/FantasyGame
+C:/Users/TK/Desktop/fanatasyrpg/Project files/FantasyRPG/FantasyGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 142.48 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 73.57 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.6f1 (338bb68529b2)
-[Subsystems] Discovering subsystems at path D:/UnityHub/Editor/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/TK/Desktop/fanatasyrpg/Project files/FantasyRPG/FantasyGame/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce MX350 (ID=0x1c94)
+    Renderer: NVIDIA GeForce RTX 3070 Laptop GPU (ID=0x249d)
     Vendor:   
-    VRAM:     1979 MB
-    Driver:   30.0.14.7196
+    VRAM:     8044 MB
+    Driver:   30.0.15.1215
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
-Mono path[0] = 'D:/UnityHub/Editor/2020.3.6f1/Editor/Data/Managed'
-Mono path[1] = 'D:/UnityHub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/UnityHub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56560
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/UnityHub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: D:/UnityHub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001154 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.109849 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 88.01 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 71.36 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.551 seconds
+- Completed reload, in  3.283 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002242 seconds.
+Registered in 0.134026 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 118.75 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 74.27 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.069 seconds
+- Completed reload, in  6.938 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.91 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4302 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 190.9 MB.
-System memory in use after: 191.1 MB.
+Unloading 4323 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.0 MB.
+System memory in use after: 192.1 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 4746.
-Total: 5.042100 ms (FindLiveObjects: 0.699100 ms CreateObjectMapping: 0.416300 ms MarkObjects: 3.738700 ms  DeleteObjects: 0.184700 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 4767.
+Total: 3.919400 ms (FindLiveObjects: 0.803000 ms CreateObjectMapping: 0.232200 ms MarkObjects: 2.768600 ms  DeleteObjects: 0.114600 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/PREFABS/BUILDINGS/ShopUnity.prefab
-  artifactKey: Guid(fa02a18adc0081c4c8289311273b9bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PREFABS/BUILDINGS/ShopUnity.prefab using Guid(fa02a18adc0081c4c8289311273b9bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '025ea3ce3e4156677e73e06267f63976') in 0.375677 seconds
-  Import took 0.391638 seconds .
+  path: Assets/MODELS/FBX/Hotel/stairssecondfllor.fbx
+  artifactKey: Guid(961a5754e192d524bba404b890965c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MODELS/FBX/Hotel/stairssecondfllor.fbx using Guid(961a5754e192d524bba404b890965c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e74aebc06596bc8aa13926835ac5a294') in 0.227406 seconds
+  Import took 0.234709 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000402 seconds.
-  path: Assets/PREFABS/BUILDINGS/HOTEL.prefab
-  artifactKey: Guid(af018909a8b8f6b4bbdcef91ed1fd76f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PREFABS/BUILDINGS/HOTEL.prefab using Guid(af018909a8b8f6b4bbdcef91ed1fd76f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fb3a438336445b3e31341f65b1a1e99') in 0.185154 seconds
-  Import took 0.201047 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002035 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.604 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.17 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 183.3 MB.
-System memory in use after: 183.5 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4794.
-Total: 9.599000 ms (FindLiveObjects: 1.726400 ms CreateObjectMapping: 0.545300 ms MarkObjects: 7.155600 ms  DeleteObjects: 0.168200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003500 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.429 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 183.4 MB.
-System memory in use after: 183.6 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4797.
-Total: 11.023200 ms (FindLiveObjects: 1.092000 ms CreateObjectMapping: 0.753400 ms MarkObjects: 8.937100 ms  DeleteObjects: 0.236400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007334 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.424 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.22 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 183.4 MB.
-System memory in use after: 183.6 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4800.
-Total: 7.912700 ms (FindLiveObjects: 1.176500 ms CreateObjectMapping: 0.635900 ms MarkObjects: 5.909800 ms  DeleteObjects: 0.185300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 3269.728346 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bf8dccb88366910b69a2118299fb439') in 0.785076 seconds
-  Import took 0.804864 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004079 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.02 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.313 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.07 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 197.4 MB.
-System memory in use after: 197.6 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4843.
-Total: 13.716700 ms (FindLiveObjects: 3.391900 ms CreateObjectMapping: 0.557900 ms MarkObjects: 9.532700 ms  DeleteObjects: 0.230900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004437 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.814 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 197.4 MB.
-System memory in use after: 197.6 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4846.
-Total: 5.259700 ms (FindLiveObjects: 1.227700 ms CreateObjectMapping: 0.249400 ms MarkObjects: 3.651100 ms  DeleteObjects: 0.127200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 116.681939 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.411211 seconds
-  ERROR: Build asset version error: assets/models/fbx/alexv3.fbx in SourceAssetDB has modification time of '2022-04-10T15:14:41.6067666Z' while content on disk has modification time of '2022-04-10T15:15:39.0475327Z'
-  Import took 0.420781 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.086023 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.280103 seconds
-  ERROR: Build asset version error: assets/models/fbx/alexv3.fbx in SourceAssetDB has modification time of '2022-04-10T15:14:41.6067666Z' while content on disk has modification time of '2022-04-10T15:15:39.0475327Z'
-  Import took 0.291493 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.085943 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.184201 seconds
-  ERROR: Build asset version error: assets/models/fbx/alexv3.fbx in SourceAssetDB has modification time of '2022-04-10T15:14:41.6067666Z' while content on disk has modification time of '2022-04-10T15:15:39.0475327Z'
-  Import took 0.194456 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.084197 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.225360 seconds
-  ERROR: Build asset version error: assets/models/fbx/alexv3.fbx in SourceAssetDB has modification time of '2022-04-10T15:14:41.6067666Z' while content on disk has modification time of '2022-04-10T15:15:39.0475327Z'
-  Import took 0.243451 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.106347 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.209435 seconds
-  ERROR: Build asset version error: assets/models/fbx/alexv3.fbx in SourceAssetDB has modification time of '2022-04-10T15:14:41.6067666Z' while content on disk has modification time of '2022-04-10T15:15:39.0475327Z'
-  Import took 0.224250 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.073922 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.182197 seconds
-  ERROR: Build asset version error: assets/models/fbx/alexv3.fbx in SourceAssetDB has modification time of '2022-04-10T15:14:41.6067666Z' while content on disk has modification time of '2022-04-10T15:15:39.0475327Z'
-  Import took 0.192614 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.070993 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.188062 seconds
-  ERROR: Build asset version error: assets/models/fbx/alexv3.fbx in SourceAssetDB has modification time of '2022-04-10T15:14:41.6067666Z' while content on disk has modification time of '2022-04-10T15:15:39.0475327Z'
-  Import took 0.197775 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.082710 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.186446 seconds
-  ERROR: Build asset version error: assets/models/fbx/alexv3.fbx in SourceAssetDB has modification time of '2022-04-10T15:14:41.6067666Z' while content on disk has modification time of '2022-04-10T15:15:39.0475327Z'
-  Import took 0.196827 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.084499 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.191168 seconds
-  ERROR: Build asset version error: assets/models/fbx/alexv3.fbx in SourceAssetDB has modification time of '2022-04-10T15:14:41.6067666Z' while content on disk has modification time of '2022-04-10T15:15:39.0475327Z'
-  Import took 0.201686 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.168533 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.364814 seconds
-  ERROR: Build asset version error: assets/models/fbx/alexv3.fbx in SourceAssetDB has modification time of '2022-04-10T15:14:41.6067666Z' while content on disk has modification time of '2022-04-10T15:15:39.0475327Z'
-  Import took 0.378670 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.118554 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.300440 seconds
-  ERROR: Build asset version error: assets/models/fbx/alexv3.fbx in SourceAssetDB has modification time of '2022-04-10T15:14:41.6067666Z' while content on disk has modification time of '2022-04-10T15:15:39.0475327Z'
-  Import took 0.312588 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.178975 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.356955 seconds
-  ERROR: Build asset version error: assets/models/fbx/alexv3.fbx in SourceAssetDB has modification time of '2022-04-10T15:14:41.6067666Z' while content on disk has modification time of '2022-04-10T15:15:39.0475327Z'
-  Import took 0.378941 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.135823 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.261821 seconds
-  ERROR: Build asset version error: assets/models/fbx/alexv3.fbx in SourceAssetDB has modification time of '2022-04-10T15:14:41.6067666Z' while content on disk has modification time of '2022-04-10T15:15:39.0475327Z'
-  Import took 0.277257 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.104215 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f41db90c727ac5f13e0cb84fc997d02') in 0.290777 seconds
-  Import took 0.328654 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.853184 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c23047618be32f930344b4a7df37fad') in 0.294162 seconds
-  Import took 0.318180 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.408603 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c23047618be32f930344b4a7df37fad') in 0.289350 seconds
-  Import took 0.302905 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005600 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.439 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 197.8 MB.
-System memory in use after: 198.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4885.
-Total: 5.263600 ms (FindLiveObjects: 0.946200 ms CreateObjectMapping: 0.366400 ms MarkObjects: 3.808300 ms  DeleteObjects: 0.140400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005131 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.435 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.41 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 197.8 MB.
-System memory in use after: 198.0 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4888.
-Total: 5.548700 ms (FindLiveObjects: 0.520500 ms CreateObjectMapping: 0.212700 ms MarkObjects: 4.653500 ms  DeleteObjects: 0.159000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 390.359928 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1435e04775d8f398e2b610175e610f95') in 0.461860 seconds
-  Import took 0.478283 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.966705 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1435e04775d8f398e2b610175e610f95') in 0.228774 seconds
-  Import took 0.244603 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002874 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.23 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.639 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.93 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 197.9 MB.
-System memory in use after: 198.1 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4927.
-Total: 7.377200 ms (FindLiveObjects: 1.556300 ms CreateObjectMapping: 0.584200 ms MarkObjects: 5.081600 ms  DeleteObjects: 0.153100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004797 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.711 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 197.9 MB.
-System memory in use after: 198.2 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4930.
-Total: 6.656600 ms (FindLiveObjects: 0.706600 ms CreateObjectMapping: 0.362500 ms MarkObjects: 5.393400 ms  DeleteObjects: 0.191300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 52.290977 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bf79f667ddccc9eca2399858921580a') in 0.443873 seconds
-  Import took 0.458859 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004323 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.418 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 198.1 MB.
-System memory in use after: 198.3 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 4969.
-Total: 4.415400 ms (FindLiveObjects: 0.426200 ms CreateObjectMapping: 0.132000 ms MarkObjects: 3.697300 ms  DeleteObjects: 0.158900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 234.081658 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b64adf644618af7eccd3d568d629c56') in 0.358146 seconds
-  Import took 0.372360 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002950 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.614 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 198.6 MB.
-System memory in use after: 198.8 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 5008.
-Total: 7.016700 ms (FindLiveObjects: 0.797800 ms CreateObjectMapping: 0.422000 ms MarkObjects: 5.606500 ms  DeleteObjects: 0.187400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005104 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.967 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 198.6 MB.
-System memory in use after: 198.8 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 5011.
-Total: 5.269000 ms (FindLiveObjects: 0.801700 ms CreateObjectMapping: 0.259600 ms MarkObjects: 4.072200 ms  DeleteObjects: 0.133300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1638.159522 seconds.
-  path: Assets/MODELS/FBX/AlexV3.fbx
-  artifactKey: Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MODELS/FBX/AlexV3.fbx using Guid(9de1dcddc0f5bfc40b0c7bec150b6f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0236bb61b8bef966ab60b90aa1bdadb') in 0.770697 seconds
-  Import took 0.798331 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002766 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.379 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 198.7 MB.
-System memory in use after: 198.9 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 5050.
-Total: 4.708500 ms (FindLiveObjects: 0.480200 ms CreateObjectMapping: 0.427100 ms MarkObjects: 3.670700 ms  DeleteObjects: 0.128900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003962 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.698 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.05 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 198.7 MB.
-System memory in use after: 198.9 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 5053.
-Total: 5.137400 ms (FindLiveObjects: 0.660300 ms CreateObjectMapping: 0.299500 ms MarkObjects: 4.033300 ms  DeleteObjects: 0.141700 ms)
+  Time since last request: 192.984454 seconds.
+  path: Assets/MODELS/FBX/Hotel/3floor.fbx
+  artifactKey: Guid(e810f6bb0f88d7346b96498df7c6a26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MODELS/FBX/Hotel/3floor.fbx using Guid(e810f6bb0f88d7346b96498df7c6a26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cd67ec6e02a9e1958ab0faaeac01ef3') in 0.087002 seconds
+  Import took 0.095328 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
