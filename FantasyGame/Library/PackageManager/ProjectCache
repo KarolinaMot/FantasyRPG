@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637851839122079440
+      ticks: 637851872881223946
     m_Hash: 3170862653
   m_LockFileStatus:
     m_FilePath: C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637851839122103788
+      ticks: 637851872881233906
     m_Hash: 1936308093
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
