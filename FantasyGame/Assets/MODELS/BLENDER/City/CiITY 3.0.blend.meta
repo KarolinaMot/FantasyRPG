@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BUILDING
-    second: {fileID: 2100000, guid: 65b2b7e8179e20c47ae900ef972270e1, type: 2}
+    second: {fileID: 2100000, guid: 17948f1f9e199014aa5baa0de589a2c4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -19,6 +19,31 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: LAMP
     second: {fileID: 2100000, guid: 1a46c4a695066c84da22d3ac77b7c4a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #25.001
+    second: {fileID: 2100000, guid: 17948f1f9e199014aa5baa0de589a2c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #29
+    second: {fileID: 2100000, guid: 17948f1f9e199014aa5baa0de589a2c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #29.001
+    second: {fileID: 2100000, guid: 17948f1f9e199014aa5baa0de589a2c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #48
+    second: {fileID: 2100000, guid: 1d298ea322db8b148aee53717551e9a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #48.001
+    second: {fileID: 2100000, guid: 1d298ea322db8b148aee53717551e9a1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -34,6 +59,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Trunk
     second: {fileID: 2100000, guid: 5f9de66f2c100d14093f491821374e95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pipe
+    second: {fileID: 2100000, guid: 17948f1f9e199014aa5baa0de589a2c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pipe.001
+    second: {fileID: 2100000, guid: 17948f1f9e199014aa5baa0de589a2c4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
