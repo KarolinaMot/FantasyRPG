@@ -1,0 +1,234 @@
+[33mcommit 93bc61a2364cb2f001cc7f7bd95a72e221c7b311[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Reese <mauricepugh006@gmail.com>
+Date:   Tue Jun 14 15:24:09 2022 -0500
+
+    modular textures complete
+
+[33mcommit dca8661ea3cacf134164f4d3f220ab71bd063b42[m
+Author: Reese <mauricepugh006@gmail.com>
+Date:   Tue Jun 14 11:00:45 2022 -0500
+
+    Modular pieces textured
+
+[33mcommit 6c41a0d876a9b8441d0aded8844c489a621a01a9[m
+Merge: 96fa248c 56cc222b
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sun Apr 10 22:08:59 2022 +0200
+
+    Merge branch 'DevelopingFactory'
+
+[33mcommit 96fa248c4b6f79ba2e3f48cde3f3761d0ed86d0a[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sun Apr 10 16:00:53 2022 +0200
+
+    Fixed attack errors, canvas scaling, updated modular city
+
+[33mcommit 56cc222b2aa0cd9ee7c91d0e6e25bca83623c43f[m[33m ([m[1;31morigin/DevelopingFactory[m[33m)[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sun Apr 10 22:04:33 2022 +0200
+
+    Fixed a couple things in branch before merging
+
+[33mcommit b8731ab4ce3745f9162a2cb66ce2dbf299dde57f[m
+Author: Kintuka93 <99124763+Kintuka93@users.noreply.github.com>
+Date:   Sun Apr 10 21:50:44 2022 +0200
+
+    i dont like unity modeling
+
+[33mcommit 31169468f84ebf2d50d7c82d7162802bc357c8e0[m
+Author: Kintuka93 <99124763+Kintuka93@users.noreply.github.com>
+Date:   Sun Apr 10 21:50:31 2022 +0200
+
+    i dont like unity modeling
+
+[33mcommit e40f5185a642ac26aa2b25565cefbe9c946c01d0[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sun Apr 10 16:00:53 2022 +0200
+
+    Fixed attack errors, canvas scaling, updated modular city
+
+[33mcommit 3148f48b953e02a7d8bf7cd0b739907180503a74[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sun Apr 10 13:18:24 2022 +0200
+
+    Set up shop
+
+[33mcommit d723cf1c2a9dd8189fee2055fe7e6982b24466a0[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sun Apr 10 01:20:46 2022 +0200
+
+    Began building hotel again
+
+[33mcommit df58e004e48d4e8969b6182cfd437e1041eee351[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sat Apr 9 18:42:29 2022 +0200
+
+    Update Unity.gitignore
+
+[33mcommit 2960c40252b9f727f53694f3f75cec6464e28ca3[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sat Apr 9 18:06:49 2022 +0200
+
+    Updated the modular buildings file
+
+[33mcommit ff9d4401b40bd9bf0dcb588e5ec29fd3d013d574[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sat Apr 2 00:11:11 2022 +0200
+
+    Lock on target, built hotel
+
+[33mcommit 4937b501f1ec78e3f4bc583b9d0ea6bc736f28da[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Wed Mar 30 21:23:36 2022 +0200
+
+    Combat system pt ?
+
+[33mcommit 9a4394745a6b42291ddb0c62aa0f1965d6f49ba2[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Mon Feb 21 00:31:50 2022 +0200
+
+    Moved stamina bar, made rotating doors, began making a better combat sequence
+
+[33mcommit 0e6caf2deccafc2d49685ef305d4cd778879cfd0[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sun Feb 20 01:05:46 2022 +0200
+
+    Sound effects, toon shader
+
+[33mcommit 91b02a65fcea6d2a430d45e75e836cdeeff81de4[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sat Feb 19 14:31:49 2022 +0200
+
+    New character model and controls, stamina for sprinting
+
+[33mcommit ab6ac33b6d860cdb18d9865697bf70e3ac0d4892[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sat Feb 12 00:19:37 2022 +0200
+
+    Some bug fixing, new testing scene
+
+[33mcommit 2a13b520f6a42e31fd439dfd2f1b6a5775a6e270[m
+Author: Kintuka93 <99124763+Kintuka93@users.noreply.github.com>
+Date:   Mon Feb 7 20:11:31 2022 +0200
+
+    Create TK models
+
+[33mcommit 5f1a83621a8e03478a1a80aceabbfa8e6716fe2b[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Fri Feb 4 21:50:48 2022 +0200
+
+    Base for part of the start city got laid down
+
+[33mcommit 9a545c22a0cdbeb4667c2f70ad9f82a128eea343[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Tue Dec 7 11:18:04 2021 +0200
+
+    Fixed character jumping
+
+[33mcommit d52b8460c93edd3ab3616960aa2dac3eba8ad69a[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Mon Nov 29 22:22:08 2021 +0200
+
+    Camera collision, organized stuff in folders
+    
+    Small update
+
+[33mcommit 4433cae51b5bff79a95f0a8956a0043271f34709[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Mon Nov 29 10:12:08 2021 +0200
+
+    Finished controls
+    
+    Jumping has still some bugs
+
+[33mcommit 5a33fddf20c81303689ba37f658962d1444b3585[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sat Nov 13 22:28:02 2021 +0200
+
+    Short update
+    
+    deleted unnecessary scenes
+
+[33mcommit 8f26322f1849597b7e63a32b11ceb64fe641b7d9[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Fri Nov 12 22:23:54 2021 +0200
+
+    Continuing rebuilding the controlls
+    
+    Mostly done, only things left is walking up and down stairs and jumping
+
+[33mcommit 484f6c0a0eeb35e04be47df4f801f57e12e7750d[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Fri Oct 29 00:02:45 2021 +0300
+
+    New map base, new controller.
+    
+    Discarded the previous map as I didn't like its structure and began creating a new one. The map will stay pretty basic for now as I want to focus on improving the character controller and also create a climbing system. Hopefully I will manage to finish the new 3rd person controller till the end of autumn break. As of now, the animator's structure is more or less finished.
+
+[33mcommit f16a0ee8376a33f6c8d10845782a21e294f2d27f[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Tue Aug 31 22:52:29 2021 +0300
+
+    Walls, floor
+    
+    Modeled, textured and added more detailed walls and floor tiles.
+
+[33mcommit 340ddc8ed274ffdb7b35e5b914efada9b070486f[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sun Aug 29 22:43:43 2021 +0300
+
+    Buildings, textures
+    
+    Continued adding details to the buildings, began designing the texture for the walls
+
+[33mcommit 3f58de523ae32c76336aa4da53e2c5b8c87570ce[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Thu Aug 26 19:10:10 2021 +0300
+
+    Character, building details
+    
+    Fixed character topology, began adding details to the buildings
+
+[33mcommit af8ef73d43705fa291e4058acfeedfca018c21ea[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Tue Aug 17 22:13:07 2021 +0300
+
+    Bugs, camera settings, map base.
+    
+    Finally finished setting up the base for the starting map. Also made in-game camera sensitivity settings. Moreover I fixed some gravity bugs and collider issues.
+
+[33mcommit 26fee185937b0bcecfcbc518f33b7e2a12454ef8[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sat Aug 14 21:10:03 2021 +0300
+
+    Redid map
+    
+    I began redoing the map. Map prototype is about about halfway done.
+
+[33mcommit 7a07b01a7bb35c1993cc2c868c25fc3738390790[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Mon Aug 9 21:19:18 2021 +0300
+
+    Building city
+    
+    Continued filling the city layout, added details to a few of the buildings
+
+[33mcommit 9f97c2aaf01cf7dbe129f039befefdd639e08fdb[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Wed Aug 4 20:12:21 2021 +0300
+
+    Finishing map base, walking upstairs, bug fixes, forcefield
+    
+    Player can now walk up and down stairs. I also made a shader for the dome-shaped forcefield. Fixed some bugs in the player controls so his movement is smoother. Made finishing touches to the terrain, fixed some errors in its mesh.
+
+[33mcommit 50ffd7d3688e11bddb2ad907862eb7c570f73165[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   Sun Aug 1 22:50:34 2021 +0300
+
+    Map, water shader
+    
+    Continued working on the map, made a water shader.
+
+[33mcommit a6ecdbc47829615eb7426902d16c562db362d227[m
+Author: Karolina Motužytė <karolina.motuzyte02@gmail.com>
+Date:   
