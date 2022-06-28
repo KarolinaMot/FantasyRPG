@@ -27,10 +27,10 @@ TagManager:
   - Building
   - Enemy
   - Grass
-  - 
-  - 
-  - 
-  - 
+  - Floor
+  - Exterior
+  - Marker
+  - Roof
   - 
   - 
   - 

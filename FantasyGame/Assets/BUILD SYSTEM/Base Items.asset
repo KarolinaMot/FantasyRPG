@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ba83a4645efb249b68e10cae3ab03a, type: 3}
+  m_Name: Base Items
+  m_EditorClassIdentifier: 
+  baseObj: {fileID: 3242958678328861876, guid: bca93cbcaf853c14a8a9a0ad501de9dc, type: 3}
+  SimpleWalls:
+  - {fileID: 2445664271940082677, guid: 74b3a966bc4118441a3d212613c3aa31, type: 3}
+  WindowWalls:
+  - {fileID: 1723977932734155280, guid: 8fb930f1551ebc14da729430779deba6, type: 3}
+  - {fileID: 3513903627629892191, guid: 19d8b173d8befb84c877642f7fadaa33, type: 3}
+  DoorWalls:
+  - {fileID: 2397810471545931253, guid: 2461b5bcf53191f44acc32f47b894ae3, type: 3}
+  - {fileID: 5381036154830125613, guid: 16f8d6756a7a7c44f8a353e84940a344, type: 3}
+  - {fileID: 8650173606521103034, guid: 495502491512e534796c0f8eb77cd875, type: 3}
+  Ground:
+  - {fileID: 4304890756877774234, guid: d39afc51edd82a8409556a27e53f30f4, type: 3}
+  Roof:
+  - {fileID: 8157508984889283602, guid: c58cc2cf63199fe4e8fda2a2e370bdc0, type: 3}
+  - {fileID: 4150500833825536786, guid: 9691bce4167bb5d40a1f81a4e73578cb, type: 3}
+  OutsideDetails:
+  - {fileID: 3588917503038586575, guid: e6b7b53daa0d2fe408dd2ac0356fa06a, type: 3}
+  - {fileID: 7202493554905387971, guid: d598ac8e96b085c478d4497f749a5ab6, type: 3}
+  - {fileID: 8255287797185776219, guid: 2da4f6230f30d4048a2ee438d0105663, type: 3}
+  - {fileID: 6399839362237564330, guid: faa64b7717bb8fa48b75c2ed959c71c9, type: 3}
+  - {fileID: 4208733100409663535, guid: 542723629ef4df943a611430a1cd855d, type: 3}
+  - {fileID: 5176652073482735102, guid: 76ee75bb7567be04b81e406ff1d13b83, type: 3}
+  - {fileID: 7442687494421396919, guid: 89536f9224040174c80c394ed3afa8df, type: 3}
+  - {fileID: 7438918080380091602, guid: 3f4ce6dd1a052e44ba84b8e759723e94, type: 3}
+  SimpleWallsT:
+  - {fileID: 2445664271940082677, guid: 003a0f305a92ea54aacdce97354a0a1e, type: 3}
+  WindowWallsT:
+  - {fileID: 1723977932734155280, guid: 096becd85d7fcd14fb61d8ebb78c1e98, type: 3}
+  - {fileID: 3513903627629892191, guid: cae0e544d0ae27646a85482684643b36, type: 3}
+  DoorWallsT:
+  - {fileID: 2397810471545931253, guid: ec37ec2a63f62cf488c3bb4ef41c8669, type: 3}
+  - {fileID: 5381036154830125613, guid: af2d72fc5faaf8640b6ee0cf3df71732, type: 3}
+  - {fileID: 8650173606521103034, guid: acaf186c4bdd21048b8192e46a3b944d, type: 3}
+  GroundT:
+  - {fileID: 916882510468871160, guid: 53fa435cbdf9a9e40a091638f270c898, type: 3}
+  RoofT:
+  - {fileID: 8928734900770270705, guid: be13c48dc57fd124cb1dcc689b7f6cd9, type: 3}
+  - {fileID: 3836772076148119406, guid: 92872993fb4dd444fb782a19f19ae65b, type: 3}
+  OutsideDetailsT:
+  - {fileID: 1006695528449228293, guid: 94fb664b0789c1d4ba8bf774e2cf9257, type: 3}
+  - {fileID: 1234460553304193583, guid: b4aac8ae495807d478469286b0b994ee, type: 3}
+  - {fileID: 39013044726503770, guid: ab08cf92a76fdc642aa5389787aae392, type: 3}
+  - {fileID: 6046627767177127556, guid: e33ceddea6c659a49a1c77afa4557bdd, type: 3}
+  - {fileID: 2605984837381602379, guid: 0fa0123da04a1e548a76bfe863c02aef, type: 3}
+  - {fileID: 4983962323416811465, guid: 62b158a09a0c391498e1e993a5d63d3e, type: 3}
+  - {fileID: 8633287399031749461, guid: 90fa407012dd5dd488745d2d7e29823a, type: 3}
+  - {fileID: 2867044182754507676, guid: 73265122b8e99ea45b7b290037a97828, type: 3}

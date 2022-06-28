@@ -37,7 +37,6 @@ public class SoundManager : MonoBehaviour
 				walking.Stop();
 				sprinting.Stop();
 				dash.Stop();
-				Debug.Log("Running is playing");
 			}
 			else if (thirdPersonController.targetSpeed == thirdPersonController.sprintSpeed && !sprinting.isPlaying)
 			{
@@ -45,7 +44,6 @@ public class SoundManager : MonoBehaviour
 				walking.Stop();
 				sprinting.Play();
 				dash.Stop();
-				Debug.Log("Sprinting is playing");
 			}
 			else if (thirdPersonController.targetSpeed == thirdPersonController.moveSpeed / 2 && !walking.isPlaying)
 			{
@@ -54,19 +52,16 @@ public class SoundManager : MonoBehaviour
 				sprinting.Stop();
 				dash.Stop();
 
-				Debug.Log("Walking is playing");
 			}
 			else if(thirdPersonController.targetSpeed == thirdPersonController.dashSpeed && !dash.isPlaying){
 				running.Stop();
 				walking.Stop();
 				sprinting.Stop();
-				Debug.Log("Walking is playing");
 				dash.Play();
 			}
 		}
         else
         {
-			Debug.Log("Nothing is playing");
 			StopAllMovingSounds();
         }
 		

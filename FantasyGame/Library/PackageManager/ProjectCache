@@ -1,19 +1,19 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Packages/manifest.json
+    m_FilePath: D:/GitHub/FantasyRPG/FantasyGame/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637851872881223946
+      ticks: 637915188313166036
     m_Hash: 3170862653
   m_LockFileStatus:
-    m_FilePath: C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Packages/packages-lock.json
+    m_FilePath: D:/GitHub/FantasyRPG/FantasyGame/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637851872881233906
+      ticks: 637915188313176429
     m_Hash: 1936308093
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -76,7 +76,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.3
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.animation.rigging@1.0.3
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.animation.rigging@1.0.3
       assetPath: Packages/com.unity.animation.rigging
       name: com.unity.animation.rigging
       displayName: Animation Rigging
@@ -172,7 +172,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.6.11
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.cinemachine@2.6.11
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.cinemachine@2.6.11
       assetPath: Packages/com.unity.cinemachine
       name: com.unity.cinemachine
       displayName: Cinemachine
@@ -228,6 +228,8 @@ m_PackageAssets:
         - 2.6.9
         - 2.6.10
         - 2.6.11
+        - 2.6.14
+        - 2.6.15
         - 2.7.1
         - 2.7.2
         - 2.7.3
@@ -243,6 +245,7 @@ m_PackageAssets:
         - 2.8.2
         - 2.8.3
         - 2.8.4
+        - 2.8.6
         - 2.9.0-pre.1
         - 2.9.0-pre.6
         compatible:
@@ -263,6 +266,8 @@ m_PackageAssets:
         - 2.6.9
         - 2.6.10
         - 2.6.11
+        - 2.6.14
+        - 2.6.15
         - 2.7.1
         - 2.7.2
         - 2.7.3
@@ -278,9 +283,10 @@ m_PackageAssets:
         - 2.8.2
         - 2.8.3
         - 2.8.4
+        - 2.8.6
         - 2.9.0-pre.1
         - 2.9.0-pre.6
-        verified: 2.6.11
+        verified: 2.6.15
       dependencies: []
       resolvedDependencies: []
       keywords:
@@ -331,7 +337,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.3.9
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.collab-proxy@1.3.9
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.collab-proxy@1.3.9
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Unity Collaborate
@@ -383,6 +389,8 @@ m_PackageAssets:
         - 1.14.13
         - 1.14.15
         - 1.14.16
+        - 1.14.17
+        - 1.14.18
         - 1.15.1
         - 1.15.4
         - 1.15.7
@@ -391,6 +399,8 @@ m_PackageAssets:
         - 1.15.13
         - 1.15.15
         - 1.15.16
+        - 1.15.17
+        - 1.15.18
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -417,6 +427,8 @@ m_PackageAssets:
         - 1.14.13
         - 1.14.15
         - 1.14.16
+        - 1.14.17
+        - 1.14.18
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -466,7 +478,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.2.3
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.connect.share@4.2.3
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.connect.share@4.2.3
       assetPath: Packages/com.unity.connect.share
       name: com.unity.connect.share
       displayName: WebGL Publisher
@@ -581,7 +593,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -627,6 +639,7 @@ m_PackageAssets:
         - 3.0.10
         - 3.0.12
         - 3.0.13
+        - 3.0.14
         compatible:
         - 1.0.2
         - 1.0.6
@@ -657,6 +670,7 @@ m_PackageAssets:
         - 3.0.10
         - 3.0.12
         - 3.0.13
+        - 3.0.14
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -696,7 +710,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -789,7 +803,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.3
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.ide.vscode@1.2.3
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -862,7 +876,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.2
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.inputsystem@1.0.2
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.inputsystem@1.0.2
       assetPath: Packages/com.unity.inputsystem
       name: com.unity.inputsystem
       displayName: Input System
@@ -980,7 +994,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.1.1
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.postprocessing@3.1.1
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.postprocessing@3.1.1
       assetPath: Packages/com.unity.postprocessing
       name: com.unity.postprocessing
       displayName: Post Processing
@@ -1032,6 +1046,7 @@ m_PackageAssets:
         - 3.1.1
         - 3.2.0
         - 3.2.1
+        - 3.2.2
         compatible:
         - 2.3.0
         - 3.0.1
@@ -1040,6 +1055,7 @@ m_PackageAssets:
         - 3.1.1
         - 3.2.0
         - 3.2.1
+        - 3.2.2
         verified: 3.1.1
       dependencies:
       - name: com.unity.modules.physics
@@ -1073,7 +1089,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.5.2
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.probuilder@4.5.2
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.probuilder@4.5.2
       assetPath: Packages/com.unity.probuilder
       name: com.unity.probuilder
       displayName: ProBuilder
@@ -1215,7 +1231,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.3-preview.6
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.progrids@3.0.3-preview.6
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.progrids@3.0.3-preview.6
       assetPath: Packages/com.unity.progrids
       name: com.unity.progrids
       displayName: ProGrids
@@ -1292,7 +1308,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 10.4.0
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.render-pipelines.universal@10.4.0
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.render-pipelines.universal@10.4.0
       assetPath: Packages/com.unity.render-pipelines.universal
       name: com.unity.render-pipelines.universal
       displayName: Universal RP
@@ -1352,6 +1368,7 @@ m_PackageAssets:
         - 10.7.0
         - 10.8.0
         - 10.8.1
+        - 10.9.0
         compatible:
         - 10.4.0
         - 10.5.0
@@ -1411,7 +1428,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 10.4.0
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.shadergraph@10.4.0
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.shadergraph@10.4.0
       assetPath: Packages/com.unity.shadergraph
       name: com.unity.shadergraph
       displayName: Shader Graph
@@ -1524,6 +1541,7 @@ m_PackageAssets:
         - 10.7.0
         - 10.8.0
         - 10.8.1
+        - 10.9.0
         compatible:
         - 10.4.0
         - 10.5.0
@@ -1571,7 +1589,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.24
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.test-framework@1.1.24
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.test-framework@1.1.24
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -1619,6 +1637,7 @@ m_PackageAssets:
         - 1.1.29
         - 1.1.30
         - 1.1.31
+        - 2.0.1-exp.1
         - 2.0.1-pre.12
         - 2.0.1-pre.18
         compatible:
@@ -1628,6 +1647,7 @@ m_PackageAssets:
         - 1.1.29
         - 1.1.30
         - 1.1.31
+        - 2.0.1-exp.1
         - 2.0.1-pre.12
         - 2.0.1-pre.18
         verified: 1.1.31
@@ -1673,7 +1693,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.4
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.textmeshpro@3.0.4
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.textmeshpro@3.0.4
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -1843,7 +1863,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.7
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.timeline@1.4.7
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.timeline@1.4.7
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -2073,7 +2093,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 10.4.0
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.visualeffectgraph@10.4.0
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.visualeffectgraph@10.4.0
       assetPath: Packages/com.unity.visualeffectgraph
       name: com.unity.visualeffectgraph
       displayName: Visual Effect Graph
@@ -2156,6 +2176,7 @@ m_PackageAssets:
         - 10.7.0
         - 10.8.0
         - 10.8.1
+        - 10.9.0
         compatible:
         - 10.4.0
         - 10.5.0
@@ -3952,7 +3973,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 10.4.0
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.render-pipelines.core@10.4.0
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.render-pipelines.core@10.4.0
       assetPath: Packages/com.unity.render-pipelines.core
       name: com.unity.render-pipelines.core
       displayName: Core RP Library
@@ -4068,6 +4089,7 @@ m_PackageAssets:
         - 10.7.0
         - 10.8.0
         - 10.8.1
+        - 10.9.0
         compatible:
         - 10.4.0
         - 10.5.0
@@ -4109,7 +4131,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.ext.nunit@1.0.6
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -4172,7 +4194,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.3.1
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.searcher@4.3.1
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.searcher@4.3.1
       assetPath: Packages/com.unity.searcher
       name: com.unity.searcher
       displayName: Searcher
@@ -4252,7 +4274,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.3
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.settings-manager@1.0.3
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.settings-manager@1.0.3
       assetPath: Packages/com.unity.settings-manager
       name: com.unity.settings-manager
       displayName: Settings Manager
@@ -4314,7 +4336,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.editorcoroutines@1.0.0
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.editorcoroutines@1.0.0
       assetPath: Packages/com.unity.editorcoroutines
       name: com.unity.editorcoroutines
       displayName: Editor Coroutines
@@ -4378,7 +4400,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.3.4
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.burst@1.3.4
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.burst@1.3.4
       assetPath: Packages/com.unity.burst
       name: com.unity.burst
       displayName: Burst
@@ -4501,8 +4523,12 @@ m_PackageAssets:
         - 1.6.3
         - 1.6.4
         - 1.6.5
+        - 1.6.6
         - 1.7.0-pre.1
         - 1.7.0
+        - 1.7.1
+        - 1.7.2
+        - 1.8.0-pre.1
         compatible:
         - 1.1.1
         - 1.1.2
@@ -4582,8 +4608,12 @@ m_PackageAssets:
         - 1.6.3
         - 1.6.4
         - 1.6.5
+        - 1.6.6
         - 1.7.0-pre.1
         - 1.7.0
+        - 1.7.1
+        - 1.7.2
+        - 1.8.0-pre.1
         verified: 1.4.11
       dependencies:
       - name: com.unity.mathematics
@@ -4617,7 +4647,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.2.1
       source: 1
-      resolvedPath: C:\Users\kahyt\OneDrive\Desktop\GITHUB\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.mathematics@1.2.1
+      resolvedPath: D:\GitHub\FantasyRPG\FantasyGame\Library\PackageCache\com.unity.mathematics@1.2.1
       assetPath: Packages/com.unity.mathematics
       name: com.unity.mathematics
       displayName: Mathematics
@@ -4695,5 +4725,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: C:/Users/kahyt/OneDrive/Desktop/GITHUB/FantasyRPG/FantasyGame/Packages
+m_ProjectPath: D:/GitHub/FantasyRPG/FantasyGame/Packages
 m_EditorVersion: 2020.3.6f1 (338bb68529b2)
