@@ -22,12 +22,9 @@ public class CombatManager : MonoBehaviour
     		
 
     [Header ("Attack Animation Stuff")]
-    [SerializeField]
-    private float maxTimeBetweenAttacks = 0;
-    private float timer = 0;
-    public bool ticking = false;
-    [HideInInspector]
     public bool isAttacking = false;
+    public bool checkForAttack = false;
+
 
 
     [Header("Weapon Stuff")]
@@ -48,7 +45,7 @@ public class CombatManager : MonoBehaviour
         ch = GetComponent<CharacterController>();
         soundManager = GetComponent<SoundManager>();
 
-        playerAnimator.SetBool("IsAttacking", ticking);
+        playerAnimator.SetBool("IsAttacking", isAttacking);
         CheckWeapon();
     }
 
@@ -56,32 +53,23 @@ public class CombatManager : MonoBehaviour
     void Update()
     {
             AttackAnimation();
-            Tick();
+
             SearchNearbyEnemy();
-
-            playerAnimator.SetBool("IsAttacking", ticking);
-
     }
 
     private void AttackAnimation()
     {
         isAttacking = playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Attack1") || playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Attack2") || playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Attack3") || playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Attack4");
-        if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.6f && ticking || timer>=maxTimeBetweenAttacks)
-        {
-            timer = 0;
-            ticking = false;
-            soundManager.StopAllWooshSounds();
-
-            return;
-        }
-
-        if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.3f && inputs.attack && !thirdPersonController.isJumping && !thirdPersonController.isDashing && !thirdPersonController.isSprinting || playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle Walk Run Blend") && inputs.attack && !thirdPersonController.isJumping && !thirdPersonController.isDashing && !thirdPersonController.isSprinting) {
-            ticking = true;
-            timer = 0;
-        }
-
+        if(!checkForAttack)
+            playerAnimator.SetBool("NextAttackAllowed", false);
         if(inputs.attack)
-          inputs.attack = false;
+        {
+            inputs.attack = false;
+            if(checkForAttack)
+                playerAnimator.SetBool("NextAttackAllowed", true);
+            if(!isAttacking)
+            playerAnimator.SetTrigger("AttackInput");
+        }
     }
 
     public void SearchNearbyEnemy(){
@@ -147,11 +135,7 @@ public class CombatManager : MonoBehaviour
         }
     }
 
-    private void Tick()
-    {
-        if(ticking)
-         timer += Time.deltaTime;
-    }
+
 
     private void CheckHitBox(){
         Collider[] hitColliders = Physics.OverlapSphere(weapon.transform.position, characterStats.attackSize, enemyLayer);
@@ -172,7 +156,14 @@ public class CombatManager : MonoBehaviour
         }
         CharacterStats enemyStats = enemy.GetComponent<CharacterStats>();
         enemyStats.currentHp -= characterStats.attack;
-
-
     }
+
+    public void LookForNextAttack(){
+        checkForAttack = true;
+    }
+
+    public void StopLookForAttack(){
+        checkForAttack = false;
+    }
+
 }

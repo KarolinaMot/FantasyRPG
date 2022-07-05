@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6269434859132919642}
   - component: {fileID: 3703366288415097316}
   - component: {fileID: 9165853406605425479}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Cylinder005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 1902918087805329504}
   - component: {fileID: 3298709149248024517}
   - component: {fileID: 730613620807998223}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Trash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 6669198685401570048}
   - component: {fileID: 6089238020189223446}
   - component: {fileID: 6951528244516273993}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Cylinder004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 2080269924019031491}
   - component: {fileID: 5319367597027551720}
   - component: {fileID: 3177117924454238866}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Box016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -437,7 +437,7 @@ GameObject:
   - component: {fileID: 6394427155828642300}
   - component: {fileID: 1608529330331607744}
   - component: {fileID: 5598416702663873547}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Cylinder002.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +518,7 @@ GameObject:
   - component: {fileID: 3770508490634030125}
   - component: {fileID: 1725996528568416230}
   - component: {fileID: 8215342136335023728}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Cylinder001.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}

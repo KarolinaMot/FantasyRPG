@@ -25,6 +25,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 861c7cdbe6ff51347b4113350774c7c1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 861c7cdbe6ff51347b4113350774c7c1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 861c7cdbe6ff51347b4113350774c7c1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 861c7cdbe6ff51347b4113350774c7c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -66,11 +78,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7049986415374887898, guid: 861c7cdbe6ff51347b4113350774c7c1, type: 3}
       propertyPath: m_Layer
-      value: 17
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -6610028072959330711, guid: 861c7cdbe6ff51347b4113350774c7c1, type: 3}
       propertyPath: m_Layer
-      value: 17
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 861c7cdbe6ff51347b4113350774c7c1, type: 3}
       propertyPath: m_Name
@@ -78,7 +90,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 861c7cdbe6ff51347b4113350774c7c1, type: 3}
       propertyPath: m_Layer
-      value: 17
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 861c7cdbe6ff51347b4113350774c7c1, type: 3}
+      propertyPath: m_TagString
+      value: Marker
       objectReference: {fileID: 0}
     - target: {fileID: 3536432590954667425, guid: 861c7cdbe6ff51347b4113350774c7c1, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -94,7 +110,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6aea6f2167d9de04f842a8f8869c89d4, type: 2}
     - target: {fileID: 5135911780295819662, guid: 861c7cdbe6ff51347b4113350774c7c1, type: 3}
       propertyPath: m_Layer
-      value: 17
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9036671457044900073, guid: 861c7cdbe6ff51347b4113350774c7c1, type: 3}
       propertyPath: m_Materials.Array.data[0]

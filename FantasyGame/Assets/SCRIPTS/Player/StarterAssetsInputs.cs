@@ -16,6 +16,8 @@ using UnityEngine.InputSystem;
 		public bool disabledlockOn = true;
 
 		public bool sprintDisabled;
+		public bool interactable = false;
+		public bool interact;
 		private int timer = 0;
 
 		[Header("Movement Settings")]
@@ -59,6 +61,10 @@ using UnityEngine.InputSystem;
 		public void OnLockOn(InputValue value){
 			LockOnInput(value.isPressed);
 		}
+
+		public void OnInteract(InputValue value){
+			InteractInput(value.isPressed);
+		}
 #else
 	// old input sys if we do decide to have it (most likely wont)...
 #endif
@@ -101,6 +107,10 @@ using UnityEngine.InputSystem;
 			lockOn = false;
 		}
 
+		public void InteractInput(bool newInteractState){
+			if(interactable)
+			interact = true;
+		}
 #if !UNITY_IOS || !UNITY_ANDROID
 
 		private void OnApplicationFocus(bool hasFocus)

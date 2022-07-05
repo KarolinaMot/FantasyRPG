@@ -25,6 +25,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc5c6c7c58a07a34081408c0ac9b8eef, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc5c6c7c58a07a34081408c0ac9b8eef, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc5c6c7c58a07a34081408c0ac9b8eef, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cc5c6c7c58a07a34081408c0ac9b8eef, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -82,15 +94,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6aea6f2167d9de04f842a8f8869c89d4, type: 2}
     - target: {fileID: -5910808779976307427, guid: cc5c6c7c58a07a34081408c0ac9b8eef, type: 3}
       propertyPath: m_Layer
-      value: 17
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -2509178372919662233, guid: cc5c6c7c58a07a34081408c0ac9b8eef, type: 3}
       propertyPath: m_Layer
-      value: 17
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 55326802522251140, guid: cc5c6c7c58a07a34081408c0ac9b8eef, type: 3}
       propertyPath: m_Layer
-      value: 17
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cc5c6c7c58a07a34081408c0ac9b8eef, type: 3}
       propertyPath: m_Name
@@ -98,15 +110,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cc5c6c7c58a07a34081408c0ac9b8eef, type: 3}
       propertyPath: m_Layer
-      value: 17
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cc5c6c7c58a07a34081408c0ac9b8eef, type: 3}
+      propertyPath: m_TagString
+      value: Marker
       objectReference: {fileID: 0}
     - target: {fileID: 1308110752561831218, guid: cc5c6c7c58a07a34081408c0ac9b8eef, type: 3}
       propertyPath: m_Layer
-      value: 17
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1449994370570199511, guid: cc5c6c7c58a07a34081408c0ac9b8eef, type: 3}
       propertyPath: m_Layer
-      value: 17
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4192571545529526991, guid: cc5c6c7c58a07a34081408c0ac9b8eef, type: 3}
       propertyPath: m_Materials.Array.data[0]

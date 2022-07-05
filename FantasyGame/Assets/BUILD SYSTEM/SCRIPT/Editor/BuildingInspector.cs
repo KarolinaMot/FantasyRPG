@@ -5,30 +5,22 @@ using UnityEditor;
 public class BuildingInspector :  Editor
 {
     BuildingWindow buildingSettings;
-
-    public override void OnInspectorGUI(){
-        base.OnInspectorGUI();
-        GUILayout.Space(20);
-
-        if (GUILayout.Button("Show Building Settings window"))
-        {
-            buildingSettings = (BuildingWindow)EditorWindow.GetWindow( typeof(BuildingWindow), false, "Building Settings" );
-            buildingSettings.Show();
-        }
-    }
     
     void OnSceneGUI()
     {
         Building building = (Building)target;
-        if(buildingSettings != null){
+
             HandleUtility.AddDefaultControl(GUIUtility.GetControlID(FocusType.Passive));
+            
+            buildingSettings = (BuildingWindow)EditorWindow.GetWindow( typeof(BuildingWindow), false, "Building Settings" );
+
+            buildingSettings.Show();
             building.selectedWall = buildingSettings.selectedWall;
             building.currentFloor =  buildingSettings.currentFloor;
             building.gridSize = buildingSettings.gridSize;
             building.isBuilding = buildingSettings.isBuilding;
             building.chosenTab = buildingSettings.openTab;
             building.baseHeight = buildingSettings.baseHeight;
-
 
             if(building.baseHeight != building.baseHeightTracker &&(building.baseHeightTracker != 0 || building.baseHeight !=0)){
                 building.ManageBaseHeight();
@@ -57,7 +49,7 @@ public class BuildingInspector :  Editor
                         if(building.isBuilding)
                             building.BuildingManager();
                         else{
-                            building.RemoveWall();
+                            building.RemoveObjects();
                         }
                 }
                 else if(Event.current.button == 1)
@@ -65,7 +57,7 @@ public class BuildingInspector :  Editor
                 break;
             }
             ManageMarkerMovement(building);
-        }
+        
     }
 
     #region  Marker Manager
@@ -90,9 +82,9 @@ public class BuildingInspector :  Editor
     public Vector3 snapPosition(Vector3 original, Building building)
     {
         Vector3 snapped;
-        snapped.x = Mathf.Round(Mathf.Round(original.x + 0.5f)/building.gridSize) * building.gridSize;
+        snapped.x = Mathf.Round(Mathf.Round(original.x + 0.5f)/building.gridSize) * building.gridSize * building.scale;
         snapped.y = 0;
-        snapped.z = Mathf.Round(Mathf.Round(original.z + 0.5f) /building.gridSize) * building.gridSize;
+        snapped.z = Mathf.Round(Mathf.Round(original.z + 0.5f) /building.gridSize) * building.gridSize * building.scale;
 
         return snapped;
     }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6899553709621552458}
   - component: {fileID: 4596570127574780827}
   - component: {fileID: 8383652500242388043}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: TOP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 3905553750723953745}
   - component: {fileID: 9136478899344629659}
   - component: {fileID: 7944929499923925819}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BOTTOM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 6725635433529360515}
   - component: {fileID: 4144972624545582900}
   - component: {fileID: 4959229777121520609}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Spindle001.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 2662455112597705695}
   - component: {fileID: 1395319034215406714}
   - component: {fileID: 3799309710076733616}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: RoofPipe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

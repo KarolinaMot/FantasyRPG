@@ -3,57 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public class Floor{
-    public Floor(int floorNum, GameObject obj){
-        floorNumber = floorNum;
-        floorObject = obj;
-    }
-
-    public int floorNumber = 0;
-    public GameObject floorObject;
-    public List<GameObject> walls;
-
-}
 public class Building : MonoBehaviour
 {
-    Transform lastMarkerTransform;
-    public GameObject floorBase;
-    public GameObject emptyWallContainer;    
+      [Header("Basic Objects")]
+    public GameObject emptyContainer;   
     public  ItemSet objectSet; 
-    public GameObject baseObject;
     
-    [HideInInspector]
-    public List<GameObject> bases;
-
-[Header("Layer masks")]
+    [Header("Building settings")]
+    public float scale = 1.2f;
     public int wallLayer;
     public int floorLayer;
     public int roofLayer;
     public int exteriorLayer;
-
-    [HideInInspector]
-    public int chosenTab;
-    [HideInInspector]
     public float gridSize = 4;
-    [HideInInspector]
-    public int currentFloor = 1;
-    [HideInInspector]
-    public int selectedWall = 0;
-    [HideInInspector]
-    int selectionTracker = -1;
-    int tabSelectionTracker = -1;
-    [HideInInspector]
-    public bool isBuilding = true;
-    [HideInInspector]
-    public float baseHeight = 0;
-    [HideInInspector]
-    public float baseHeightTracker = 0;
-    [HideInInspector]
+    public Floor examp;
+
+    [Header("Instantiated objects")]
     public List<Floor> floors;
-    GameObject instantiatedMarker = null;
-    GameObject temporary;
-    Vector3 baseTransformPos;
-    Quaternion baseTransformRot;
+    public List<GameObject> bases;
+
+
+    public GameObject instantiatedMarker = null;
+    public GameObject baseObject;     
+    public GameObject temporary;
+    public Transform lastMarkerTransform;
+    public Vector3 baseTransformPos;
+    public Quaternion baseTransformRot;
+    public int chosenTab;
+    public int currentFloor = 1;
+    public int selectedWall = 0;
+    public int selectionTracker = -1;
+    public int tabSelectionTracker = -1;
+    public bool isBuilding = true;
+    public float baseHeight = 0;
+    public float baseHeightTracker = 0;
 
 
     public void MoveMarker(Vector3 markerPosition)
@@ -73,7 +56,7 @@ public class Building : MonoBehaviour
         }
 
         lastMarkerTransform = instantiatedMarker.transform;
-        instantiatedMarker.transform.position = new Vector3(markerPosition.x, (currentFloor-1)*6, markerPosition.z);
+        instantiatedMarker.transform.position = new Vector3(markerPosition.x, (currentFloor-1)*6*scale+baseHeight*3, markerPosition.z);
     }
 
     public void InstantiateMarker(Vector3 markerPosition)
@@ -126,11 +109,12 @@ public class Building : MonoBehaviour
             }
         }
 
-        temporary = Instantiate(emptyWallContainer, new Vector3(0, 0, 0), Quaternion.identity);
+        temporary = Instantiate(emptyContainer, new Vector3(0, 0, 0), Quaternion.identity);
         temporary.transform.parent = transform;
         temporary.name = "Floor"+currentFloor;
 
-        floors.Add(new Floor(currentFloor, temporary));
+        floors.Add(ScriptableObject.Instantiate(examp));
+        floors[floors.Count-1].Init(currentFloor, temporary);
         
         PlaceWall();
         temporary.transform.parent = floors[floors.Count - 1 ].floorObject.transform; 
@@ -145,16 +129,7 @@ public class Building : MonoBehaviour
 
     public void PlaceWall(){
 
-        var objectsHit = Physics.OverlapSphere (instantiatedMarker.transform.position, 0.02f);
-        
-        foreach ( Collider objectHit in objectsHit ) {
-            if(objectHit.gameObject.layer == wallLayer && objectHit.transform.position == instantiatedMarker.transform.position && (chosenTab == 0 || chosenTab ==1 || chosenTab ==2) )
-            DestroyImmediate(objectHit.gameObject);
-            else if((objectHit.gameObject.layer == floorLayer || objectHit.gameObject.layer == roofLayer) && objectHit.transform.position == instantiatedMarker.transform.position && (chosenTab == 4 || chosenTab ==3) )
-            DestroyImmediate(objectHit.gameObject);
-            else if(objectHit.gameObject.layer == exteriorLayer && objectHit.transform.position == instantiatedMarker.transform.position && chosenTab == 5)
-            DestroyImmediate(objectHit.gameObject);
-        }
+        RemoveObjects();
 
         switch (chosenTab) {
             case 0:
@@ -180,44 +155,35 @@ public class Building : MonoBehaviour
 
     public void ManageBaseHeight(){
         for(int i=0; i<floors.Count; i++){
-            floors[i].floorObject.transform.position =  new Vector3(0, (baseHeight*3), 0);
+            floors[i].floorObject.transform.position =  new Vector3(0, baseHeight*3, 0);
         }
 
         for(int i=0; i<bases.Count; i++){
-            bases[i].transform.localScale = new Vector3(1, baseHeight, 1);
+            bases[i].transform.localScale = new Vector3(scale, baseHeight*scale*scale, scale);
         }
     }
 
     public void PlaceBase(){
         if(currentFloor ==1 && temporary.layer == wallLayer){
-            if(baseObject == null){
-                baseObject = Instantiate(emptyWallContainer, new Vector3(0, 0, 0), Quaternion.identity);
-                baseObject.transform.parent = transform;
-                baseObject.name = "Buiding Bases";
-            }
-            
             baseTransformPos = temporary.transform.position;
             baseTransformRot = temporary.transform.rotation;
 
             temporary = Instantiate(objectSet.baseObj, baseTransformPos, baseTransformRot);
+            if(baseObject == null){
+                baseObject = Instantiate(emptyContainer, new Vector3(0, 0, 0), Quaternion.identity);
+                baseObject.transform.parent = transform;
+                baseObject.name = "Buiding Bases";
+            }
             temporary.transform.parent = baseObject.transform;
             bases.Add(temporary);
         }
     }
-    public void RemoveWall(){
-        var objectsHit = Physics.OverlapSphere (instantiatedMarker.transform.position, 0.02f);
+    public void RemoveObjects(){
+        var objectsHit = Physics.OverlapSphere (instantiatedMarker.transform.position, 1);
         
         foreach ( Collider objectHit in objectsHit ) {
-            if(objectHit.gameObject.layer == wallLayer && objectHit.transform.position == instantiatedMarker.transform.position)
+            if(objectHit.gameObject.layer == instantiatedMarker.layer && objectHit.transform.position == instantiatedMarker.transform.position && objectHit.tag != "Marker")
             DestroyImmediate(objectHit.gameObject);
         }
-    }
-
-    public int findFloorID(){
-        for(int i=0; i<floors.Count; i++){
-            if(floors[i].floorNumber == currentFloor)
-            return i;
-        }
-        return -1;
     }
 }

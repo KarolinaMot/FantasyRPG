@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9108636026589116911
 Transform:
   m_ObjectHideFlags: 0
@@ -43,19 +43,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b65f4bbaf064c6418185b9acc1c9367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floorBase: {fileID: 4083777116607858854, guid: c8d0320fadd22f544b277a795a5450fc, type: 3}
-  emptyWallContainer: {fileID: 8700703779390397417, guid: 9796ddfc5fcacec4a9126234ae2a877f, type: 3}
+  emptyContainer: {fileID: 8700703779390397417, guid: 9796ddfc5fcacec4a9126234ae2a877f, type: 3}
   objectSet: {fileID: 11400000, guid: ebc4fb72c5061f144823ca6d8f46f2b4, type: 2}
-  baseObject: {fileID: 3242958678328861876, guid: bca93cbcaf853c14a8a9a0ad501de9dc, type: 3}
-  bases: []
+  scale: 1.2
   wallLayer: 3
   floorLayer: 15
   roofLayer: 18
   exteriorLayer: 16
-  chosenTab: 0
   gridSize: 4
+  examp: {fileID: 11400000, guid: 247ccaf50aebe1547b502515e6c5acc3, type: 2}
+  floors: []
+  bases: []
+  instantiatedMarker: {fileID: 0}
+  baseObject: {fileID: 0}
+  temporary: {fileID: 0}
+  lastMarkerTransform: {fileID: 0}
+  baseTransformPos: {x: 0, y: 0, z: 0}
+  baseTransformRot: {x: 0, y: 0, z: 0, w: 0}
+  chosenTab: 0
   currentFloor: 1
   selectedWall: 0
+  selectionTracker: -1
+  tabSelectionTracker: -1
   isBuilding: 1
   baseHeight: 0
   baseHeightTracker: 0

@@ -79,7 +79,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cb86e859bc0a9e34386bf4bbf0ed625d, type: 3}
       propertyPath: m_Layer
-      value: 17
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cb86e859bc0a9e34386bf4bbf0ed625d, type: 3}
+      propertyPath: m_TagString
+      value: Marker
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb86e859bc0a9e34386bf4bbf0ed625d, type: 3}

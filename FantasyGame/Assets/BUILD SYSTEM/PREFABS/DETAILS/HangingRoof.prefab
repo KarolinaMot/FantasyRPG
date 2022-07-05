@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6aea6f2167d9de04f842a8f8869c89d4, type: 2}
     - target: {fileID: -4650559775357159948, guid: 5a4feebac17c0f94a9ab5411a6e44ee6, type: 3}
       propertyPath: m_Layer
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5a4feebac17c0f94a9ab5411a6e44ee6, type: 3}
       propertyPath: m_Name
@@ -65,7 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5a4feebac17c0f94a9ab5411a6e44ee6, type: 3}
       propertyPath: m_Layer
-      value: 17
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5a4feebac17c0f94a9ab5411a6e44ee6, type: 3}
+      propertyPath: m_TagString
+      value: Marker
       objectReference: {fileID: 0}
     - target: {fileID: 5813232096821488380, guid: 5a4feebac17c0f94a9ab5411a6e44ee6, type: 3}
       propertyPath: m_Materials.Array.data[0]
