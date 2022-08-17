@@ -1,0 +1,468 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed5864476f84ce4b85454db09ca4eaa, type: 3}
+  m_Name: graph_0
+  m_EditorClassIdentifier: 
+  AssetPath: Assets/MATERIALS/SUBSTANCE/paintedplastersubstance001.sbsar
+  OutputPath: Assets/MATERIALS/SUBSTANCE/paintedplastersubstance001_graph_0
+  RawData: {fileID: -244192453324840774, guid: 5be7789d1b2021745ae57c878ddd7251, type: 3}
+  Name: graph_0
+  IsRoot: 1
+  FlagedForDelete: 0
+  GUID: d0892a06-3669-4c69-aa9f-dc1fffcc5d40
+  Index: 0
+  Input:
+  - rid: 1000
+  - rid: 1001
+  - rid: 1002
+  - rid: 1003
+  - rid: 1004
+  - rid: 1005
+  - rid: 1006
+  - rid: 1007
+  - rid: 1008
+  - rid: 1009
+  - rid: 1010
+  - rid: 1011
+  - rid: 1012
+  - rid: 1013
+  - rid: 1014
+  - rid: 1015
+  Output:
+  - Index: 0
+    VirtualOutputIndex: 4
+    GraphIndex: 0
+    Description:
+      Identifier: basecolor
+      Label: basecolor
+      Index: 0
+      Type: 8
+      Channel: baseColor
+    OutputTexture: {fileID: 2800000, guid: fd59572b747a3304aae51e3e3251fe9b, type: 3}
+    sRGB: 1
+    IsVirtual: 0
+    IsStandardOutput: 1
+    IsAlphaAssignable: 1
+    AlphaChannel: roughness
+    InvertAssignedAlpha: 1
+    Flags: 0
+  - Index: 1
+    VirtualOutputIndex: 5
+    GraphIndex: 0
+    Description:
+      Identifier: normal
+      Label: normal
+      Index: 1
+      Type: 8
+      Channel: normal
+    OutputTexture: {fileID: 2800000, guid: 94d230279a06de64687f186f75f7b963, type: 3}
+    sRGB: 0
+    IsVirtual: 0
+    IsStandardOutput: 1
+    IsAlphaAssignable: 0
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+  - Index: 2
+    VirtualOutputIndex: 6
+    GraphIndex: 0
+    Description:
+      Identifier: roughness
+      Label: roughness
+      Index: 2
+      Type: 8
+      Channel: roughness
+    OutputTexture: {fileID: 0}
+    sRGB: 0
+    IsVirtual: 0
+    IsStandardOutput: 0
+    IsAlphaAssignable: 1
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+  - Index: 3
+    VirtualOutputIndex: 7
+    GraphIndex: 0
+    Description:
+      Identifier: height
+      Label: height
+      Index: 3
+      Type: 8
+      Channel: height
+    OutputTexture: {fileID: 2800000, guid: 8f43924c6948b7b44b98c595f69ee96f, type: 3}
+    sRGB: 1
+    IsVirtual: 0
+    IsStandardOutput: 1
+    IsAlphaAssignable: 1
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+  Thumbnail: 
+  HasThumbnail: 0
+  CurrentStatePreset: " <sbspreset pkgurl=\"pkg://PaintedPlaster\" label=\"\" >\n 
+    <presetinput identifier=\"$outputsize\" uid=\"4187650820\" type=\"8\" value=\"10,10\"
+    />\n  <presetinput identifier=\"color1\" uid=\"2352938332\" type=\"3\" value=\"1,1,1,1\"
+    />\n  <presetinput identifier=\"color2\" uid=\"2352938342\" type=\"3\" value=\"0.77265,0.867613,0.915094,1\"
+    />\n </sbspreset>\n"
+  IsRuntimeOnly: 0
+  GenerateAllOutputs: 0
+  GenerateAllMipmaps: 1
+  OutputMaterial: {fileID: 2100000, guid: a52ae4c74bd01fc4dad06988c0302ea5, type: 2}
+  DefaultPreset: " <sbspreset pkgurl=\"pkg://PaintedPlaster\" label=\"\" >\n  <presetinput
+    identifier=\"$outputsize\" uid=\"4187650820\" type=\"8\" value=\"10,10\" />\n</sbspreset>\n"
+  MaterialShader: Universal Render Pipeline/Lit
+  RenderTextures: 0
+  OutputRemaped: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 1000
+      type: {class: SubstanceInputInt2, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 0
+        GraphID: 0
+        Description:
+          Identifier: $outputsize
+          Label: $outputsize
+          GuiGroup: 
+          GuiDescription: 
+          Type: 5
+          WidgetType: 0
+        Data: {x: 10, y: 10}
+        NumericalDescription:
+          DefaultValue: {x: 8, y: 8}
+          MinValue: {x: 0, y: 0}
+          MaxValue: {x: 1, y: 1}
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1001
+      type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 1
+        GraphID: 0
+        Description:
+          Identifier: $randomseed
+          Label: $randomseed
+          GuiGroup: 
+          GuiDescription: 
+          Type: 4
+          WidgetType: 0
+        Data: 0
+        NumericalDescription:
+          DefaultValue: 0
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          LabelFalse: 
+          LabelTrue: 
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1002
+      type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 2
+        GraphID: 0
+        Description:
+          Identifier: scuffs_scale
+          Label: Scale
+          GuiGroup: Scuffs
+          GuiDescription: 
+          Type: 4
+          WidgetType: 1
+        Data: 16
+        NumericalDescription:
+          DefaultValue: 16
+          MinValue: 0
+          MaxValue: 64
+          SliderStep: 1
+          SliderClamp: 0
+          LabelFalse: 
+          LabelTrue: 
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1003
+      type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 3
+        GraphID: 0
+        Description:
+          Identifier: scuffs_distortion_scale
+          Label: Distortion Scale
+          GuiGroup: Scuffs
+          GuiDescription: 
+          Type: 4
+          WidgetType: 1
+        Data: 16
+        NumericalDescription:
+          DefaultValue: 16
+          MinValue: 0
+          MaxValue: 256
+          SliderStep: 1
+          SliderClamp: 0
+          LabelFalse: 
+          LabelTrue: 
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1004
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 4
+        GraphID: 0
+        Description:
+          Identifier: scuffs_intensity
+          Label: Paint Dominance
+          GuiGroup: Scuffs
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: 0.67
+        NumericalDescription:
+          DefaultValue: 0.67
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1005
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 5
+        GraphID: 0
+        Description:
+          Identifier: cracks_intensity
+          Label: Cracks
+          GuiGroup: Scuffs
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: 1
+        NumericalDescription:
+          DefaultValue: 1
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1006
+      type: {class: SubstanceInputFloat4, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 6
+        GraphID: 0
+        Description:
+          Identifier: color1
+          Label: Color 1
+          GuiGroup: Paint
+          GuiDescription: 
+          Type: 3
+          WidgetType: 3
+        Data: {x: 1, y: 1, z: 1, w: 1}
+        NumericalDescription:
+          DefaultValue: {x: 0.937255, y: 0.183775, z: 0.183775, w: 1}
+          MinValue: {x: 0, y: 0, z: 0, w: 0}
+          MaxValue: {x: 1, y: 1, z: 1, w: 1}
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1007
+      type: {class: SubstanceInputFloat4, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 7
+        GraphID: 0
+        Description:
+          Identifier: color2
+          Label: Color 2
+          GuiGroup: Paint
+          GuiDescription: 
+          Type: 3
+          WidgetType: 3
+        Data: {x: 0.77265036, y: 0.8676131, z: 0.9150943, w: 1}
+        NumericalDescription:
+          DefaultValue: {x: 0.701961, y: 0.164715, z: 0.0825836, w: 1}
+          MinValue: {x: 0, y: 0, z: 0, w: 0}
+          MaxValue: {x: 1, y: 1, z: 1, w: 1}
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1008
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 8
+        GraphID: 0
+        Description:
+          Identifier: roughness_contrast
+          Label: Roughness Contrast
+          GuiGroup: Paint
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: -0.5
+        NumericalDescription:
+          DefaultValue: -0.5
+          MinValue: -1
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 1
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1009
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 9
+        GraphID: 0
+        Description:
+          Identifier: roughness_main
+          Label: Roughness
+          GuiGroup: Paint
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: 0
+        NumericalDescription:
+          DefaultValue: 0
+          MinValue: -1
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 1
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1010
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 10
+        GraphID: 0
+        Description:
+          Identifier: curvature_darkening
+          Label: Darken by Curvature
+          GuiGroup: Paint
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: 0.2
+        NumericalDescription:
+          DefaultValue: 0.2
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1011
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 11
+        GraphID: 0
+        Description:
+          Identifier: fine_streaks_intensity
+          Label: Fine Streaks
+          GuiGroup: Paint
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: 0.49
+        NumericalDescription:
+          DefaultValue: 0.49
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1012
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 12
+        GraphID: 0
+        Description:
+          Identifier: pattern_structure_impact
+          Label: Pattern Strength
+          GuiGroup: Paint
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: 0.33
+        NumericalDescription:
+          DefaultValue: 0.33
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1013
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 13
+        GraphID: 0
+        Description:
+          Identifier: intensity
+          Label: Normal Intensity
+          GuiGroup: 
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: 0.4
+        NumericalDescription:
+          DefaultValue: 0.4
+          MinValue: 0
+          MaxValue: 3
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1014
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 14
+        GraphID: 0
+        Description:
+          Identifier: paint_opacity_contrast
+          Label: Opacity Contrast
+          GuiGroup: Paint
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: 0
+        NumericalDescription:
+          DefaultValue: 0
+          MinValue: -1
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 1
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 1015
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 15
+        GraphID: 0
+        Description:
+          Identifier: paint_opacity
+          Label: Opacity
+          GuiGroup: Paint
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: 0
+        NumericalDescription:
+          DefaultValue: 0
+          MinValue: -1
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 1
+          EnumValueCount: 0
+          EnumValues: []

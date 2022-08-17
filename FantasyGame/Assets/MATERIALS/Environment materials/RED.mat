@@ -2,19 +2,21 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: RED
-  m_Shader: {fileID: -6465566751694194690, guid: 3fe91b4a9f3bf36479c44ffe8db6df52, type: 3}
-  m_ShaderKeywords: 
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -83,6 +85,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - Vector1_3a4a41e27f9d49e9820a663ec8e763ee: 0.17
     - Vector1_762ca9b23a9f41038cb240952a13a95b: 0.16
@@ -91,6 +94,7 @@ Material:
     - _AlphaClip: 0
     - _AmbientCol: 0
     - _Blend: 0
+    - _BlendOp: 0
     - _BumpScale: 1
     - _ClearCoat: 0
     - _ClearCoatMask: 0
@@ -118,13 +122,16 @@ Material:
     - _OtlWidth: 4.74
     - _Parallax: 0.02
     - _PostAtten: 0
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _RimIntense: 0.552
+    - _RimLightBrightness: 0
     - _RimLimit: 1
     - _RimOverlap: 1
     - _RimSmooth: 1
     - _RimTolerc: 1
+    - _SampleGI: 0
     - _Segmented: 1
     - _ShnIntense: 0.244
     - _ShnOverlap: 0
@@ -142,6 +149,8 @@ Material:
     - _Steps: 2.2
     - _StpSmooth: 0.052
     - _Surface: 0
+    - _ToonRampOffset: 0
+    - _ToonRampSmoothness: 0
     - _UVSec: 0
     - _WindQuality: 0
     - _WorkflowMode: 1
@@ -150,8 +159,8 @@ Material:
     - Color_2edec8efaf3447988ad46451754ef79d: {r: 1, g: 1, b: 1, a: 0}
     - Color_a9d737b9c3b74364af40606122d8fe78: {r: 0.8962264, g: 0.281027, b: 0.08877714, a: 0}
     - Color_fa7f7740307d4685adf1dbb0415c2464: {r: 0.5566038, g: 0.38341886, b: 0.34393916, a: 0}
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.5849056, g: 0.44741604, b: 0.40557137, a: 1}
+    - _BaseColor: {r: 1, g: 0, b: 0, a: 1}
+    - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
     - _MaxColor: {r: 0, g: 0.76902664, b: 0.8113208, a: 1}
@@ -161,6 +170,7 @@ Material:
     - _ShnColor: {r: 0.9406834, g: 1, b: 0.7294118, a: 1}
     - _SpcColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _ToonRampTinting: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7989885574135272401
 MonoBehaviour:
@@ -174,4 +184,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 4
+  version: 5

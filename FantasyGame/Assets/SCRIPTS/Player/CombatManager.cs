@@ -45,7 +45,6 @@ public class CombatManager : MonoBehaviour
         ch = GetComponent<CharacterController>();
         soundManager = GetComponent<SoundManager>();
 
-        playerAnimator.SetBool("IsAttacking", isAttacking);
         CheckWeapon();
     }
 

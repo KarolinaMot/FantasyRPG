@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 79f756372f42e9e44ae98b3f50d6c7c6
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 04b3902389fc1734ea5fce0742e92816, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/MATERIALS/BRICKS/Bricks.sbsar

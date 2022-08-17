@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: acbe30426ae953146b1e54d7f37d6b16
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 5f8d8cc4ffdc35f4397f67161385179c, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/MATERIALS/BRICKS/roof.sbsar

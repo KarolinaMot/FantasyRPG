@@ -6,7 +6,7 @@ public class BuildingWindow : EditorWindow
 {   
    public Texture2D[] textures;
  
-   public int selectedWall = -1;
+   public int selectedWall = 0;
    public int currentFloor = 1;
    public int gridSize = 4;
    public bool isBuilding = true; 

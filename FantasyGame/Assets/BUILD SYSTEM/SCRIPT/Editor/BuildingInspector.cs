@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
+
 [CustomEditor(typeof(Building))]
 public class BuildingInspector :  Editor
 {

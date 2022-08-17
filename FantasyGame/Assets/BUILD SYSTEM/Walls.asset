@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d76251769af156644b81af9ac215833e, type: 3}
+  m_Name: Walls
+  m_EditorClassIdentifier: 
+  baseObj: {fileID: 0}
+  SimpleWalls:
+  - {fileID: 8650173606521103034, guid: 495502491512e534796c0f8eb77cd875, type: 3}
+  - {fileID: 1723977932734155280, guid: 8fb930f1551ebc14da729430779deba6, type: 3}
+  - {fileID: 2445664271940082677, guid: 74b3a966bc4118441a3d212613c3aa31, type: 3}
+  - {fileID: 3548303358918129239, guid: 231f52a1a921b2c4f914085a7dade4e0, type: 3}
+  - {fileID: 2397810471545931253, guid: 2461b5bcf53191f44acc32f47b894ae3, type: 3}
+  - {fileID: 3513903627629892191, guid: 19d8b173d8befb84c877642f7fadaa33, type: 3}
+  WindowWalls: []
+  DoorWalls: []
+  Ground: []
+  Roof: []
+  OutsideDetails: []
+  SimpleWallsT: []
+  WindowWallsT: []
+  DoorWallsT: []
+  GroundT: []
+  RoofT: []
+  OutsideDetailsT: []

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0221971dad1ce3546ac194672f51d6ba
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 2c19199488fea684fac16d16ea1290cd, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/MATERIALS/BRICKS/suk_stylised_roof.sbsar

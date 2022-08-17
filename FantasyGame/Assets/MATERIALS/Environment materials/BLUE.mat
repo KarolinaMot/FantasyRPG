@@ -12,26 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 4
+  version: 5
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BLUE
-  m_Shader: {fileID: -6465566751694194690, guid: 3fe91b4a9f3bf36479c44ffe8db6df52, type: 3}
-  m_ShaderKeywords: _RIMLIMIT_ON _RIMOVERLAP_ON _SEGMENTED_ON _SPCOVERLAP_ON
-  m_LightmapFlags: 4
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_ValidKeywords:
+  - _EMISSION
+  m_InvalidKeywords: []
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -56,11 +67,23 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _HeightMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Metallic:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -69,6 +92,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Smoothness:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -84,20 +115,27 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - Vector1_3a4a41e27f9d49e9820a663ec8e763ee: 0.17
     - Vector1_762ca9b23a9f41038cb240952a13a95b: 0.16
-    - Vector1_a1a275139ac346deb8475b4170f8680e: 0.1
+    - Vector1_a1a275139ac346deb8475b4170f8680e: 0.22
     - Vector1_ccf23053d9e9428db86f4594711b5508: 0.4
+    - _AlphaClip: 0
     - _AmbientCol: 0
+    - _Blend: 0
     - _BumpScale: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
     - _Clipped: 0
     - _ColBright: 0
     - _ColIntense: 1
     - _Cull: 2
     - _Cutoff: 0.5
+    - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _EnvironmentReflections: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -112,7 +150,11 @@ Material:
     - _OtlWidth: 4.74
     - _Parallax: 0.02
     - _PostAtten: 0
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
     - _RimIntense: 0.552
+    - _RimLightBrightness: 0
     - _RimLimit: 1
     - _RimOverlap: 1
     - _RimSmooth: 1
@@ -122,6 +164,7 @@ Material:
     - _ShnOverlap: 0
     - _ShnRange: 0.258
     - _ShnSmooth: 1
+    - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpcIntence: 0
     - _SpcLimit: 0
@@ -132,15 +175,20 @@ Material:
     - _SrcBlend: 1
     - _Steps: 2.7
     - _StpSmooth: 0.205
+    - _Surface: 0
+    - _ToonRampOffset: 0
+    - _ToonRampSmoothness: 0
     - _UVSec: 0
     - _WindQuality: 0
+    - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
     - Color_2edec8efaf3447988ad46451754ef79d: {r: 1, g: 1, b: 1, a: 0}
-    - Color_a9d737b9c3b74364af40606122d8fe78: {r: 0.5647059, g: 0.74709034, b: 0.972549, a: 1}
-    - Color_fa7f7740307d4685adf1dbb0415c2464: {r: 1, g: 1, b: 1, a: 0}
-    - _Color: {r: 0.5647059, g: 0.6901961, b: 0.972549, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - Color_a9d737b9c3b74364af40606122d8fe78: {r: 0.5246529, g: 0.67125845, b: 0.8490566, a: 0.3764706}
+    - Color_fa7f7740307d4685adf1dbb0415c2464: {r: 0.764151, g: 0.64520293, b: 0.64520293, a: 0}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _EmissionColor: {r: 0.500623, g: 0.7302502, b: 0.8490566, a: 1}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
     - _MaxColor: {r: 0, g: 0.76902664, b: 0.8113208, a: 1}
     - _MinColor: {r: 0, g: 0, b: 0, a: 1}
@@ -148,4 +196,5 @@ Material:
     - _RimColor: {r: 1, g: 0.9904847, b: 0.8160377, a: 1}
     - _ShnColor: {r: 0.9406834, g: 1, b: 0.7294118, a: 1}
     - _SpcColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []

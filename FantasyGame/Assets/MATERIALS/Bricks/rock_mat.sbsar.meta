@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: de729e9b26505ad46930b2ca283f7b33
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: d26c520775483ce4aa5bc7fa305332eb, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/MATERIALS/BRICKS/rock_mat.sbsar

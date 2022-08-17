@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -40,16 +41,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2205783031547675949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b65f4bbaf064c6418185b9acc1c9367, type: 3}
+  m_Script: {fileID: 11500000, guid: dcb164bbc670e5f44b94f2bc9e2bf2d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   emptyContainer: {fileID: 8700703779390397417, guid: 9796ddfc5fcacec4a9126234ae2a877f, type: 3}
-  objectSet: {fileID: 11400000, guid: ebc4fb72c5061f144823ca6d8f46f2b4, type: 2}
+  objectSet: {fileID: 11400000, guid: f69a9f1645178234ca14a009cceede07, type: 2}
   scale: 1.2
-  wallLayer: 3
-  floorLayer: 15
-  roofLayer: 18
-  exteriorLayer: 16
+  wallLayer: 0
+  floorLayer: 0
+  roofLayer: 0
+  exteriorLayer: 0
   gridSize: 4
   examp: {fileID: 11400000, guid: 247ccaf50aebe1547b502515e6c5acc3, type: 2}
   floors: []

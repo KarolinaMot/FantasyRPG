@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4349739256416054473}
   - component: {fileID: 5982325560637510717}
   - component: {fileID: 991456403}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: WALL SIDES.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,6 +29,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: -0.00000023841858, z: -3.083489}
   m_LocalScale: {x: 1.3471516, y: 1.7726319, z: 1.8179283}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8304716586130225152}
   m_RootOrder: 2
@@ -52,6 +53,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -105,7 +107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2176590915896424377}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,6 +124,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.35, y: 0, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8304716586130225152}
   m_RootOrder: 5
@@ -135,7 +138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3998523786565121675}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: DOOR HINGE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,6 +155,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.5, y: 2.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6704374113030949980}
   m_Father: {fileID: 8304716586130225152}
@@ -166,7 +170,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7220203018168541800}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,6 +187,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.35, y: 0, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8304716586130225152}
   m_RootOrder: 6
@@ -199,7 +204,7 @@ GameObject:
   - component: {fileID: 2135752350789708086}
   - component: {fileID: 5685230870405444900}
   - component: {fileID: 105677338}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: ARCH DOOR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,6 +221,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.5021108, y: -0.3400004, z: 0.062255852}
   m_LocalScale: {x: 1.6115695, y: 1.6115708, z: 1.6115708}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3998523786565121675}
   m_RootOrder: 0
@@ -239,6 +245,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -298,8 +305,8 @@ GameObject:
   - component: {fileID: 547464954}
   - component: {fileID: 547464957}
   - component: {fileID: 547464956}
-  m_Layer: 3
-  m_Name: BASE.007
+  m_Layer: 0
+  m_Name: BASE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -315,6 +322,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 3, z: 0.1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8304716586130225152}
   m_RootOrder: 0
@@ -338,6 +346,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -346,7 +355,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b5aa0c9186c7cd4785866fc7dc1c97e, type: 2}
+  - {fileID: 2100000, guid: 49098a9e80b9c0141bc420ae69c9a78b, type: 2}
   - {fileID: 2100000, guid: 0b5aa0c9186c7cd4785866fc7dc1c97e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -414,8 +423,8 @@ MonoBehaviour:
   back: {fileID: 6344113917857543243}
   startPosition: {x: 0, y: 0, z: 0}
   inTrigger: 0
-  doorOpen: 0
-  closeDoor: 0
+  doorIsOpen: 0
+  doorIsClosing: 0
   slidingDoor: 0
   slideAmmount: 0
 --- !u!1 &7416770035176850137
@@ -430,7 +439,7 @@ GameObject:
   - component: {fileID: 8168720689537832298}
   - component: {fileID: 9157090334933987960}
   - component: {fileID: 850487553}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: DOOR FRAME
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,6 +456,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.010703802, y: 2.2891195, z: 0.22479105}
   m_LocalScale: {x: 1.59442, y: 1.5515428, z: 1.6115699}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8304716586130225152}
   m_RootOrder: 1
@@ -470,6 +480,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -526,7 +537,7 @@ GameObject:
   - component: {fileID: 5095340407155529248}
   - component: {fileID: 896942301414589380}
   - component: {fileID: 1337374571}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: WALL TOP.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,6 +554,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 5.7290263, z: 0.16622496}
   m_LocalScale: {x: 1.4768671, y: 1.4768671, z: 1.4768671}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8304716586130225152}
   m_RootOrder: 4
@@ -566,6 +578,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -619,6 +632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8304716586130225152}
+  - component: {fileID: -8638384490606242961}
   m_Layer: 3
   m_Name: ArchDoorWall
   m_TagString: Untagged
@@ -636,6 +650,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7569393332649095114}
   - {fileID: 7502726667083284633}
@@ -647,3 +662,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-8638384490606242961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650173606521103034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1ab2a9d642eb644ae171073cd15bbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: {fileID: 11400000, guid: 08cabdf89c68a1e4eae7534780246d8a, type: 2}
+  baseMaterials: {fileID: 11400000, guid: 8840203db5edca84aa6c6f90312565c1, type: 2}

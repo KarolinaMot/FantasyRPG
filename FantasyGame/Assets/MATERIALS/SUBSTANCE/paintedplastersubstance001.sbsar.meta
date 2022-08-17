@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5be7789d1b2021745ae57c878ddd7251
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: d760a301f9e31354fa0a2f40fe20a6df, type: 2}
+  - {fileID: 11400000, guid: c4c71205f777ae0488392f240248f0b7, type: 2}
+  _fileAsset: {fileID: 6013892654665635331, guid: 5be7789d1b2021745ae57c878ddd7251, type: 3}
+  _assetPath: Assets/MATERIALS/SUBSTANCE/paintedplastersubstance001.sbsar

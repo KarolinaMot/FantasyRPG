@@ -133,24 +133,27 @@ public class Building : MonoBehaviour
 
         switch (chosenTab) {
             case 0:
-                temporary = Instantiate(objectSet.SimpleWalls[selectedWall], instantiatedMarker.transform.position, instantiatedMarker.transform.rotation);
+                temporary =  (GameObject)PrefabUtility.InstantiatePrefab(objectSet.SimpleWalls[selectedWall]);
                 break;
             case 1:
-                temporary = Instantiate(objectSet.WindowWalls[selectedWall], instantiatedMarker.transform.position, instantiatedMarker.transform.rotation);
+                temporary =  (GameObject)PrefabUtility.InstantiatePrefab(objectSet.WindowWalls[selectedWall]);
                 break;
             case 2:
-                temporary = Instantiate(objectSet.DoorWalls[selectedWall], instantiatedMarker.transform.position, instantiatedMarker.transform.rotation);
+                temporary =  (GameObject)PrefabUtility.InstantiatePrefab(objectSet.DoorWalls[selectedWall]);
                 break;       
             case 3:
-                temporary = Instantiate(objectSet.Ground[selectedWall], instantiatedMarker.transform.position, instantiatedMarker.transform.rotation);
+                temporary =  (GameObject)PrefabUtility.InstantiatePrefab(objectSet.Ground[selectedWall]);
                 break;   
             case 4:
-                temporary = Instantiate(objectSet.Roof[selectedWall], instantiatedMarker.transform.position, instantiatedMarker.transform.rotation);
+                temporary =  (GameObject)PrefabUtility.InstantiatePrefab(objectSet.Roof[selectedWall]);
                 break; 
             case 5:
-                temporary = Instantiate(objectSet.OutsideDetails[selectedWall], instantiatedMarker.transform.position, instantiatedMarker.transform.rotation);
+                temporary =  (GameObject)PrefabUtility.InstantiatePrefab(objectSet.OutsideDetails[selectedWall]);
                 break; 
         }
+
+        temporary.transform.position = instantiatedMarker.transform.position;
+        temporary.transform.rotation = instantiatedMarker.transform.rotation;
     }
 
     public void ManageBaseHeight(){
